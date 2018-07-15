@@ -167,7 +167,23 @@ jQuery(window).resize(function () {
     });
 
 });
+//------------------------------------------------------------------------
+// InstaFeed.js Methods -->
+//------------------------------------------------------------------------
+jQuery(document).ready(function () {
 
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '5949033596',
+        resolution: 'standard_resolution',
+        template: '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="{{image}}" itemprop="contentUrl" class="thumbnail-img" data-size="{{width}}x{{height}}"><img src="{{image}}" alt="{{caption}}" itemprop="thumbnail" class="image activator"/></a><figcaption itemprop="caption description">{{caption}}</figcaption></figure>',
+        accessToken: '5949033596.6d865ac.eb2e0457c3b742e7a526e06fa92345ca'
+    });
+
+    feed.run();
+
+});
+//#access_token=5949033596.6d865ac.eb2e0457c3b742e7a526e06fa92345ca
 //------------------------------------------------------------------------
 //Helper Methods -->
 //------------------------------------------------------------------------

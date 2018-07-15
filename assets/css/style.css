@@ -419,6 +419,40 @@ body.open .site-content
 }
 
 
+/* GALERIES */
+
+#galleries-wrapper
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galleries-holder
+{
+    padding-top: 100px;
+    max-width: 100%;
+    padding-bottom: 85px;
+}
+
+.galleries-item-holder
+{
+    transition: .2s filter ease-in-out;
+    -webkit-transition: .2s -webkit-filter ease-in-out;    
+}
+
+#instafeed figcaption {
+    display: none;
+}
+#instafeed img {
+    max-width: 240px;
+}
+#instafeed figure {
+    float: left;
+    padding: 10px;
+}
+
+/* END GALERIES */
+
 /* BLOG */
 
 #blog-wrapper
@@ -999,6 +1033,7 @@ body.open .site-content
 }
 
 /* END FOOTER */
+
 
 /* RESPONSIVE PART */
 
