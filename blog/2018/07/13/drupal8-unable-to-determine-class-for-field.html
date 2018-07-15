@@ -3,13 +3,13 @@
 
   <head>
   <meta charset="utf-8">
-  <title>Mauris ac tincidunt mauris</title>
+  <title>Drupal8 - Unable to determine class for field...</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="keywords" content="Docker, HTML, CSS, JavaScript, PHP, Drupal,  WebGL" />
   <meta name="author" content="Ivan Fesiuk (eneus)" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequatelit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros so...">
+  <meta name="description" content="One possible way is that your module is missing from the codebase or has been improperly uninstalled and you’ve still a field which is using that missing mod...">
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   
@@ -31,7 +31,7 @@
   <!-- Compiled and minified Photoswipe CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css">
-  <link rel="canonical" href="http://0.0.0.0:4000/blog/2016/11/02/mauris-ac-tincidunt-mauris.html">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/2018/07/13/drupal8-unable-to-determine-class-for-field.html">
   <link rel="alternate" type="application/rss+xml" title="Ivan Fesiuk" href="http://0.0.0.0:4000/feed.xml">
 </head>
 
@@ -148,7 +148,7 @@
     <div class="single-post-wrapper content-1070 center-relative">
 
         <article class="center-relative post" itemscope itemtype="http://schema.org/BlogPosting">
-            <h1 class="post-title entry-title" itemprop="name headline">Mauris ac tincidunt mauris</h1>
+            <h1 class="post-title entry-title" itemprop="name headline">Drupal8 - Unable to determine class for field...</h1>
             <div class="post-info content-660 center-relative">
                 <div class="cat-links">
                     <ul>
@@ -156,57 +156,32 @@
                     </ul>
                 </div>
                 <div class="entry-date published">
-                    <time datetime="2016-11-02T00:00:00+00:00" itemprop="datePublished">Nov 2, 2016</time>
+                    <time datetime="2018-07-13T00:00:00+00:00" itemprop="datePublished">Jul 13, 2018</time>
                 </div>
                 <div class="clear"></div>
             </div>
 
             <div class="entry-content post-content" itemprop="articleBody">
                 <div class="content-wrap content-660 center-relative">
-                    <img class="image activator" alt="" src="/assets/e9998a-e7cf21c26a5c4b14564365fe5e21ff6671028be9320620d4f9a7cacddc485df1.jpg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat
-elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales
-ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit.
-Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim
-justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor.
-Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex
-velit, vitae blandit justo iaculis ac.</p>
+                    <img class="image activator" alt="" src="/assets/6747ad-ff8017d709c20c5c5d5b12d002000f8b775bfa0b180d66b69c0d727530e536b2.jpg">
+                    <p>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you’ve still a field which is using that missing module.
+<br />Try the following drush commands to remove the broken field:</p>
 
-<p>Proin ex neque, commodo id sollicitudin et, egestas et mauris. Aliquam nisi mi, porttitor
-vel rutrum id, congue at felis. Class aptent taciti sociosqu ad litora torquent per conubia
-nostra, per inceptos himenaeos. Mauris ac tincidunt mauris, a imperdiet ipsum.
-Nam posuere vehicula ornare. Curabitur at leo quis metus iaculis bibendum et a sem.
-Nam condimentum congue nulla. Sed nec tincidunt urna. Nunc dignissim gravida leo, sit
-amet maximus mi elementum et. Nam at neque ac sem rhoncus congue. Phasellus gravida
-sapien tortor, vel tincidunt tellus vestibulum placerat. Cras id enim at sapien sollicitudin
-pellentesque. Aenean tempor imperdiet neque, id hendrerit felis finibus eget. In accumsan
-facilisis urna eget consequat. Proin pretium nisi diam, at pulvinar urna commodo et. Nunc
-leo risus, facilisis sed cursus non, condimentum blandit arcu.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">drush</span> <span class="n">sqlq</span> <span class="s2">"DELETE FROM cache_config"</span>
+<span class="n">drush</span> <span class="n">sqlq</span> <span class="s2">"DELETE FROM config WHERE name = 'field.storage.xxx.xxx' OR data LIKE '%field.storage.xxx.xxx%'"</span>
+<span class="n">drush</span> <span class="n">sqlq</span> <span class="s2">"DELETE FROM config_snapshot  WHERE name = 'field.storage.xxx.xxx' OR data LIKE '%field.storage.xxx.xxx%'"</span></code></pre></figure>
 
-<p>Integer rutrum sem at metus scelerisque faucibus. Nulla sit amet placerat risus. Etiam a
-justo lobortis, rutrum diam vitae, volutpat ex. Nulla sodales sollicitudin volutpat. Aenean
-ligula tortor, sodales non ligula tempor, lacinia tincidunt ex. Nullam varius posuere mauris,
-quis laoreet magna euismod eleifend. Ut efficitur eget urna vel pretium. Pellentesque aliquet
-neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium,
-nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel
-purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur
-sagittis ipsum. Sed vel imperdiet augue. Aliquam id diam ultrices, bibendum sapien at, eleifend
-dolor. Praesent ut sollicitudin nulla. Suspendisse maximus faucibus odio, quis placerat lectus
-efficitur sit amet.</p>
+<p><b>Warning:</b> Don't execute above commands on master/live database. Make a backup before doing any database changes.</p>
 
-<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Where field.storage.xxx.xxx is your reported field storage type (e.g. field.storage.node.webform).</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>If above won't help, check any other references by:</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">drush</span> <span class="n">sql</span><span class="o">-</span><span class="n">dump</span> <span class="o">--</span><span class="n">ordered</span><span class="o">-</span><span class="n">dump</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">field</span><span class="p">.</span><span class="nf">storage</span><span class="p">.</span><span class="nf">xxx</span><span class="p">.</span><span class="nf">xxx</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>At the end you need to rebuild your caches:</p>
 
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">drush</span> <span class="n">cr</span></code></pre></figure>
 
 
                 </div>
