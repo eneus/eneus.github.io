@@ -5,8 +5,8 @@
     <description>#Full Stack Developer &lt;br/&gt; All ingenious is simple</description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Jul 2018 17:42:54 +0000</pubDate>
-    <lastBuildDate>Sun, 15 Jul 2018 17:42:54 +0000</lastBuildDate>
+    <pubDate>Sun, 15 Jul 2018 17:58:16 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 17:58:16 +0000</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -42,15 +42,13 @@
       </item>
     
       <item>
-        <title>How to use Jekyll Docker container</title>
-        <description></description>
-        <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/blog/2016/12/05/how-to-use-jekyll-container.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/12/05/how-to-use-jekyll-container.html</guid>
+        <title>Instagram Images to your website</title>
+        <description>Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium, nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur sagittis ipsum.</description>
+        <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2018/02/05/instagram-images-to-your-website.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2018/02/05/instagram-images-to-your-website.html</guid>
         
-        <category>Jekyll,</category>
-        
-        <category>Docker</category>
+        <category>Jekyll</category>
         
         
         <category>blog</category>
@@ -58,11 +56,11 @@
       </item>
     
       <item>
-        <title>Lorem second dolor</title>
+        <title>Configure Docker for Drupal</title>
         <description></description>
-        <pubDate>Wed, 12 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/blog/2016/10/12/lorem-second-dolor.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/10/12/lorem-second-dolor.html</guid>
+        <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2017/12/31/configure-docker-for-drupal.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/12/31/configure-docker-for-drupal.html</guid>
         
         <category>Web</category>
         
@@ -74,11 +72,11 @@
       </item>
     
       <item>
-        <title>Etiam a justo lobortis</title>
+        <title>Configure Drupal libraries using composer</title>
         <description>Nulla sit amet placerat risus. Etiam a justo lobortis, rutrum diam vitae, volutpat ex. Nulla sodales sollicitudin volutpat. Aenean ligula tortor, sodales non ligula tempor, lacinia tincidunt ex. Nullam varius posuere mauris, quis laoreet magna euismod eleifend. Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus.</description>
-        <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/blog/2016/09/12/etiam-a-justo-lobortis.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/09/12/etiam-a-justo-lobortis.html</guid>
+        <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2017/09/12/drupal-libraries.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2017/09/12/drupal-libraries.html</guid>
         
         <category>Docker</category>
         
@@ -88,13 +86,15 @@
       </item>
     
       <item>
-        <title>Pellentesque aliquet neque sed tortor</title>
-        <description>Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium, nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur sagittis ipsum.</description>
-        <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
-        <link>http://0.0.0.0:4000/blog/2016/08/05/pellentesque-aliquet-neque.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/08/05/pellentesque-aliquet-neque.html</guid>
+        <title>How to use Jekyll Docker container</title>
+        <description></description>
+        <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/12/05/how-to-use-jekyll-container.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/12/05/how-to-use-jekyll-container.html</guid>
         
-        <category>Jekyll</category>
+        <category>Jekyll,</category>
+        
+        <category>Docker</category>
         
         
         <category>blog</category>
