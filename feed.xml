@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivan Fesiuk</title>
+    <description>#Full Stack Developer &lt;br/&gt; All ingenious is simple</description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Jul 2018 11:02:24 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 11:02:24 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Praesent ut sollicitudin nulla</title>
+        <description>Aliquam id diam ultrices, bibendum sapien at, eleifend dolor. Praesent ut sollicitudin nulla. Suspendisse maximus faucibus odio, quis placerat lectus efficitur sit amet. Donec eget eros dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</description>
+        <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/12/05/praesent-ut-venenatis-felis.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/12/05/praesent-ut-venenatis-felis.html</guid>
+        
+        <category>Docker</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Mauris ac tincidunt mauris</title>
+        <description>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ac tincidunt mauris, a imperdiet ipsum. Nam posuere vehicula ornare. Curabitur at leo quis metus iaculis bibendum et a sem. Nam condimentum congue nulla. Sed nec tincidunt urna.</description>
+        <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/11/02/mauris-ac-tincidunt-mauris.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/11/02/mauris-ac-tincidunt-mauris.html</guid>
+        
+        <category>Drupal</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Lorem second dolor</title>
+        <description>Donec eget eros dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam leo felis, blandit eget consectetur vitae, molestie et mauris. Praesent ut venenatis felis, sit amet gravida mi. Nullam finibus ultricies turpis sit amet maximus. Nunc quis lectus leo. Duis a rutrum libero.</description>
+        <pubDate>Wed, 12 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/10/12/lorem-second-dolor.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/10/12/lorem-second-dolor.html</guid>
+        
+        <category>Web</category>
+        
+        <category>GL</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Etiam a justo lobortis</title>
+        <description>Nulla sit amet placerat risus. Etiam a justo lobortis, rutrum diam vitae, volutpat ex. Nulla sodales sollicitudin volutpat. Aenean ligula tortor, sodales non ligula tempor, lacinia tincidunt ex. Nullam varius posuere mauris, quis laoreet magna euismod eleifend. Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus.</description>
+        <pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/09/12/etiam-a-justo-lobortis.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/09/12/etiam-a-justo-lobortis.html</guid>
+        
+        <category>Docker</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Pellentesque aliquet neque sed tortor</title>
+        <description>Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium, nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur sagittis ipsum.</description>
+        <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/08/05/pellentesque-aliquet-neque.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/08/05/pellentesque-aliquet-neque.html</guid>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Nulla sit amet placerat risus</title>
+        <description>Nulla sit amet placerat risus. Etiam a justo lobortis, rutrum diam vitae, volutpat ex. Nulla sodales sollicitudin volutpat. Aenean ligula tortor, sodales non ligula tempor, lacinia tincidunt ex. Nullam varius posuere mauris, quis laoreet magna euismod eleifend. Ut efficitur eget urna vel pretium. Pellentesque aliquet neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium, nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur sagittis ipsum.</description>
+        <pubDate>Sat, 23 Jul 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/07/23/nulla-sit-amet.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/07/23/nulla-sit-amet.html</guid>
+        
+        <category>Drupal</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>First lorem ipsum dolor</title>
+        <description>First lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/06/23/first-ipsum-dolor.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/06/23/first-ipsum-dolor.html</guid>
+        
+        <category>Web</category>
+        
+        <category>GL</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Curabitur at leo quis metus</title>
+        <description>Curabitur at leo quis metus iaculis bibendum et a sem. Nam condimentum congue nulla. Sed nec tincidunt urna. Nunc dignissim gravida leo, sit amet maximus mi elementum et. Nam at neque ac sem rhoncus congue. Phasellus gravida sapien tortor, vel tincidunt tellus vestibulum placerat. Cras id enim at sapien sollicitudin pellentesque. Aenean tempor imperdiet neque, id hendrerit felis finibus eget. In accumsan facilisis urna eget consequat.</description>
+        <pubDate>Mon, 30 May 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/05/30/curabitur-at-leo-quis-metus.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/05/30/curabitur-at-leo-quis-metus.html</guid>
+        
+        <category>Web</category>
+        
+        <category>GL</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Proin ex neque</title>
+        <description>Proin ex neque, commodo id sollicitudin et, egestas et mauris. Aliquam nisi mi, porttitor vel rutrum id, congue at felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ac tincidunt mauris, a imperdiet ipsum. Nam posuere vehicula ornare. Curabitur at leo quis metus iaculis bibendum et a sem. Nam condimentum congue nulla. Sed nec tincidunt urna. Nunc dignissim gravida leo, sit amet maximus mi elementum et.</description>
+        <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/project/2016/04/19/proin-ex-neque.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/project/2016/04/19/proin-ex-neque.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Proin ex neque</title>
+        <description>Proin ex neque, commodo id sollicitudin et, egestas et mauris. Aliquam nisi mi, porttitor vel rutrum id, congue at felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ac tincidunt mauris, a imperdiet ipsum. Nam posuere vehicula ornare. Curabitur at leo quis metus iaculis bibendum et a sem. Nam condimentum congue nulla. Sed nec tincidunt urna. Nunc dignissim gravida leo, sit amet maximus mi elementum et.</description>
+        <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/04/19/proin-ex-neque.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/04/19/proin-ex-neque.html</guid>
+        
+        <category>Jekyll</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Morbi pulvinar ut nisi nec blandit</title>
+        <description>Consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/project/2016/03/20/morbi-pulvinar-ut-nisi-nec-blandit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/project/2016/03/20/morbi-pulvinar-ut-nisi-nec-blandit.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Morbi pulvinar ut nisi nec blandit</title>
+        <description>Consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/03/20/morbi-pulvinar-ut-nisi-nec-blandit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/03/20/morbi-pulvinar-ut-nisi-nec-blandit.html</guid>
+        
+        <category>Docker</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Maecenas risus tortor</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/project/2016/02/17/maecenas-risus-tortor.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/project/2016/02/17/maecenas-risus-tortor.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Maecenas risus tortor</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/02/17/maecenas-risus-tortor.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/02/17/maecenas-risus-tortor.html</guid>
+        
+        <category>Drupal</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Morbi vehicula ex velit</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/video/2016/01/13/morbi-vehicula-ex-velit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/video/2016/01/13/morbi-vehicula-ex-velit.html</guid>
+        
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
+        <title>Morbi vehicula ex velit</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/project/2016/01/13/morbi-vehicula-ex-velit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/project/2016/01/13/morbi-vehicula-ex-velit.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Morbi vehicula ex velit</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex velit, vitae blandit justo iaculis ac.</description>
+        <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/blog/2016/01/13/morbi-vehicula-ex-velit.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/2016/01/13/morbi-vehicula-ex-velit.html</guid>
+        
+        <category>Drupal</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
