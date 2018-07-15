@@ -142,14 +142,14 @@ input, textarea, select
     cursor: pointer;
 }
 
-.scroll-top .fa
+.scroll-top .far
 {
     font-size: 36px;
     width: 32px;
     color: #0697AE;
 }
 
-.scroll-top .fa:hover
+.scroll-top .far:hover
 {
     color: #47afbf;
 }
