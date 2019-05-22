@@ -11,29 +11,37 @@
             gtag('config', 'UA-3791456-15');
         </script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Ivan Fesiuk | Short summary and contacts">
+        <meta name="description" content="This is meta description">
         <meta name="author" content="Ivan Fesiuk">
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Hugo 0.53" />
 		
-        <title> Hi, I am Ivan </title>
+        <title> Drupal8 - Unable to determine class for field... </title>
                 
-        <meta property="og:title" content="Hi, I am Ivan" />
+        <meta property="og:title" content="Drupal8 - Unable to determine class for field..." />
         
         <meta property="og:type" content="article">
-        <meta property="article:published_time" content="0001-01-01">
+        <meta property="article:published_time" content="2018-07-13">
         
-        <meta property="og:description" content="Ivan Fesiuk | Short summary and contacts" />
-        <meta property="og:url" content="https://eneus.github.io/about/" />
+        <meta property="og:description" content="This is meta description" />
+        <meta property="og:url" content="https://eneus.github.io/blog/drupal8-unable-to-determine-field/" />
         
-        <meta property="og:image" content="https://eneus.github.io/images/backgrounds/22.jpg"/>
-        <meta property="og:image:secure_url" content="https://eneus.github.io/images/backgrounds/22.jpg"/>
+        <meta property="og:image" content="https://eneus.github.io/images/backgrounds/21.jpg"/>
+        <meta property="og:image:secure_url" content="https://eneus.github.io/images/backgrounds/21.jpg"/>
         
         <meta property="og:locale" content="en_GB" />
         <meta property="og:locale:alternate" content="UA_uk" />
         <meta property="og:site_name" content="" />
+        
+        <meta property="og:tags" content="drupal">
+        
+        <meta property="og:tags" content="field">
+        
+        <meta property="og:tags" content="drush">
+        
+        <meta property="og:tags" content="MySQL">
         
         
 		<!-- Favicon -->
@@ -146,51 +154,84 @@
 </div>
 <!-- End Fixed Navigation -->
 
-<!-- ABout Content -->
-<div id="content" class="site-content about page page-template-default">
+<!-- Single Content -->
+    <div id="content" class="single-post site-content center-relative">
+        <div class="single-post-wrapper content-1070 center-relative">
 
-<div class="page-header-image relative" style="background-image: url(../images/backgrounds/22.jpg);">
-        
-    </div>
-    
-    <article>
-        <div class="content-1070 center-relative entry-content">
-            <h1 class="entry-title">Hi, I am Ivan</h1>
-            <div class="page-full-width col-inline">
-                <div class="one_half ">
-                    We choose to go to the moon in this decade and do the other things, not because they are easy.</p>
-                    <br>
-                    Because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone and one.</p>
+            <article class="center-relative">
+                <h1 class="entry-title">
+                    Drupal8 - Unable to determine class for field...
+                </h1>
+                <div class="post-info content-660 center-relative">
+                    <div class="cat-links">
+                        <ul>
+                            
+                            <li><a href="https://eneus.github.io/#">drupal</a></li>
+                            
+                            <li><a href="https://eneus.github.io/#">field</a></li>
+                            
+                            <li><a href="https://eneus.github.io/#">drush</a></li>
+                            
+                            <li><a href="https://eneus.github.io/#">MySQL</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="entry-date published">Friday, 13.07.2018</div>
+                    <div class="clear"></div>
                 </div>
-                <div class="one_half last">
-                    Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center an equal earth which all men occupy as equals. The airman’s earth, if free men make it, will be truly round.<br>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="page-full-width ">
-                <div class="team-holder ">
-                    <div class="member relative one ">
-                        <img src="https://instagram.flwo4-2.fna.fbcdn.net/vp/dc26e60c92f178a5856e6fdac68e5bbb/5D6364F6/t51.2885-15/sh0.08/e35/s640x640/47585315_225320791728666_2760087455380753699_n.jpg?_nc_ht=instagram.flwo4-2.fna.fbcdn.net" alt="Ivan Fesiuk | Full Stack Developer | Personal Blog">
-                        <div class="member-info">
-                            <div class="member-name">Ivan Fesiuk</div>
-                            <div class="member-position">Full Stack Developer | Personal Blog</div>
-                            <div class="member-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur perset adipisicing elit, sed do eiusmod tempor.</p>
-                                <br>
-                                <p>Ut enim aden minim veniam, quis nostrud seti exercitation ullamco laboris nisi ut aliquip exeea commodo consequat. Duis aute irure dolor.</p>
-                                <br>
-                                <p>Suspendisse potenti. Maecenas faucibus massa euismod, malesuada diam finibus, semper ligula. Donec nibh arcu, scelerisque id nisl sit amet, placerat mollis neque. Nullam suscipit auctor laoreet.</p>
-                            </div>
-                        </div>
+                    
+                <div class="entry-content">
+                    <div class="post-full-width">
+                            <img class="img-fluid mb-50" src="https://eneus.github.io/images/backgrounds/21.jpg" alt="blog-image">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="content-wrap content-660 center-relative">
+                        <p>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&rsquo;ve still a field which is using that missing module.</p>
+
+<p>Try the following drush commands to remove the broken field:</p>
+
+<pre><code class="language-bash">drush sqlq &quot;DELETE FROM cache_config&quot;
+drush sqlq &quot;DELETE FROM config WHERE name = 'field.storage.xxx.xxx' OR data LIKE '%field.storage.xxx.xxx%'&quot;
+drush sqlq &quot;DELETE FROM config_snapshot  WHERE name = 'field.storage.xxx.xxx' OR data LIKE '%field.storage.xxx.xxx%'&quot;
+</code></pre>
+
+<p><strong>Warning:</strong> Don&rsquo;t execute above commands on master/live database. Make a backup before doing any database changes.</p>
+
+<p>Where field.storage.xxx.xxx is your reported field storage type (e.g. field.storage.node.webform).</p>
+
+<p>If above won&rsquo;t help, check any other references by:</p>
+
+<pre><code class="language-bash">drush sql-dump --ordered-dump | grep field.storage.xxx.xxx
+</code></pre>
+
+<p>At the end you need to rebuild your caches:</p>
+
+<pre><code class="language-bash">drush cr
+</code></pre>
+
                     </div>
                 </div>
                 <div class="clear"></div>
-            </div>
-        </div>
-    </article>
+            </article>
+        <div id="disqus_thread"></div>
+<script>
 
-</div>
-<!-- /Page Content -->
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://eneus.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+        </div>
+    </div>
+
 
 	<!-- Essential Scripts -->
 

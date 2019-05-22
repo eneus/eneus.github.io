@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
+    <link>https://eneus.github.io/projects/</link>
+    <description>Recent content in Projects on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Sep 2018 14:51:12 +0600</lastBuildDate>
+    
+	<atom:link href="https://eneus.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Virtualisation and flexibility</title>
+      <link>https://eneus.github.io/projects/3/</link>
+      <pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/projects/3/</guid>
+      <description>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+ Design is not just what it looks like and feels like. Design is how it works.
+ Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</description>
+    </item>
+    
+    <item>
+      <title>Virtualisation and flexibility</title>
+      <link>https://eneus.github.io/projects/4/</link>
+      <pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/projects/4/</guid>
+      <description>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+ Design is not just what it looks like and feels like. Design is how it works.
+ Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Reality</title>
+      <link>https://eneus.github.io/projects/2/</link>
+      <pubDate>Wed, 12 Sep 2018 14:39:16 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/projects/2/</guid>
+      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+ Design is not just what it looks like and feels like. Design is how it works.
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</description>
+    </item>
+    
+    <item>
+      <title>Search engine</title>
+      <link>https://eneus.github.io/projects/1/</link>
+      <pubDate>Wed, 12 Sep 2018 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/projects/1/</guid>
+      <description>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+ Design is not just what it looks like and feels like. Design is how it works.</description>
+    </item>
+    
+  </channel>
+</rss>
