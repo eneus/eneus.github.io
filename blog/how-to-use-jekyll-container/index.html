@@ -11,7 +11,7 @@
             gtag('config', 'UA-3791456-15');
         </script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="How to use Jekyll Docker container">
+        <meta name="description" content="How to use Jekyll Docker container and why you need it.">
         <meta name="author" content="Ivan Fesiuk">
 		
 		<!-- Mobile Specific Meta -->
@@ -23,13 +23,13 @@
         <meta property="og:title" content="How to use Jekyll Docker container" />
         
         <meta property="og:type" content="article">
-        <meta property="article:published_time" content="2016-12-05">
+        <meta property="article:published_time" content="2017-04-17">
         
-        <meta property="og:description" content="How to use Jekyll Docker container" />
+        <meta property="og:description" content="How to use Jekyll Docker container and why you need it." />
         <meta property="og:url" content="https://eneus.github.io/blog/how-to-use-jekyll-container/" />
         
-        <meta property="og:image" content="https://eneus.github.io/images/backgrounds/16.jpg"/>
-        <meta property="og:image:secure_url" content="https://eneus.github.io/images/backgrounds/16.jpg"/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/eneus/jekyll/master/src/demosite.com/assets/docker-jekyll.png"/>
+        <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/eneus/jekyll/master/src/demosite.com/assets/docker-jekyll.png"/>
         
         <meta property="og:locale" content="en_GB" />
         <meta property="og:locale:alternate" content="UA_uk" />
@@ -154,45 +154,115 @@
                             
                         </ul>
                     </div>
-                    <div class="entry-date published">Monday, 05.12.2016</div>
+                    <div class="entry-date published">Monday, 17.04.2017</div>
                     <div class="clear"></div>
                 </div>
                     
                 <div class="entry-content">
                     <div class="post-full-width">
-                            <img class="img-fluid mb-50" src="https://eneus.github.io/images/backgrounds/16.jpg" alt="blog-image">
+                            <img class="img-fluid mb-50" src="https://raw.githubusercontent.com/eneus/jekyll/master/src/demosite.com/assets/docker-jekyll.png" alt="blog-image">
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat
-elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales
-ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit.
-Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim
-justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor.
-Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus. Morbi vehicula ex
-velit, vitae blandit justo iaculis ac.</p>
+                        
 
-<p>Proin ex neque, commodo id sollicitudin et, egestas et mauris. Aliquam nisi mi, porttitor
-vel rutrum id, congue at felis. Class aptent taciti sociosqu ad litora torquent per conubia
-nostra, per inceptos himenaeos. Mauris ac tincidunt mauris, a imperdiet ipsum.
-Nam posuere vehicula ornare. Curabitur at leo quis metus iaculis bibendum et a sem.
-Nam condimentum congue nulla. Sed nec tincidunt urna. Nunc dignissim gravida leo, sit
-amet maximus mi elementum et. Nam at neque ac sem rhoncus congue. Phasellus gravida
-sapien tortor, vel tincidunt tellus vestibulum placerat. Cras id enim at sapien sollicitudin
-pellentesque. Aenean tempor imperdiet neque, id hendrerit felis finibus eget. In accumsan
-facilisis urna eget consequat. Proin pretium nisi diam, at pulvinar urna commodo et. Nunc
-leo risus, facilisis sed cursus non, condimentum blandit arcu.</p>
+<p>Jekyll&rsquo;s Docker Container with Demo Content and demo site.</p>
 
-<p>Integer rutrum sem at metus scelerisque faucibus. Nulla sit amet placerat risus. Etiam a
-justo lobortis, rutrum diam vitae, volutpat ex. Nulla sodales sollicitudin volutpat. Aenean
-ligula tortor, sodales non ligula tempor, lacinia tincidunt ex. Nullam varius posuere mauris,
-quis laoreet magna euismod eleifend. Ut efficitur eget urna vel pretium. Pellentesque aliquet
-neque sed tortor sollicitudin dapibus. Vivamus eu fermentum ligula. Pellentesque pretium,
-nisl at tempus mattis, elit enim fringilla diam, nec convallis urna diam at lectus. Ut vel
-purus et purus pellentesque consequat. Proin orci felis, bibendum id lacus in, consectetur
-sagittis ipsum. Sed vel imperdiet augue. Aliquam id diam ultrices, bibendum sapien at, eleifend
-dolor. Praesent ut sollicitudin nulla. Suspendisse maximus faucibus odio, quis placerat lectus
-efficitur sit amet.</p>
+<p><strong>Plugins included:</strong></p>
+
+<pre><code>- Jekyll: 3.8.3
+  -- jekyll-paginate
+  -- jekyll-sitemap
+  -- jekyll-feed
+  -- jekyll-multisite
+  -- jekyll-github-metadata
+  -- jekyll-seo-tag
+  -- jekyll-watch
+  -- jekyll-sass-converter
+  -- jekyll-assets
+  -- jekyll-multiple-languages-plugin
+- Compass: 1.0.3
+- NodeJS: 8.9.3
+-- NPM: 5.5.1
+-- Yarn: 1.3.2
+</code></pre>
+
+<h2 id="the-first-of-all">The first of all:</h2>
+
+<p><strong>Install Docker:</strong></p>
+
+<ul>
+<li>On <strong><em>Linux Ubuntu/Debian</em></strong>:</li>
+</ul>
+
+<p><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a>
+  <a href="https://docs.docker.com/install/linux/docker-ce/debian/">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
+
+<ul>
+<li>On <strong><em>MacOS</em></strong>:</li>
+</ul>
+
+<p><a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></p>
+
+<ul>
+<li>On <strong><em>Windows</em></strong>:</li>
+</ul>
+
+<p><a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a></p>
+
+<p><strong>Install Docker Compose:</strong></p>
+
+<ul>
+<li><a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></li>
+</ul>
+
+<p><strong>Download repository:</strong></p>
+
+<pre><code>git clone git@github.com:eneus/jekyll.git
+</code></pre>
+
+<p><strong>Go to downloaded folder:</strong></p>
+
+<pre><code class="language-shell">cd jekyll
+</code></pre>
+
+<p><strong>Configure your .env file:</strong></p>
+
+<pre><code>COMPOSE_FILE=./configs/docker-compose.yml
+COMPOSE_PROJECT=demo           # Folder  (src/${COMPOSE_PROJECT}), config file ${COMPOSE_PROJECT}.yml,
+COMPOSE_PROJECT_NAME=demo      # short name used in container name Ex.: demo_jekyll
+SITE_NAME=Demo Content
+SITE_MAIL=admin@demosite.com
+
+IPRANGE=192.168.16.0/20
+CUID=1000
+CGID=1000
+</code></pre>
+
+<p><strong>Start docker container via Makefile:</strong></p>
+
+<pre><code class="language-shell">$ make all
+</code></pre>
+
+<p><strong>Start docker container via docker-compose:</strong></p>
+
+<pre><code class="language-shell">docker-compose up
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="language-shell">docker-compose up -d     //in background
+</code></pre>
+
+<p><strong>Now you can access to you static site:</strong></p>
+
+<ul>
+<li>Jekyll Server: <a href="http://localhost:4000">http://localhost:4000</a></li>
+</ul>
+
+<hr />
+
+<p>Image Credits: <a href="http://gratisography.com/">http://gratisography.com/</a></p>
 
                     </div>
                 </div>
