@@ -11,21 +11,21 @@
             gtag('config', 'UA-3791456-15');
         </script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Back to Top Button to your website">
+        <meta name="description" content="Back to Top Button for your website with CSS &amp; jQuery">
         <meta name="author" content="Ivan Fesiuk">
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Hugo 0.53" />
 		
-        <title> Back to Top Button to your website </title>
+        <title> &#39;Back to Top&#39; Button for your website </title>
                 
-        <meta property="og:title" content="Back to Top Button to your website" />
+        <meta property="og:title" content="&#39;Back to Top&#39; Button for your website" />
         
         <meta property="og:type" content="article">
         <meta property="article:published_time" content="2017-04-30">
         
-        <meta property="og:description" content="Back to Top Button to your website" />
+        <meta property="og:description" content="Back to Top Button for your website with CSS &amp; jQuery" />
         <meta property="og:url" content="https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/" />
         
         <meta property="og:image" content="https://eneus.github.io/images/backgrounds/9.jpg"/>
@@ -142,7 +142,7 @@
 
             <article class="center-relative">
                 <h1 class="entry-title">
-                    Back to Top Button to your website
+                    &#39;Back to Top&#39; Button for your website
                 </h1>
                 <div class="post-info content-660 center-relative">
                     <div class="cat-links">
@@ -164,13 +164,229 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        <p>Creating a Back to Top Button with CSS &amp; jQuery</p>
+                        <p>A <strong>Back To Top</strong> button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.</p>
 
-<p>A back to top button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.</p>
+<p>If you want to add a back to top button while you&rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.</p>
 
-<p>If you want to add a back to top button while you&rsquo;re still designing a website, or just curious about how you can build one on your own, welcome aboard!</p>
+<p>Our code would consist of three parts:
+- tiny HTML
+- CSS styling
+- small jQuery script.</p>
 
-<p><a href="https://www.templatemonster.com/blog/back-to-top-button-css-jquery/">https://www.templatemonster.com/blog/back-to-top-button-css-jquery/</a></p>
+<p>Let’s start with HTML.
+You need a simple button HTML code:</p>
+
+<pre><code class="language-html">&lt;div class=&quot;back-to-top&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>The button would consist of only one anchor tag with an id button. We also include a link to the FontAwesome library so that we can use an icon for our button.</p>
+
+<p>The initial styles for the button would look like this:</p>
+
+<pre><code class="language-css">#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+</code></pre>
+
+<p>Since the button is an anchor element, and anchors by default are inline elements, we need to change the display property to inline block so that we can assign dimensions to it.</p>
+
+<p>Let’s make it a square button of 50*50px with rounded corners of 4px. We’ll give it a bright orange color and a margin of 30px on each side.</p>
+
+<p>The fixed position would always enable our button to stay at the same spot when we scroll the page, and z-index of a very high number makes sure that the button is always overlapping other website elements.</p>
+
+<p>When we hover over a button the cursor changes to a pointer, and the background becomes a dark grey. In order to make the transition smooth, we assign the transition of 0.3 seconds to the background-color property. Also, when we click the button, the background color also changes and becomes a bit lighter.</p>
+
+<p><strong>Adding an Icon</strong></p>
+
+<p>Right now our button is empty, so let’s add an icon to it. We do it by adding an ::after pseudo-element like this:</p>
+
+<pre><code class="language-css">#button::after {
+  content: &quot;\f077&quot;;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+</code></pre>
+
+<p>We’re going to pick an icon from the most popular font library FontAwesome. I decided to go with a Chevron Up icon.</p>
+
+<p>In order to display it in a pseudo-element, set the font-family to FontAwesome, and assign the Unicode value of your icon to the content property.</p>
+
+<p>Also make sure that your line height is equal to the height of your icon if you want it to be centered horizontally.</p>
+
+<hr />
+
+<p>Adding Functionality with jQuery
+In this sub-section I&rsquo;ll actually show you how to make the button work as expected. The easiest way to achieve this is to use a JavaScript library jQuery. First, we have to add jQuery to the HTML markup of our code. Add this line of code just before the closing body tag.</p>
+
+<pre><code>&lt;script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Now we can write our script using jQuery syntax. Add the following script after the jQuery line:</p>
+
+<pre><code class="language-html">&lt;script&gt;
+
+jQuery(document).ready(function() {
+  
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() &gt; 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+});
+
+&lt;/script&gt;
+</code></pre>
+
+<p>Let’s take a closer look at this script.
+You will notice the first line of code:</p>
+
+<pre><code class="language-js">jQuery(document).ready(function() {
+</code></pre>
+
+<p>It is basically saying, run the code inside this function only when the document is fully loaded. This is a great way to prevent errors, in case your JavaScript code wants to make changes to parts of a web page which are not fully loaded in the browser.</p>
+
+<p>The code that we run after the document is fully loaded consists of two major chunks of code where each one is doing its own thing.</p>
+
+<p>The first part of the script makes our button appear and disappear after the page scroll reaches a certain point. The second part makes the page scroll to the top after we click the button. Let’s examine each one in detail.</p>
+
+<p><strong>Making the Button Appear and Disappear</strong></p>
+
+<p>This is the code that does the trick:</p>
+
+<pre><code class="language-js"> var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() &gt; 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+</code></pre>
+
+<p>First we declare a variable btn and point it to an element with an ID of button, so that it will be easier for us to refer to it later in the code. Also this helps JavaScript to make calculations faster. Once we store the element in a variable, JavaScript won’t need to search through the whole page over and over each time we need to use it again in our code.</p>
+
+<pre><code class="language-js">.scroll()
+</code></pre>
+
+<p>jQuery has a handy function .scroll(). What it does is bind a piece of code that will be executed each time that a scroll event on your web page happens. It takes one parameter, which is a function that is being executed each time when you do a page scroll. Although you can apply it to any scrollable element, such as frames and elements with overflow property set to scroll, usually we apply it to the window element, since that’s where the scrolling occurs in most cases, including our example.</p>
+
+<pre><code class="language-js">$(window).scroll(function() {
+</code></pre>
+
+<p>Inside the function we place this if/else statement:</p>
+
+<pre><code class="language-js">if ($(window).scrollTop() &gt; 300) {
+    btn.addClass('show');
+} else {
+    btn.removeClass('show');
+}
+</code></pre>
+
+<p>What we’re trying to do here is check the vertical position of the scroll bar, and make our button appear when it is below a certain point, and disappear when it is above that point.</p>
+
+<p>In order to get the current position of the scroll bar, we’re going to use a built-in jQuery method <code>.scrollTop().</code> It doesn’t take any arguments, and simply returns a number of pixels that is hidden above the scrollable area.</p>
+
+<p>So, each time we do a scroll, JavaScript checks how many pixels are hidden, and compares them to a number. In our case I set that number to 300, but you can change it if you want.</p>
+
+<p>If we go past 300px, then we add a class show to our button element, which would make it appear. If the number is less than 300, we remove that class. Adding and removing classes is another reason why jQuery is so popular. We can do it with two simple methods <code>addClass()</code> and <code>removeClass()</code>.</p>
+
+<p>However we don’t have the show class in our CSS yet, so let’s add it:
+s</p>
+
+<pre><code class="language-js">    if ($(window).scrollTop() &gt; 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+</code></pre>
+
+<p>By default our button is going to be hidden, so we would need to add a few more rules to the #button element:</p>
+
+<pre><code class="language-css">#button {
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+</code></pre>
+
+<p>In order to make the transition smooth, I’ve added two more values to the transition attribute, opacity and visibility set to 0.5 seconds.</p>
+
+<p><strong>Scroll to the Top</strong><br />
+The second part of the script enables you to scroll to the top of the page after clicking the button.</p>
+
+<pre><code class="language-js">  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+</code></pre>
+
+<p>The first jQuery method we see here is <code>on()</code>. Its first parameter is the <code>‘click’</code> JavaScript event, which occurs each time when we do a mouse click in our browser. The second parameter is a handler function, which is triggered as soon as the event occurs.</p>
+
+<p>The handler function takes an event parameter. We can name it whatever we want, but usually e or event are preferred. We need the event parameter in order to pass it to the function and use for the <code>preventDefault()</code> method.</p>
+
+<p>The method <code>e.preventDefault()</code> prevents the default action of the event from happening, for example a link doesn’t take us to the next page. In our case it’s not crucial, since our anchor element lacks the href attribute and wouldn’t take us to a new page anyway, but it’s always better to double-check.</p>
+
+<pre><code class="language-js">.animate()
+</code></pre>
+
+<p>The jQuery .animate() method is the one that does the whole trick.</p>
+
+<pre><code class="language-js">$('html, body').animate({scrollTop:0}, '300');
+</code></pre>
+
+<p>The first parameter of the <code>.animate()</code> method is the list of properties which we should animate. Our property is called scrollTop, and we want it to have a value of 0. The type of this parameter is plain object and that’s why we need to use curly braces and write down our values using the key/value pair syntax.</p>
+
+<p>The second parameter is the speed with which we want our animation to run. It is measured in milliseconds and the higher the number, the slower the animation. The default one is 400, but I changed it to 300.</p>
+
+<p>Finally, we apply the animate method to the HTML and body elements on our web page.</p>
+
+<p>Now each time we click the button, it will take us to the top of the page.</p>
+
+<p><strong>Demo</strong><br />
+You can see the final result in this CodePen demo. I’ve also included some sample text up there for demonstration purposes.</p>
+
+<p>See the Pen Back to Top Button by Matthew Cain (@matthewcain) on CodePen.</p>
+
+<p><strong>Final Thoughts</strong><br />
+Back to top buttons are a great usability element of a web page, and having one on your website adds a small but helpful detail most of us are used to. Hopefully this guide has helped you broaden your CSS and JavaScript knowledge, providing some ‘a-ha’ moments that can be so useful for aspiring web designers and developers.</p>
+
+<p>Keep on hacking!</p>
 
                     </div>
                 </div>
