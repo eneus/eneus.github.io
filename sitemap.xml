@@ -33,38 +33,13 @@
   </url>
   
   <url>
-    <loc>https://eneus.github.io/blog/toast-messages/</loc>
-    <lastmod>2018-09-12T14:39:16+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</loc>
     <lastmod>2018-07-13T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eneus.github.io/blog/instagram-images-to-your-website/</loc>
-    <lastmod>2018-07-13T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/blog/xdebug-configure-visual-studio-code/</loc>
-    <lastmod>2018-06-02T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eneus.github.io/projects/3/</loc>
     <lastmod>2018-05-22T14:51:12+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/blog/configure-docker-for-drupal/</loc>
-    <lastmod>2017-12-31T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/blog/drupal-libraries/</loc>
-    <lastmod>2017-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
@@ -123,13 +98,13 @@
   
   <url>
     <loc>https://eneus.github.io/tags/docker/</loc>
-    <lastmod>2018-06-02T12:52:36+06:00</lastmod>
+    <lastmod>2017-04-17T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eneus.github.io/tags/drupal/</loc>
-    <lastmod>2018-09-12T14:39:16+06:00</lastmod>
+    <lastmod>2018-07-13T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,12 +129,6 @@
   </url>
   
   <url>
-    <loc>https://eneus.github.io/tags/instagram/</loc>
-    <lastmod>2018-07-13T12:52:36+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://eneus.github.io/</loc>
     <lastmod>2019-04-12T14:51:12+06:00</lastmod>
     <priority>0</priority>
@@ -173,13 +142,7 @@
   
   <url>
     <loc>https://eneus.github.io/tags/jekyll/</loc>
-    <lastmod>2018-07-13T12:52:36+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/tags/jquery/</loc>
-    <lastmod>2018-09-12T14:39:16+06:00</lastmod>
+    <lastmod>2017-04-17T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,12 +155,6 @@
   <url>
     <loc>https://eneus.github.io/tags/mysql/</loc>
     <lastmod>2018-07-13T12:52:36+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/tags/php/</loc>
-    <lastmod>2018-06-02T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,12 +176,6 @@
   <url>
     <loc>https://eneus.github.io/tags/web/</loc>
     <lastmod>2017-04-30T12:52:36+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://eneus.github.io/tags/xdebug/</loc>
-    <lastmod>2018-06-02T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   

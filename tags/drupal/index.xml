@@ -6,21 +6,10 @@
     <description>Recent content in Drupal on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Sep 2018 14:39:16 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate>
     
 	<atom:link href="https://eneus.github.io/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Implement Toast Messages into Drupal</title>
-      <link>https://eneus.github.io/blog/toast-messages/</link>
-      <pubDate>Wed, 12 Sep 2018 14:39:16 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/toast-messages/</guid>
-      <description>https://codepen.io/burnaDLX/pen/GowJpX
-Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</description>
-    </item>
     
     <item>
       <title>Drupal8 - Unable to determine class for field...</title>
@@ -31,15 +20,6 @@ Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus 
       <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
 drush sqlq &amp;quot;DELETE FROM cache_config&amp;quot; drush sqlq &amp;quot;DELETE FROM config WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot; drush sqlq &amp;quot;DELETE FROM config_snapshot WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot;  Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
-    </item>
-    
-    <item>
-      <title>Configure Docker for Drupal</title>
-      <link>https://eneus.github.io/blog/configure-docker-for-drupal/</link>
-      <pubDate>Sun, 31 Dec 2017 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/configure-docker-for-drupal/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus consequat elit placerat mattis. Nulla auctor, nisi vitae luctus varius, felis eros sodales ligula, eget euismod velit ligula ut quam. Morbi pulvinar ut nisi nec blandit. Nunc semper, diam at accumsan molestie, lacus metus efficitur arcu, vitae bibendum enim justo vel libero. Maecenas risus tortor, blandit at felis vel, dictum ornare tortor. Nullam vitae convallis libero. Etiam pharetra mi eu iaculis tempus.</description>
     </item>
     
   </channel>
