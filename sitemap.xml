@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://eneus.github.io/projects/7/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/projects/6/</loc>
     <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
@@ -60,6 +65,11 @@
   <url>
     <loc>https://eneus.github.io/blog/drupal-libraries/</loc>
     <lastmod>2017-09-12T12:52:36+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/</loc>
+    <lastmod>2017-04-30T12:52:36+06:00</lastmod>
   </url>
   
   <url>
@@ -156,6 +166,12 @@
   </url>
   
   <url>
+    <loc>https://eneus.github.io/tags/javascript/</loc>
+    <lastmod>2017-04-30T12:52:36+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/tags/jekyll/</loc>
     <lastmod>2018-07-13T12:52:36+06:00</lastmod>
     <priority>0</priority>
@@ -197,6 +213,12 @@
   <url>
     <loc>https://eneus.github.io/tags/</loc>
     <lastmod>2019-04-12T14:51:12+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/web/</loc>
+    <lastmod>2017-04-30T12:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -56,6 +56,17 @@ Link: https://github.com/eneus/SPA</description>
     </item>
     
     <item>
+      <title>Awal 10</title>
+      <link>https://eneus.github.io/projects/7/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/projects/7/</guid>
+      <description>News WEB site for Arabian world. Customer asked about full redesign and data restructe WEB site based on WordPress CMS.
+Status: Done.
+Link: http://awal10.com/</description>
+    </item>
+    
+    <item>
       <title>Jekyll Docker Container</title>
       <link>https://eneus.github.io/projects/6/</link>
       <pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate>
@@ -138,6 +149,17 @@ Link: https://animals-city.org/</description>
     </item>
     
     <item>
+      <title>Back to Top Button to your website</title>
+      <link>https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/</link>
+      <pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/</guid>
+      <description>Creating a Back to Top Button with CSS &amp;amp; jQuery
+A back to top button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.
+If you want to add a back to top button while you&amp;rsquo;re still designing a website, or just curious about how you can build one on your own, welcome aboard!</description>
+    </item>
+    
+    <item>
       <title>How to use Jekyll Docker container</title>
       <link>https://eneus.github.io/blog/how-to-use-jekyll-container/</link>
       <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
@@ -157,8 +179,8 @@ Plugins included:
       <pubDate>Wed, 12 Jun 2013 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/projects/1/</guid>
-      <description>Business Security Center - Business wesite with e-commerce. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-Status: Done.</description>
+      <description>Business Security Center (BSC) website had needed SEO optimization and a total redesign and data restructure for securing high professional level of services and achievement of maximum efficiency of company activity.
+First required for developing was to provide comfort navigation and quick search of services, products and equipment, since the company granting a full range of security and safety services for private individuals or companies as well as sells integrated security solutions.</description>
     </item>
     
     <item>
@@ -189,7 +211,7 @@ Link: https://myzhovkva.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/about/</guid>
-      <description>Hi! I am a Full Stack Developer expert with over 12 years experience in setup and customization of clean PHP and Drupal project. I don&#39;t work with Joomla, Wordpress, Typo 3 and other CMS. I can propose you migrate your project to Drupal8 or configure environment for it. If you need create a project with big performance and hight-load environment i can help you, but I don&#39;t work with small project.</description>
+      <description>I am a Software Developer expert with over 10 years experience in setup and customization different software solutions and embedded systems like STM32 and Raspberry Pi or analogs based on ARM microprocessors.  Durring study in University, to earn a money worked like a WEB developer, hence I have a big experience in the developing of WEB aplications and cross-platform complex environments for different networks protocols and API&#39;s. Some my own projects or that are not under NDA agreement you can see in the section &#34;</description>
     </item>
     
     <item>
