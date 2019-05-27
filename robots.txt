@@ -29,3 +29,5 @@ Disallow: /core/
 # Files
 Disallow: /README.txt
 Disallow: /web.config
+# books
+Disallow: /books/*.pdf

@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://eneus.github.io/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</loc>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/blog/awesome-cpp/</loc>
     <lastmod>2019-02-01T14:51:12+06:00</lastmod>
   </url>
@@ -75,13 +80,13 @@
   
   <url>
     <loc>https://eneus.github.io/tags/books/</loc>
-    <lastmod>2019-02-01T14:51:12+06:00</lastmod>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eneus.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2019-02-01T14:51:12+06:00</lastmod>
+    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
