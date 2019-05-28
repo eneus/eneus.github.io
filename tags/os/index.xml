@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Os on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
+    <link>https://eneus.github.io/tags/os/</link>
+    <description>Recent content in Os on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://eneus.github.io/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Operating Systems for ASUS Tinker Board</title>
+      <link>https://eneus.github.io/blog/os-for-asus-tinker-board/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/blog/os-for-asus-tinker-board/</guid>
+      <description>In this Article I had collected all available OS for single-board computer ASUS Tinker Board. Based on this computer i will to construct my robot with AI implementation and computer vision. Actually this the first reason why i had select Tinker Board that based on Rockchip RK3288 processor with 4x Cores &amp;ldquo;Cortex-A17&amp;rdquo; and work with frequency 1.8 GHz, and support hardware decoding H.265 with resolution 4K х 2К and besides, new chipset get support network 4G LTE with 64-bit RAM LPDDR3.</description>
+    </item>
+    
+  </channel>
+</rss>
