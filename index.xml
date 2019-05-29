@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Drone Communicator Interface</title>
+      <link>https://eneus.github.io/projects/8/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/projects/8/</guid>
+      <description>Application written on C++ with use OpenGL and OpenCV for communicate with available drones in the networks. Also will show drone status and control it. *Image downloaded from internet and will be changed for screenshot.
+Status: Active Development.</description>
+    </item>
+    
+    <item>
       <title>How to connect DSI and CSI cable to tinker board</title>
       <link>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
