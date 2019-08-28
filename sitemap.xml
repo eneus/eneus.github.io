@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eneus.github.io/blog/a_fifo_buffer_implementation/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/blog/live-webcam-streaming-using-vlc-on-the-command-line/</loc>
+    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/blog/os-for-asus-tinker-board/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
@@ -15,6 +25,11 @@
   <url>
     <loc>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/blog/ssh-examples-tips-tunnels/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -96,12 +111,12 @@
   
   <url>
     <loc>https://eneus.github.io/blog/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://eneus.github.io/tags/books/</loc>
-    <lastmod>2019-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,13 +127,19 @@
   </url>
   
   <url>
+    <loc>https://eneus.github.io/tags/c-c&#43;&#43;/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://eneus.github.io/tags/development/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -156,7 +177,7 @@
   
   <url>
     <loc>https://eneus.github.io/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,6 +196,12 @@
   <url>
     <loc>https://eneus.github.io/tags/mathematics/</loc>
     <lastmod>2019-04-12T14:51:12+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/microcontroller/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,8 +233,32 @@
   </url>
   
   <url>
+    <loc>https://eneus.github.io/tags/ssh/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/streaming/</loc>
+    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/tags/</loc>
     <lastmod>2019-04-12T14:51:12+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/tips-tunnels/</loc>
+    <lastmod>2019-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/video/</loc>
+    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
