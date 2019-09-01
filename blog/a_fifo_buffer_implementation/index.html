@@ -80,6 +80,8 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
                 
+                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                
                 <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
@@ -176,8 +178,9 @@
 
 <p>A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the buffer is full, and the implementation must define if the oldest data is discarded or the write is not completed. In the example, below the write is not completed.</p>
 
-<p>###General Implementation<br />
-The code below shows a general implementation of a FIFO buffer. The code assumes an overflow condition is not allowed (that is when the head meets the tail, the buffer is full and no more data can be written).</p>
+<h3 id="general-implementation">General Implementation</h3>
+
+<p>The code below shows a general implementation of a FIFO buffer. The code assumes an overflow condition is not allowed (that is when the head meets the tail, the buffer is full and no more data can be written).</p>
 
 <pre><code>typedef struct {
      char * buf;
@@ -269,6 +272,8 @@ void uart_isr(void){
 <h3 id="conclusions">Conclusions</h3>
 
 <p>FIFOs are a storage mechanism which operate on a first-in, first-out basis. They are useful for managing the arrival of asynchronous data. Integrating a FIFO with an ISR, such as the UART ISR, can make processing the incoming data much easier for the application developer.</p>
+
+<!--- [Source](https://sandilands.info/sgordon/live-webca-streaming-using-vlc-command-line) -->
 
                     </div>
                 </div>
