@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eneus.github.io/manual/algorithms/sorting-algorithms/</loc>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eneus.github.io/manual/data_structures/arrays/</loc>
     <lastmod>2019-08-23T12:52:36+06:00</lastmod>
   </url>
@@ -155,7 +160,7 @@
   
   <url>
     <loc>https://eneus.github.io/tags/algorithms/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,7 +224,7 @@
   
   <url>
     <loc>https://eneus.github.io/tags/development/</loc>
-    <lastmod>2019-08-23T12:52:36+06:00</lastmod>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -257,7 +262,7 @@
   
   <url>
     <loc>https://eneus.github.io/</loc>
-    <lastmod>2019-08-23T12:52:36+06:00</lastmod>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -311,7 +316,7 @@
   
   <url>
     <loc>https://eneus.github.io/manual/</loc>
-    <lastmod>2019-08-23T12:52:36+06:00</lastmod>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
   </url>
   
   <url>
@@ -350,6 +355,12 @@
   <url>
     <loc>https://eneus.github.io/tags/single-linked-list/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eneus.github.io/tags/sorting/</loc>
+    <lastmod>2019-08-23T13:52:36+06:00</lastmod>
     <priority>0</priority>
   </url>
   

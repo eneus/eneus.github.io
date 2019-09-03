@@ -11,33 +11,33 @@
             gtag('config', 'UA-3791456-15');
         </script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Arrays">
+        <meta name="description" content="Sorting Algorithms">
         <meta name="author" content="Ivan Fesiuk">
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="Hugo 0.53" />
 		
-        <title> Arrays </title>
+        <title> Sorting Algorithms </title>
                 
-        <meta property="og:title" content="Arrays" />
+        <meta property="og:title" content="Sorting Algorithms" />
         
         <meta property="og:type" content="article">
         <meta property="article:published_time" content="2019-08-23">
         
-        <meta property="og:description" content="Arrays" />
-        <meta property="og:url" content="https://eneus.github.io/manual/data_structures/arrays/" />
+        <meta property="og:description" content="Sorting Algorithms" />
+        <meta property="og:url" content="https://eneus.github.io/manual/algorithms/sorting-algorithms/" />
         
-        <meta property="og:image" content="https://eneus.github.io/images/manual/arrays.jpg"/>
-        <meta property="og:image:secure_url" content="https://eneus.github.io/images/manual/arrays.jpg"/>
+        <meta property="og:image" content="https://eneus.github.io/images/manual/sorting-algorithm.png"/>
+        <meta property="og:image:secure_url" content="https://eneus.github.io/images/manual/sorting-algorithm.png"/>
         
         <meta property="og:locale" content="en_GB" />
         <meta property="og:locale:alternate" content="UA_uk" />
         <meta property="og:site_name" content="" />
         
-        <meta property="og:tags" content="Data Structure">
+        <meta property="og:tags" content="algorithms">
         
-        <meta property="og:tags" content="Arrays">
+        <meta property="og:tags" content="Sorting">
         
         <meta property="og:tags" content="Development">
         
@@ -148,15 +148,15 @@
 
             <article class="center-relative">
                 <h1 class="entry-title">
-                    Arrays
+                    Sorting Algorithms
                 </h1>
                 <div class="post-info content-660 center-relative">
                     <div class="cat-links">
                         <ul>
                             
-                            <li><a href="https://eneus.github.io/#">Data Structure</a></li>
+                            <li><a href="https://eneus.github.io/#">algorithms</a></li>
                             
-                            <li><a href="https://eneus.github.io/#">Arrays</a></li>
+                            <li><a href="https://eneus.github.io/#">Sorting</a></li>
                             
                             <li><a href="https://eneus.github.io/#">Development</a></li>
                             
@@ -168,160 +168,74 @@
                     
                 <div class="entry-content">
                     <div class="post-full-width">
-                            <img class="img-fluid mb-50" src="https://eneus.github.io/images/manual/arrays.jpg" alt="blog-image">
+                            <img class="img-fluid mb-50" src="https://eneus.github.io/images/manual/sorting-algorithm.png" alt="blog-image">
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
                         
 
-<h3 id="arrays">Arrays</h3>
+<p>A sorting algorithm is an algorithm made up of a series of instructions that takes an array as input, performs specified operations on the array, sometimes called a list, and outputs a sorted array. Sorting algorithms are often taught early in computer science classes as they provide a straightforward way to introduce other key computer science topics like Big-O notation, divide-and-conquer methods, and data structures such as binary trees, and heaps. There are many factors to consider when choosing a sorting algorithm to use.</p>
 
-<p>Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+<p>Contents
+Sorting Algorithms
+Properties of Sorting Algorithms
+Common Sorting Algorithms
+Choosing a Sorting Algorithm
+See Also
+References
+Sorting Algorithms
+In other words, a sorted array is an array that is in a particular order. For example, [a,b,c,d][a,b,c,d] is sorted alphabetically, [1,2,3,4,5][1,2,3,4,5] is a list of integers sorted in increasing order, and [5,4,3,2,1][5,4,3,2,1] is a list of integers sorted in decreasing order.</p>
 
-<p>Instead of declaring individual variables, such as number0, number1, &hellip;, and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and &hellip;, numbers[99] to represent individual variables. A specific element in an array is accessed by an index.</p>
+<p>A sorting algorithm takes an array as input and outputs a permutation of that array that is sorted.</p>
 
-<p>All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.</p>
+<p>There are two broad types of sorting algorithms: integer sorts and comparison sorts.</p>
 
-<h4 id="image">[IMAGE:]</h4>
+<p>Comparison Sorts</p>
 
-<h3 id="declaring-arrays">Declaring Arrays</h3>
+<p>Comparison sorts compare elements at each step of the algorithm to determine if one element should be to the left or right of another element.</p>
 
-<p>To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows −</p>
+<p>Comparison sorts are usually more straightforward to implement than integer sorts, but comparison sorts are limited by a lower bound of O(n \log n)O(nlogn), meaning that, on average, comparison sorts cannot be faster than O(n \log n)O(nlogn). A lower bound for an algorithm is the worst-case running time of the best possible algorithm for a given problem. The &ldquo;on average&rdquo; part here is important: there are many algorithms that run in very fast time if the inputted list is already sorted, or has some very particular (and overall unlikely) property. There is only one permutation of a list that is sorted, but n!n! possible lists, so the chances that the input is already sorted is very unlikely, and on average, the list will not be very sorted.</p>
 
-<pre><code class="language-C">type arrayName [ arraySize ];
-</code></pre>
+<p>The running time of comparison-based sorting algorithms is bounded by \Omega(n \log n)Ω(nlogn).</p>
 
-<p>This is called a single-dimensional array. The arraySize must be an integer constant greater than zero and type can be any valid C data type. For example, to declare a 10-element array called balance of type double, use this statement −</p>
+<p>A comparison sort can be modeled as a large binary tree called a decision tree where each node represents a single comparison. Because the sorted list is some permutation of the input list, for an input list of length nn, there are n!n! possible permutations of that list. This is a decision tree because each of the n!n! is represented by a leaf, and the path the algorithm must take to get to each leaf is the series of comparisons and outcomes that yield that particular ordering.</p>
 
-<pre><code class="language-C">double balance[10];
-</code></pre>
+<p>At each level of the tree, a comparison is made. Comparisons happen, and we keep traveling down the tree; until the algorithm reaches the leaves of the tree, there will be a leaf for each permutation, so there are n!n! leaves.</p>
 
-<p>Here balance is a variable array which is sufficient to hold up to 10 double numbers.</p>
+<p>Each comparison halves the number of future comparisons the algorithm must do (since if the algorithm selects the right edge out of a node at a given step, it will not search the nodes and paths connected to the left edge). Therefore, the algorithm performs O(\log n!)O(logn!) comparisons. Any binary tree, with height hh, has a number of leaves that is less than or equal to 2^h2
+h
+ .</p>
 
-<h3 id="initializing-arrays">Initializing Arrays</h3>
+<p>From this,</p>
 
-<p>You can initialize an array in C either one by one or using a single statement as follows −</p>
+<p>$2^h \geq n!.$
+$2h≥n!$.</p>
 
-<pre><code class="language-C">double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
-</code></pre>
+<p>Taking the logarithm results in</p>
 
-<p>The number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].</p>
+<p>$h \geq \log(n!).$
+$h≥log(n!).$</p>
 
-<p>If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write −</p>
+<p>From Stirling&rsquo;s approximation,</p>
 
-<pre><code class="language-C">double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
-</code></pre>
+<p>$n! &gt; \left(\frac{n}{e}\right)^n$.</p>
 
-<p>You will create exactly the same array as you did in the previous example. Following is an example to assign a single element of the array −</p>
+<p>$n!&gt;( e/n ) n$.</p>
 
-<pre><code class="language-C">balance[4] = 50.0;
-</code></pre>
+<p>Therefore,</p>
 
-<p>The above statement assigns the 5th element in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called the base index and the last index of an array will be total size of the array minus 1. Shown below is the pictorial representation of the array we discussed above −</p>
+<p>$\begin{aligned} h &amp;\geq \log\left(\frac{n}{e}\right)^n = n\log \left(\frac{n}{e}\right) = n\log n- n \log e = \Omega(n\log n). \end{aligned}h ≥ log(e/n)^n = nlog(e/n) = nlogn−nloge =Ω (nlogn)$.
+​</p>
 
-<h4 id="image-array-presentation">[IMAGE:Array Presentation]</h4>
+<h3 id="integer-sorts">Integer Sorts</h3>
 
-<p>Accessing Array Elements
-An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example −</p>
+<p>Integer sorts are sometimes called counting sorts (though there is a specific integer sort algorithm called counting sort). Integer sorts do not make comparisons, so they are not bounded by $Ω(n\log n)Ω(nlogn)$. Integer sorts determine for each element​ xx how many elements are less than x. If there are 14 elements that are less than x, then x will be placed in the $15^{th}$ slot. This information is used to place each element into the correct slot immediately—no need to rearrange lists.</p>
 
-<pre><code class="language-C">double salary = balance[9];
-</code></pre>
+<h3 id="properties-of-sorting-algorithms">Properties of Sorting Algorithms</h3>
 
-<p>The above statement will take the 10th element from the array and assign the value to salary variable. The following example Shows how to use all the three above mentioned concepts viz. declaration, assignment, and accessing arrays −</p>
+<p>All sorting algorithms share the goal of outputting a sorted list, but the way that each algorithm goes about this task can vary. When working with any kind of algorithm, it is important to know how fast it runs and in how much space it operates—in other words, its time complexity and space complexity. As shown in the section above, comparison-based sorting algorithms have a time complexity of $Ω(n log n)$, meaning the algorithm can&rsquo;t be faster than $n log n$. However, usually, the running time of algorithms is discussed​ in terms of big O, and not Omega. For example, if an algorithm had a worst-case running time of $O(n log n)$, then it is guaranteed that the algorithm will never be slower than $O(n log n)$, and if an algorithm has an average-case running time of $O(n^2)$, then on average, it will not be slower than $O(n^2)$.</p>
 
-<script src="//onlinegdb.com/embed/js/H1UTbctrr?theme=dark"></script>
-
-<h3 id="arrays-in-detail">Arrays in Detail</h3>
-
-<p>Arrays are important to C and should need a lot more attention. The following important concepts related to array should be clear to a C programmer.</p>
-
-<h3 id="multi-dimensional-arrays-in-c">Multi-dimensional Arrays in C</h3>
-
-<p>C programming language allows multidimensional arrays. Here is the general form of a multidimensional array declaration −</p>
-
-<pre><code class="language-C">type name[size1][size2]...[sizeN];
-</code></pre>
-
-<p>For example, the following declaration creates a three dimensional integer array −</p>
-
-<pre><code class="language-C">int threedim[5][10][4];
-</code></pre>
-
-<h3 id="two-dimensional-arrays">Two-dimensional Arrays</h3>
-
-<p>The simplest form of multidimensional array is the two-dimensional array. A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array of size [x][y], you would write something as follows −</p>
-
-<pre><code class="language-C">type arrayName [ x ][ y ];
-</code></pre>
-
-<p>Where type can be any valid C data type and arrayName will be a valid C identifier. A two-dimensional array can be considered as a table which will have x number of rows and y number of columns. A two-dimensional array a, which contains three rows and four columns can be shown as follows:</p>
-
-<script src="//onlinegdb.com/embed/js/BkC7U5KBH?theme=dark"></script>
-
-<p>As explained above, you can have arrays with any number of dimensions, although it is likely that most of the arrays you create will be of one or two dimensions.</p>
-
-<h3 id="passing-arrays-as-function-arguments-in-c">Passing Arrays as Function Arguments in C</h3>
-
-<p>If you want to pass a single-dimension array as an argument in a function, you would have to declare a formal parameter in one of following three ways and all three declaration methods produce similar results because each tells the compiler that an integer pointer is going to be received. Similarly, you can pass multi-dimensional arrays as formal parameters.</p>
-
-<h4 id="way-1">Way-1</h4>
-
-<p>Formal parameters as a pointer:</p>
-
-<pre><code class="language-C">void myFunction(int *param) {
-   .
-   .
-   .
-}
-</code></pre>
-
-<h4 id="way-2">Way-2</h4>
-
-<p>Formal parameters as a sized array:</p>
-
-<pre><code class="language-C">void myFunction(int param[10]) {
-   .
-   .
-   .
-}
-</code></pre>
-
-<h4 id="way-3">Way-3</h4>
-
-<p>Formal parameters as an unsized array:</p>
-
-<pre><code class="language-C">void myFunction(int param[]) {
-   .
-   .
-   .
-}
-</code></pre>
-
-<h4 id="example">Example</h4>
-
-<p>Now, consider the following function, which takes an array as an argument along with another argument and based on the passed arguments, it returns the average of the numbers passed through the array as follows</p>
-
-<pre><code class="language-C">double getAverage(int arr[], int size) {
-
-   int i;
-   double avg;
-   double sum = 0;
-
-   for (i = 0; i &lt; size; ++i) {
-      sum += arr[i];
-   }
-
-   avg = sum / size;
-
-   return avg;
-}
-</code></pre>
-
-<p>Now, let us call the above function as follow:</p>
-
-<script src="//onlinegdb.com/embed/js/SJUz_9FHr?theme=dark"></script>
-
-<p>As you can see, the length of the array doesn&rsquo;t matter as far as the function is concerned because C performs no bounds checking for formal parameters.</p>
+<p>The running time describes how many operations an algorithm must carry out before it completes. The space complexity describes how much space must be allocated to run a particular algorithm. For example, if an algorithm takes in a list of size nn, and for some reason makes a new list of size nn for each element in nn, the algorithm needs $n^2$ space.</p>
 
                     </div>
                 </div>
