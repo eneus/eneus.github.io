@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
@@ -76,7 +76,8 @@ A circular linked list is a sequence of elements in which every element has a li
       
       <guid>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</guid>
       <description>What is an algorithm? An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;
- An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.</description>
+ An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.
+ Algorithms are used to convert our problem solution into step by step statements.</description>
     </item>
     
     <item>
@@ -154,7 +155,8 @@ What is Single Linked List? Simply a list is a sequence of data, and the linked 
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/projects/8/</guid>
-      <description>Application written on C++ with use OpenGL and OpenCV for communicate with available drones in the networks. Also will show drone status and control it. *Image downloaded from internet and will be changed for screenshot.
+      <description>Application written on C++ with use OpenGL and OpenCV for communicate with available drones in the networks. Also will show drone status and control it. \
+*Image downloaded from internet and will be changed for screenshot.
 Status: Active Development.</description>
     </item>
     
@@ -207,8 +209,8 @@ In this article, I would like to provide a brief math primer for people who woul
       
       <guid>https://eneus.github.io/blog/awesome-cpp/</guid>
       <description>Awesome C++
- Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous  Software
- Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools  Resources</description>
+ Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous    Software
+ Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools    Resources</description>
     </item>
     
     <item>
@@ -263,9 +265,9 @@ Link: https://github.com/eneus/jekyll</description>
       <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid>
-      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
+      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&#39;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
-drush sqlq &amp;quot;DELETE FROM cache_config&amp;quot; drush sqlq &amp;quot;DELETE FROM config WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot; drush sqlq &amp;quot;DELETE FROM config_snapshot WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot;  Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
+drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&#39;t execute above commands on master/live database.</description>
     </item>
     
     <item>
@@ -287,7 +289,7 @@ Link: https://animals-city.org/</description>
       
       <guid>https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/</guid>
       <description>A Back To Top button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.
-If you want to add a back to top button while you&amp;rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.</description>
+If you want to add a back to top button while you&#39;re still designing a website, or just curious about how you can build one on your own, this article for you.</description>
     </item>
     
     <item>
@@ -296,12 +298,16 @@ If you want to add a back to top button while you&amp;rsquo;re still designing a
       <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/how-to-use-jekyll-container/</guid>
-      <description>Jekyll&amp;rsquo;s Docker Container with Demo Content and demo site.
+      <description>Jekyll&#39;s Docker Container with Demo Content and demo site.
 Plugins included:
-- Jekyll: 3.8.3 -- jekyll-paginate -- jekyll-sitemap -- jekyll-feed -- jekyll-multisite -- jekyll-github-metadata -- jekyll-seo-tag -- jekyll-watch -- jekyll-sass-converter -- jekyll-assets -- jekyll-multiple-languages-plugin - Compass: 1.0.3 - NodeJS: 8.9.3 -- NPM: 5.5.1 -- Yarn: 1.3.2  The first of all: Install Docker:
- On Linux Ubuntu/Debian:  https://docs.docker.com/install/linux/docker-ce/ubuntu/ https://docs.docker.com/install/linux/docker-ce/debian/
- On MacOS:  https://docs.docker.com/docker-for-mac/install/
- On Windows:  https://docs.</description>
+- Jekyll: 3.8.3 -- jekyll-paginate -- jekyll-sitemap -- jekyll-feed -- jekyll-multisite -- jekyll-github-metadata -- jekyll-seo-tag -- jekyll-watch -- jekyll-sass-converter -- jekyll-assets -- jekyll-multiple-languages-plugin - Compass: 1.0.3 - NodeJS: 8.9.3 -- NPM: 5.5.1 -- Yarn: 1.3.2 The first of all: Install Docker:
+  On Linux Ubuntu/Debian:
+https://docs.docker.com/install/linux/docker-ce/ubuntu/ https://docs.docker.com/install/linux/docker-ce/debian/
+  On MacOS:
+https://docs.docker.com/docker-for-mac/install/
+  On Windows:
+https://docs.docker.com/docker-for-windows/install/
+  Install Docker Compose:</description>
     </item>
     
     <item>
@@ -337,12 +343,12 @@ Link: https://myzhovkva.com/</description>
     </item>
     
     <item>
-      <title>Hi, I am Ivan</title>
+      <title>Greetings!</title>
       <link>https://eneus.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/about/</guid>
-      <description>I am a Software Developer expert with over 10 years experience in setup and customization different software solutions and embedded systems like STM32 and Raspberry Pi or analogs based on ARM microprocessors.  Durring study in University, to earn a money worked like a WEB developer, hence I have a big experience in the developing of WEB aplications and cross-platform complex environments for different networks protocols and API&#39;s. Some my own projects or that are not under NDA agreement you can see in the section &#34;</description>
+      <description></description>
     </item>
     
     <item>

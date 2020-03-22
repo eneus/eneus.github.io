@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> How to connect DSI and CSI cable to tinker board </title>
                 
@@ -88,7 +88,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -176,186 +176,202 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<ul>
+                        <ul>
 <li>DSI, CSI cable can be use will no difference, those cable is the same.</li>
 <li>CSI connect to the middle of tinker board, please refer icon print on board as follows:</li>
 </ul>
-
-<p><img src="/images/blog/ASUSTinkerBoard_ico1.png" alt="CSI" title="CSI connect" /></p>
-
+<p><img src="/images/blog/ASUSTinkerBoard_ico1.png" alt="CSI" title="CSI connect"></p>
 <p>DSI connect to the boundary of tinker board, please refer icon print on board as follows:</p>
-
-<p><img src="/images/blog/ASUSTinkerBoard_ico2.png" alt="CSI" title="CSI connect" /></p>
-
+<p><img src="/images/blog/ASUSTinkerBoard_ico2.png" alt="CSI" title="CSI connect"></p>
 <p>DSI panel need extra 5V power. You can USB to supply, or thinker board can output 5V by GPIO PIN, red line is for positive(+)，black line is for negative(-) , as follow.</p>
-
-<p><img src="/images/blog/ASUSTinkerBoard_img1.png" alt="DSI" title="DSI connect" /></p>
-
+<p><img src="/images/blog/ASUSTinkerBoard_img1.png" alt="DSI" title="DSI connect"></p>
 <p>You need to notice the direction, when you install cable, the principle is: blue side is face outside of the tinker board.</p>
-
 <p>DSI:</p>
-
-<p><img src="/images/blog/ASUSTinkerBoard_img2.png" alt="DSI" title="DSI connect" /></p>
-
+<p><img src="/images/blog/ASUSTinkerBoard_img2.png" alt="DSI" title="DSI connect"></p>
 <p>CSI:</p>
-
-<p><img src="/images/blog/ASUSTinkerBoard_img3.png" alt="DSI" title="DSI connect" /></p>
-
+<p><img src="/images/blog/ASUSTinkerBoard_img3.png" alt="DSI" title="DSI connect"></p>
 <h3 id="camera-operation-sop">Camera Operation SOP</h3>
-
 <ul>
 <li>Use Build-in Camera test tool for operation.</li>
 <li>Some operations need root permission to execute.</li>
 <li>Run <code>sudo su</code> in terminal command line before operation.</li>
 </ul>
-
 <p><strong>CameraPreview:</strong></p>
-
 <p>Key-in</p>
-
 <p><code>camHalTest.bin 0</code></p>
-
 <p>or</p>
-
 <p><code>camHalTest.bin 1</code></p>
-
 <p>0 for show preview in DSI
 1 for show preview in HDMI</p>
-
-<p>Camera preview will be showed on specific display equipment.<br />
+<p>Camera preview will be showed on specific display equipment.<br>
 <strong>Capture</strong>
-Each time executing Capture needs to run below cmd to setup environment.</p>
-
-<p><code>sh /home/linaro/camera/copy_xml_file.sh</code> </p>
-
+Each time executing Capture needs to run below cmd to setup environment.\</p>
+<p><code>sh /home/linaro/camera/copy_xml_file.sh</code> \</p>
 <p>Then key-in capture cmd: <code>dumpsys</code>
-Five pictures will be taken and placed in <code>/tmp/isptune</code> with <strong><em>ppm</em></strong> filename extension. Build-in file viewer is capable to open and view the image.</p>
-
-<p><strong>Note:</strong>
-1. All contents in <code>/tmp/</code> are volatile and will disappear after reboot.
-2. Disk space for <code>/tmp/</code> is only <strong>~300MB</strong> and one ppm image size is <strong>~22MB</strong>, so it can only save <strong>~12 pictures</strong>. Make sure to move (mv) image files to external storage before next Capture operation of stress test.</p>
-
-<h3 id="faq">FAQ</h3>
-
+Five pictures will be taken and placed in <code>/tmp/isptune</code> with <em><strong>ppm</strong></em> filename extension. Build-in file viewer is capable to open and view the image.</p>
+<p><strong>Note:</strong></p>
 <ol>
-<li><p><strong><em>What is a Single Board Computer?</em></strong><br />
-<em>A single-board computer (SBC) is a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features required of a functional computer. Single-board computers were made as demonstration or development systems, for educational systems, or for use as embedded computer controllers. Many types of home computers or portable computers integrate all their functions onto a single printed circuit board.</em></p></li>
-
-<li><p><strong><em>What is Tinkerboard</em></strong><br />
-<em>Tinker Board packs a whole load of exciting feature into a very small space, and at an incredibly competitive price that’s barely more than its manufacturing cost. ASUS has identified a clear DIY/maker market trend and we intend to create a big impact with our little board, so we’ve crammed in loads of tech while keeping our profits to a minimum — it’s our little contribution to the DIY world.</em></p></li>
-
-<li><p><strong><em>How powerful is the CPU processing</em></strong><br />
-Tinker Board features a powerful quad-core ARM Cortex-A17 1.8Ghz processor with a dual-channel DDR3 memory architecture. The performance is almost twice faster than the Raspberry Pi 3, and much higher than most of the SBC boards. For heavy computing loads like OpenCV projects, Tinker board should be one of selected platform for your creation.</p></li>
-
-<li><p><strong><em>How powerful is the GPU processing</em></strong><br />
-Tinker Board has an integrated ARM Mali GPU T760 MP4 supports up to up- scaled 4K from 1080P, and the GPU also supports H.264/H.265 4K hardware decoder for 4K content display.</p></li>
-
-<li><p><strong><em>Does the Tinkerboard overheat or need a heatsink?</em></strong><br />
-Since the performance is much higher than most of the SBC boards, the heat generation is also higher. Thus Tinker Board will comes with a heatsink.</p></li>
-
-<li><p><strong><em>What type of hardware interfaces does the Tinkerboard have?</em></strong><br />
-Tinker Board has 4 x USB 2.0 ports, 1 x GbE LAN, 1 x 3.5mm audio jack with 192K/24bit audio, MIPI DSI/CSI</p></li>
-
-<li><p><strong><em>Can I add additional system memory</em></strong><br />
-<em>The memory was soldered and mounted on the board during manufacturing, and did fully test before shipping out. Even the SoC can supports for higher memory capacity, but we’ll strongly recommend you do not swap the memory by yourself.</em></p></li>
-
-<li><p><strong><em>What Tinkerboard’s range of temperature operation</em></strong><br />
-The operation temperature is between 30°C ~ 60°C based on system loading.</p></li>
-
-<li><p><strong><em>Can I connect a keyboard and mouse and use the Tinkerboard as a computer / PC?</em></strong><br />
-Yes, with the available operating system for Tinker Board, you can run Tinker Board as a linux-based mini system for daily operation or enjoy the media content thru this tiny board.</p></li>
-
-<li><p><strong><em>What are the Tinkerboard’s dimensions?</em></strong><br />
-Tinker Board measures 85.60mm x 56mm x 21mm (or roughly 3.37” x 2.21” x 0.83”).</p></li>
-
-<li><p><strong><em>How much does the Tinkerboard weigh?</em></strong><br />
-Tinker Board weighs 45g without installing the heatsink.</p></li>
-
-<li><p><strong><em>Is the Tinkerboard compatible with RasperryPI cases?</em></strong><br />
-Yes, Tinker Board can compatible with most of the chassis for Raspberry Pi.</p></li>
-
-<li><p><strong><em>What SoC are used in the Tinkerboard?</em></strong><br />
-The Tinker Board uses the Rockchip RK3288. This contains an quad-core ARM cortex A17, running at 1.8Ghz, and a Mali T760 MP4 GPU.</p></li>
-
-<li><p><strong><em>What type of Wi-Fi does the Tinkerboard offer?</em></strong><br />
-The Wi-Fi solution is AW-NB177NF module, it contains a Realtek RTL8723BS IC, supports the Wi-Fi 802.11 b/g/n, and Bluetooth 4.0 + EDR.</p></li>
-
-<li><p><strong><em>What type of Bluetooth does the Tinkerboard offer?</em></strong><br />
-Bluetooth 4.0 with EDR</p></li>
-
-<li><p><strong><em>Is the Ethernet port / LAN shared with the USB?</em></strong><br />
-The Ethernet port is working individually.</p></li>
-
-<li><p><strong><em>What type of hardware decoding does the Tinkerboard offer?</em></strong><br />
-The GPU equipped H.264/H.265 hardware decoder for video contents.</p></li>
-
-<li><p><strong><em>Does the Tinkerboard support an IR blaster?</em></strong><br />
-Tinker Board didn’t equip IR transmitter, but Tinker Board has many GPIO expansion pins allowing this kind of extension.</p></li>
-
-<li><p><strong><em>What is the power requirement for the Tinkerboard?</em></strong><br />
+<li>All contents in <code>/tmp/</code> are volatile and will disappear after reboot.</li>
+<li>Disk space for <code>/tmp/</code> is only <strong>~300MB</strong> and one ppm image size is <strong>~22MB</strong>, so it can only save <strong>~12 pictures</strong>. Make sure to move (mv) image files to external storage before next Capture operation of stress test.</li>
+</ol>
+<h3 id="faq">FAQ</h3>
+<ol>
+<li>
+<p><em><strong>What is a Single Board Computer?</strong></em><br>
+<em>A single-board computer (SBC) is a complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O) and other features required of a functional computer. Single-board computers were made as demonstration or development systems, for educational systems, or for use as embedded computer controllers. Many types of home computers or portable computers integrate all their functions onto a single printed circuit board.</em>\</p>
+</li>
+<li>
+<p><em><strong>What is Tinkerboard</strong></em><br>
+<em>Tinker Board packs a whole load of exciting feature into a very small space, and at an incredibly competitive price that’s barely more than its manufacturing cost. ASUS has identified a clear DIY/maker market trend and we intend to create a big impact with our little board, so we’ve crammed in loads of tech while keeping our profits to a minimum — it’s our little contribution to the DIY world.</em>\</p>
+</li>
+<li>
+<p><em><strong>How powerful is the CPU processing</strong></em><br>
+Tinker Board features a powerful quad-core ARM Cortex-A17 1.8Ghz processor with a dual-channel DDR3 memory architecture. The performance is almost twice faster than the Raspberry Pi 3, and much higher than most of the SBC boards. For heavy computing loads like OpenCV projects, Tinker board should be one of selected platform for your creation.\</p>
+</li>
+<li>
+<p><em><strong>How powerful is the GPU processing</strong></em><br>
+Tinker Board has an integrated ARM Mali GPU T760 MP4 supports up to up- scaled 4K from 1080P, and the GPU also supports H.264/H.265 4K hardware decoder for 4K content display.</p>
+</li>
+<li>
+<p><em><strong>Does the Tinkerboard overheat or need a heatsink?</strong></em><br>
+Since the performance is much higher than most of the SBC boards, the heat generation is also higher. Thus Tinker Board will comes with a heatsink.\</p>
+</li>
+<li>
+<p><em><strong>What type of hardware interfaces does the Tinkerboard have?</strong></em><br>
+Tinker Board has 4 x USB 2.0 ports, 1 x GbE LAN, 1 x 3.5mm audio jack with 192K/24bit audio, MIPI DSI/CSI</p>
+</li>
+<li>
+<p><em><strong>Can I add additional system memory</strong></em><br>
+<em>The memory was soldered and mounted on the board during manufacturing, and did fully test before shipping out. Even the SoC can supports for higher memory capacity, but we’ll strongly recommend you do not swap the memory by yourself.</em></p>
+</li>
+<li>
+<p><em><strong>What Tinkerboard’s range of temperature operation</strong></em><br>
+The operation temperature is between 30°C ~ 60°C based on system loading.</p>
+</li>
+<li>
+<p><em><strong>Can I connect a keyboard and mouse and use the Tinkerboard as a computer / PC?</strong></em><br>
+Yes, with the available operating system for Tinker Board, you can run Tinker Board as a linux-based mini system for daily operation or enjoy the media content thru this tiny board.</p>
+</li>
+<li>
+<p><em><strong>What are the Tinkerboard’s dimensions?</strong></em><br>
+Tinker Board measures 85.60mm x 56mm x 21mm (or roughly 3.37” x 2.21” x 0.83”).</p>
+</li>
+<li>
+<p><em><strong>How much does the Tinkerboard weigh?</strong></em><br>
+Tinker Board weighs 45g without installing the heatsink.</p>
+</li>
+<li>
+<p><em><strong>Is the Tinkerboard compatible with RasperryPI cases?</strong></em><br>
+Yes, Tinker Board can compatible with most of the chassis for Raspberry Pi.</p>
+</li>
+<li>
+<p><em><strong>What SoC are used in the Tinkerboard?</strong></em><br>
+The Tinker Board uses the Rockchip RK3288. This contains an quad-core ARM cortex A17, running at 1.8Ghz, and a Mali T760 MP4 GPU.</p>
+</li>
+<li>
+<p><em><strong>What type of Wi-Fi does the Tinkerboard offer?</strong></em><br>
+The Wi-Fi solution is AW-NB177NF module, it contains a Realtek RTL8723BS IC, supports the Wi-Fi 802.11 b/g/n, and Bluetooth 4.0 + EDR.</p>
+</li>
+<li>
+<p><em><strong>What type of Bluetooth does the Tinkerboard offer?</strong></em><br>
+Bluetooth 4.0 with EDR</p>
+</li>
+<li>
+<p><em><strong>Is the Ethernet port / LAN shared with the USB?</strong></em><br>
+The Ethernet port is working individually.</p>
+</li>
+<li>
+<p><em><strong>What type of hardware decoding does the Tinkerboard offer?</strong></em><br>
+The GPU equipped H.264/H.265 hardware decoder for video contents.</p>
+</li>
+<li>
+<p><em><strong>Does the Tinkerboard support an IR blaster?</strong></em><br>
+Tinker Board didn’t equip IR transmitter, but Tinker Board has many GPIO expansion pins allowing this kind of extension.</p>
+</li>
+<li>
+<p><em><strong>What is the power requirement for the Tinkerboard?</strong></em><br>
 Tinker Board supports 5V/1~2.5A power input, but since the SoC’s performance is high, if the connected peripheral required huge power demand from the board, it might cause the power supply issue.
-Thus we strongly recommended to use the AC adaptor with 5V/2~2.5A power rating, plus LPS marking.</p></li>
-
-<li><p><strong><em>Can the Tinkerboard being powered by a battery?</em></strong><br />
-Yes, if the battery can supports power output with at least 5V/1A.</p></li>
-
-<li><p><strong><em>How does the Tinkerboard boot?</em></strong><br />
-All the files necessary for booting are installed in a FAT32 partition of the SD card. The Tinker Board has to have an SD card installed to boot from.</p></li>
-
-<li><p><strong><em>What OS does the Tinkerboard support?</em></strong><br />
-Currently Debian is the only available OS for Tinker Board.</p></li>
-
-<li><p><strong><em>Which LINUX runs on the Tinkerboard?</em></strong><br />
-TinkerOS (based on Debian)</p></li>
-
-<li><p><strong><em>What type of microSD cards are supported?</em></strong><br />
-The MicroSD slot was from a SDIO 3.0 signal, allowing the MicroSD card with UHS-I speed. And we recommend using the card size at least 8GB.</p></li>
-
-<li><p><strong><em>What type of SD card is recommended?</em></strong><br />
-The MicroSD slot was from a SDIO 3.0 signal, allowing the MicroSD card with UHS-I</p></li>
-
-<li><p><strong><em>What resolutions are supported for the HDMI output?</em></strong><br />
-The maximum HDMI output supports up to 4K/30fps, up-scaled from 1080P.</p></li>
-
-<li><p><strong><em>What display outs are supported?</em></strong><br />
-There’re two display interfaces on Tinker Board, one is HDMI &amp; the other is MIPI DSI.</p></li>
-
-<li><p><strong><em>Is sound supported through HDMI?</em></strong><br />
-Yes, the sound output can be worked from HDMI or the 192K/24bit audio jack.</p></li>
-
-<li><p><strong><em>What type of audio in and audio out are supported?</em></strong><br />
-The 3.5mm audio jack on Tinker Board can supports Mic-in and Line-out at the same time.</p></li>
-
-<li><p><strong><em>Can I stream Netflix?</em></strong><br />
-Yes</p></li>
-
-<li><p><strong><em>Which HDMI version is supported?</em></strong><br />
-HDMI 1.4</p></li>
-
-<li><p><strong><em>IS CEC supported on the HDMI port?</em></strong></p></li>
-
-<li><p><strong><em>What is the DSI port?</em></strong><br />
-The Display Serial Interface (DSI) is a specification by the Mobile Industry Processor Interface (MIPI) alliance, DSI is commonly targeted at LCD and similar display technologies. It defines a serial bus and a communication protocol between the host (source of the image data) and the device (destination of the image data).</p></li>
-
-<li><p><strong><em>What model of LCD panel is compatible with the Tinkerboard?</em></strong><br />
-The DSI interface is refer to the most popular design from Raspberry Pi, that allows users to connect the 7” display from Raspberry.</p></li>
-
-<li><p><strong><em>Does the Tinkerboard have a realtime clock feature ( RTC )?</em></strong><br />
-No, but there’re so many alternatives available on the market.</p></li>
-
-<li><p><strong><em>What else will I need after I purchase a Tinkerboard?</em></strong><br />
-Get a keyboard, mouse, USB AC adaptor, a monitor with HDMI, and a micro SD card with 8GB capacity. Then download the OS image from its website, and burn into the micro SD card.</p></li>
-
-<li><p><strong><em>What is the warranty on the Tinkerboard?</em></strong><br />
-1 Year</p></li>
-
-<li><p><strong><em>Does the Tinkerboard support Expansion shields?</em></strong><br />
-Yes, the 40-pin GPIO equipped several signals for expansion. It will works with the GPIO API.</p></li>
-
-<li><p><strong><em>Does the Tinkerboard support Arduino?</em></strong><br />
-Yes</p></li>
+Thus we strongly recommended to use the AC adaptor with 5V/2~2.5A power rating, plus LPS marking.</p>
+</li>
+<li>
+<p><em><strong>Can the Tinkerboard being powered by a battery?</strong></em><br>
+Yes, if the battery can supports power output with at least 5V/1A.</p>
+</li>
+<li>
+<p><em><strong>How does the Tinkerboard boot?</strong></em><br>
+All the files necessary for booting are installed in a FAT32 partition of the SD card. The Tinker Board has to have an SD card installed to boot from.</p>
+</li>
+<li>
+<p><em><strong>What OS does the Tinkerboard support?</strong></em><br>
+Currently Debian is the only available OS for Tinker Board.</p>
+</li>
+<li>
+<p><em><strong>Which LINUX runs on the Tinkerboard?</strong></em><br>
+TinkerOS (based on Debian)</p>
+</li>
+<li>
+<p><em><strong>What type of microSD cards are supported?</strong></em><br>
+The MicroSD slot was from a SDIO 3.0 signal, allowing the MicroSD card with UHS-I speed. And we recommend using the card size at least 8GB.</p>
+</li>
+<li>
+<p><em><strong>What type of SD card is recommended?</strong></em><br>
+The MicroSD slot was from a SDIO 3.0 signal, allowing the MicroSD card with UHS-I</p>
+</li>
+<li>
+<p><em><strong>What resolutions are supported for the HDMI output?</strong></em><br>
+The maximum HDMI output supports up to 4K/30fps, up-scaled from 1080P.</p>
+</li>
+<li>
+<p><em><strong>What display outs are supported?</strong></em><br>
+There’re two display interfaces on Tinker Board, one is HDMI &amp; the other is MIPI DSI.</p>
+</li>
+<li>
+<p><em><strong>Is sound supported through HDMI?</strong></em><br>
+Yes, the sound output can be worked from HDMI or the 192K/24bit audio jack.</p>
+</li>
+<li>
+<p><em><strong>What type of audio in and audio out are supported?</strong></em><br>
+The 3.5mm audio jack on Tinker Board can supports Mic-in and Line-out at the same time.</p>
+</li>
+<li>
+<p><em><strong>Can I stream Netflix?</strong></em><br>
+Yes</p>
+</li>
+<li>
+<p><em><strong>Which HDMI version is supported?</strong></em><br>
+HDMI 1.4</p>
+</li>
+<li>
+<p><em><strong>IS CEC supported on the HDMI port?</strong></em>\</p>
+</li>
+<li>
+<p><em><strong>What is the DSI port?</strong></em><br>
+The Display Serial Interface (DSI) is a specification by the Mobile Industry Processor Interface (MIPI) alliance, DSI is commonly targeted at LCD and similar display technologies. It defines a serial bus and a communication protocol between the host (source of the image data) and the device (destination of the image data).</p>
+</li>
+<li>
+<p><em><strong>What model of LCD panel is compatible with the Tinkerboard?</strong></em><br>
+The DSI interface is refer to the most popular design from Raspberry Pi, that allows users to connect the 7” display from Raspberry.</p>
+</li>
+<li>
+<p><em><strong>Does the Tinkerboard have a realtime clock feature ( RTC )?</strong></em><br>
+No, but there’re so many alternatives available on the market.</p>
+</li>
+<li>
+<p><em><strong>What else will I need after I purchase a Tinkerboard?</strong></em><br>
+Get a keyboard, mouse, USB AC adaptor, a monitor with HDMI, and a micro SD card with 8GB capacity. Then download the OS image from its website, and burn into the micro SD card.</p>
+</li>
+<li>
+<p><em><strong>What is the warranty on the Tinkerboard?</strong></em><br>
+1 Year</p>
+</li>
+<li>
+<p><em><strong>Does the Tinkerboard support Expansion shields?</strong></em><br>
+Yes, the 40-pin GPIO equipped several signals for expansion. It will works with the GPIO API.</p>
+</li>
+<li>
+<p><em><strong>Does the Tinkerboard support Arduino?</strong></em><br>
+Yes</p>
+</li>
 </ol>
 
                     </div>

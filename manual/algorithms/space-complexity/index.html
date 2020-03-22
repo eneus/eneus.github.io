@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> Space Complexity </title>
                 
@@ -86,7 +86,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -172,65 +172,44 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<h3 id="what-is-space-complexity">What is Space complexity?</h3>
-
+                        <h3 id="what-is-space-complexity">What is Space complexity?</h3>
 <p>When we design an algorithm to solve a problem, it needs some computer memory to complete its execution. For any algorithm, memory is required for the following purposes&hellip;</p>
-
 <ol>
 <li>To store program instructions.</li>
 <li>To store constant values.</li>
 <li>To store variable values.</li>
 <li>And for few other things like funcion calls, jumping statements etc,.</li>
 </ol>
-
 <p>Space complexity of an algorithm can be defined as follows&hellip;</p>
-
 <blockquote>
 <p>Total amount of computer memory required by an algorithm to complete its execution is called as space complexity of that algorithm.</p>
 </blockquote>
-
 <p>Generally, when a program is under execution it uses the computer memory for THREE reasons. They are as follows&hellip;</p>
-
 <ol>
 <li><strong>Instruction Space:</strong> It is the amount of memory used to store compiled version of instructions.</li>
 <li><strong>Environmental Stack:</strong> It is the amount of memory used to store information of partially executed functions at the time of function call.</li>
 <li><strong>Data Space:</strong> It is the amount of memory used to store all the variables and constants.</li>
 </ol>
-
-<p><strong><em>Note - When we want to perform analysis of an algorithm based on its Space complexity, we consider only Data Space and ignore Instruction Space as well as Environmental Stack.
-That means we calculate only the memory required to store Variables, Constants, Structures, etc.,</em></strong></p>
-
+<p><em><strong>Note - When we want to perform analysis of an algorithm based on its Space complexity, we consider only Data Space and ignore Instruction Space as well as Environmental Stack.
+That means we calculate only the memory required to store Variables, Constants, Structures, etc.,</strong></em></p>
 <p>To calculate the space complexity, we must know the memory required to store different datatype values (according to the compiler). For example, the C Programming Language compiler requires the following&hellip;</p>
-
 <ol>
 <li>2 bytes to store Integer value.</li>
 <li>4 bytes to store Floating Point value.</li>
 <li>1 byte to store Character value.</li>
 <li>6 (OR) 8 bytes to store double value.</li>
 </ol>
-
 <p>Consider the following piece of code&hellip;</p>
-
 <h4 id="example-1">Example 1:</h4>
-
 <pre><code>int square(int a)
 {
 	return a*a;
 }
-</code></pre>
-
-<p>In the above piece of code, it requires 2 bytes of memory to store variable &lsquo;a&rsquo; and another 2 bytes of memory is used for return value.</p>
-
+</code></pre><p>In the above piece of code, it requires 2 bytes of memory to store variable &lsquo;a&rsquo; and another 2 bytes of memory is used for return value.</p>
 <p>That means, totally it requires 4 bytes of memory to complete its execution. And this 4 bytes of memory is fixed for any input value of &lsquo;a&rsquo;. This space complexity is said to be Constant Space Complexity.</p>
-
-<p><strong><em>If any algorithm requires a fixed amount of space for all input values then that space complexity is said to be Constant Space Complexity.</em></strong></p>
-
+<p><em><strong>If any algorithm requires a fixed amount of space for all input values then that space complexity is said to be Constant Space Complexity.</strong></em></p>
 <p>Consider the following piece of code&hellip;</p>
-
 <h4 id="example-2">Example 2:</h4>
-
 <pre><code>int sum(int A[ ], int n)
 {
    int sum = 0, i;
@@ -238,17 +217,13 @@ That means we calculate only the memory required to store Variables, Constants, 
       sum = sum + A[i];
    return sum;
 }
-</code></pre>
-
-<p>In the above piece of code it requires
+</code></pre><p>In the above piece of code it requires
 &lsquo;n*2&rsquo; bytes of memory to store array variable &lsquo;a[ ]&rsquo;
 2 bytes of memory for integer parameter &lsquo;n&rsquo;
 4 bytes of memory for local integer variables &lsquo;sum&rsquo; and &lsquo;i&rsquo; (2 bytes each)
 2 bytes of memory for return value.</p>
-
 <p>That means, totally it requires &lsquo;2n+8&rsquo; bytes of memory to complete its execution. Here, the total amount of memory required depends on the value of &lsquo;n&rsquo;. As &lsquo;n&rsquo; value increases the space required also increases proportionately. This type of space complexity is said to be Linear Space Complexity.</p>
-
-<p><strong><em>If the amount of space required by an algorithm is increased with the increase of input value, then that space complexity is said to be Linear Space Complexity.</em></strong></p>
+<p><em><strong>If the amount of space required by an algorithm is increased with the increase of input value, then that space complexity is said to be Linear Space Complexity.</strong></em></p>
 
                     </div>
                 </div>

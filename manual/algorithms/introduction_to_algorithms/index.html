@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> Introduction to Algorithms </title>
                 
@@ -84,7 +84,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -168,22 +168,14 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<h3 id="what-is-an-algorithm">What is an algorithm?</h3>
-
+                        <h3 id="what-is-an-algorithm">What is an algorithm?</h3>
 <p>An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&hellip;</p>
-
 <blockquote>
 <p>An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.</p>
 </blockquote>
-
 <p>Algorithms are used to convert our problem solution into step by step statements. These statements can be converted into computer programming instructions which form a program. This program is executed by a computer to produce a solution. Here, the program takes required data as input, processes data according to the program instructions and finally produces a result as shown in the following picture.</p>
-
 <h3 id="specifications-of-algorithms">Specifications of Algorithms</h3>
-
 <p>Every algorithm must satisfy the following specifications&hellip;</p>
-
 <ul>
 <li>Input - Every algorithm must take zero or more number of input values from external.</li>
 <li>Output - Every algorithm must produce an output as result.</li>
@@ -191,27 +183,20 @@
 <li>Finiteness - For all different cases, the algorithm must produce result within a finite number of steps.</li>
 <li>Effectiveness - Every instruction must be basic enough to be carried out and it also must be feasible.</li>
 </ul>
-
 <h3 id="example-for-an-algorithm">Example for an Algorithm</h3>
-
 <p>Let us consider the following problem for finding the largest value in a given list of values.
 Problem Statement : Find the largest number in the given list of numbers?
 Input : A list of positive integer numbers. (List must contain at least one number).
 Output : The largest number in the given list of positive integer numbers.</p>
-
 <p>Consider the given list of numbers as &lsquo;L&rsquo; (input), and the largest number as &lsquo;max&rsquo; (Output).</p>
-
 <h3 id="algorithm">Algorithm</h3>
-
 <ul>
 <li>Step 1: Define a variable &lsquo;max&rsquo; and initialize with &lsquo;0&rsquo;.</li>
 <li>Step 2: Compare first number (say &lsquo;x&rsquo;) in the list &lsquo;L&rsquo; with &lsquo;max&rsquo;, if &lsquo;x&rsquo; is larger than &lsquo;max&rsquo;, set &lsquo;max&rsquo; to &lsquo;x&rsquo;.</li>
 <li>Step 3: Repeat step 2 for all numbers in the list &lsquo;L&rsquo;.</li>
 <li>Step 4: Display the value of &lsquo;max&rsquo; as a result.</li>
 </ul>
-
 <h4 id="code-using-c-programming-language">Code using C Programming Language</h4>
-
 <pre><code>int findMax(L)
 {
     int max = 0,i;
@@ -222,23 +207,16 @@ Output : The largest number in the given list of positive integer numbers.</p>
     }
     return max;
 }
-</code></pre>
-
-<h3 id="recursive-algorithm">Recursive Algorithm</h3>
-
+</code></pre><h3 id="recursive-algorithm">Recursive Algorithm</h3>
 <blockquote>
 <p>The function which is called by itself is known as Direct Recursive function (or Recursive function)</p>
 </blockquote>
-
 <p>In computer science, all algorithms are implemented with programming language functions. We can view a function as something that is invoked (called) by another function. It executes its code and then returns control to the calling function. Here, a function can be called by itself or it may call another function which in turn call the same function inside it is known as recursion. A recursive function can be defined as follows&hellip;</p>
-
 <p>A recursive algorithm can also be defined as follows&hellip;</p>
-
 <blockquote>
 <p>The function which calls a function and that function calls its called function is known Indirect Recursive function (or Recursive function)</p>
 </blockquote>
-
-<p>Most of the computer science students think that recursive is a technique useful for only a few special problems like computing factorials, Ackermann&rsquo;s function, etc., This is unfortunate because the function implemented using assignment or if-else or while or looping statements can also be implemented using recursive functions. This recursive function is very easier to understand when compared to its iterative counterpart.</p>
+<p>Most of the computer science students think that recursive is a technique useful for only a few special problems like computing factorials, Ackermann's function, etc., This is unfortunate because the function implemented using assignment or if-else or while or looping statements can also be implemented using recursive functions. This recursive function is very easier to understand when compared to its iterative counterpart.</p>
 
                     </div>
                 </div>

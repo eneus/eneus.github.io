@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
@@ -6,98 +6,17 @@
     <description>Recent content in Tags on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Apr 2019 14:51:12 +0600</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate>
     
 	<atom:link href="https://eneus.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>3d</title>
-      <link>https://eneus.github.io/tags/3d/</link>
-      <pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/3d/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithms</title>
+      <title>algorithms</title>
       <link>https://eneus.github.io/tags/algorithms/</link>
       <pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/algorithms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arm</title>
-      <link>https://eneus.github.io/tags/arm/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/arm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arrays</title>
-      <link>https://eneus.github.io/tags/arrays/</link>
-      <pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/arrays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Asymptotic Notations</title>
-      <link>https://eneus.github.io/tags/asymptotic-notations/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/asymptotic-notations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://eneus.github.io/tags/books/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>https://eneus.github.io/tags/c&#43;&#43;/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C/C&#43;&#43;</title>
-      <link>https://eneus.github.io/tags/c-c&#43;&#43;/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/c-c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>https://eneus.github.io/tags/data-structure/</link>
-      <pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/data-structure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structures</title>
-      <link>https://eneus.github.io/tags/data-structures/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/data-structures/</guid>
       <description></description>
     </item>
     
@@ -111,56 +30,56 @@
     </item>
     
     <item>
-      <title>Docker</title>
-      <link>https://eneus.github.io/tags/docker/</link>
-      <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
+      <title>Sorting</title>
+      <link>https://eneus.github.io/tags/sorting/</link>
+      <pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate>
       
-      <guid>https://eneus.github.io/tags/docker/</guid>
+      <guid>https://eneus.github.io/tags/sorting/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Drupal</title>
-      <link>https://eneus.github.io/tags/drupal/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      <title>Arrays</title>
+      <link>https://eneus.github.io/tags/arrays/</link>
+      <pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate>
       
-      <guid>https://eneus.github.io/tags/drupal/</guid>
+      <guid>https://eneus.github.io/tags/arrays/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Drush</title>
-      <link>https://eneus.github.io/tags/drush/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      <title>Data Structure</title>
+      <link>https://eneus.github.io/tags/data-structure/</link>
+      <pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate>
       
-      <guid>https://eneus.github.io/tags/drush/</guid>
+      <guid>https://eneus.github.io/tags/data-structure/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Field</title>
-      <link>https://eneus.github.io/tags/field/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      <title>Asymptotic Notations</title>
+      <link>https://eneus.github.io/tags/asymptotic-notations/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://eneus.github.io/tags/field/</guid>
+      <guid>https://eneus.github.io/tags/asymptotic-notations/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>https://eneus.github.io/tags/javascript/</link>
-      <pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate>
+      <title>C/C&#43;&#43;</title>
+      <link>https://eneus.github.io/tags/c/c&#43;&#43;/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://eneus.github.io/tags/javascript/</guid>
+      <guid>https://eneus.github.io/tags/c/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Jekyll</title>
-      <link>https://eneus.github.io/tags/jekyll/</link>
-      <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
+      <title>Data Structures</title>
+      <link>https://eneus.github.io/tags/data-structures/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://eneus.github.io/tags/jekyll/</guid>
+      <guid>https://eneus.github.io/tags/data-structures/</guid>
       <description></description>
     </item>
     
@@ -183,15 +102,6 @@
     </item>
     
     <item>
-      <title>Mathematics</title>
-      <link>https://eneus.github.io/tags/mathematics/</link>
-      <pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/mathematics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Microcontroller</title>
       <link>https://eneus.github.io/tags/microcontroller/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
@@ -201,29 +111,11 @@
     </item>
     
     <item>
-      <title>Mysql</title>
-      <link>https://eneus.github.io/tags/mysql/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Non Linear</title>
+      <title>Non-Linear&#34;</title>
       <link>https://eneus.github.io/tags/non-linear/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/tags/non-linear/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Os</title>
-      <link>https://eneus.github.io/tags/os/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/os/</guid>
       <description></description>
     </item>
     
@@ -246,29 +138,11 @@
     </item>
     
     <item>
-      <title>Single Board</title>
-      <link>https://eneus.github.io/tags/single-board/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/single-board/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Single Linked List</title>
       <link>https://eneus.github.io/tags/single-linked-list/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/tags/single-linked-list/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sorting</title>
-      <link>https://eneus.github.io/tags/sorting/</link>
-      <pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/sorting/</guid>
       <description></description>
     </item>
     
@@ -282,24 +156,6 @@
     </item>
     
     <item>
-      <title>Ssh</title>
-      <link>https://eneus.github.io/tags/ssh/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Streaming</title>
-      <link>https://eneus.github.io/tags/streaming/</link>
-      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/streaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Time Complexity</title>
       <link>https://eneus.github.io/tags/time-complexity/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
@@ -309,16 +165,16 @@
     </item>
     
     <item>
-      <title>Tips Tunnels</title>
-      <link>https://eneus.github.io/tags/tips-tunnels/</link>
-      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      <title>streaming</title>
+      <link>https://eneus.github.io/tags/streaming/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://eneus.github.io/tags/tips-tunnels/</guid>
+      <guid>https://eneus.github.io/tags/streaming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Video</title>
+      <title>video</title>
       <link>https://eneus.github.io/tags/video/</link>
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -327,11 +183,155 @@
     </item>
     
     <item>
-      <title>Web</title>
+      <title>ARM</title>
+      <link>https://eneus.github.io/tags/arm/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS</title>
+      <link>https://eneus.github.io/tags/os/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>single-board</title>
+      <link>https://eneus.github.io/tags/single-board/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/single-board/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>books</title>
+      <link>https://eneus.github.io/tags/books/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://eneus.github.io/tags/ssh/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips &amp; Tunnels</title>
+      <link>https://eneus.github.io/tags/tips-tunnels/</link>
+      <pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/tips-tunnels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D</title>
+      <link>https://eneus.github.io/tags/3d/</link>
+      <pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://eneus.github.io/tags/mathematics/</link>
+      <pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://eneus.github.io/tags/c&#43;&#43;/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drupal</title>
+      <link>https://eneus.github.io/tags/drupal/</link>
+      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/drupal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drush</title>
+      <link>https://eneus.github.io/tags/drush/</link>
+      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/drush/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>field</title>
+      <link>https://eneus.github.io/tags/field/</link>
+      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/field/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://eneus.github.io/tags/mysql/</link>
+      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://eneus.github.io/tags/javascript/</link>
+      <pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
       <link>https://eneus.github.io/tags/web/</link>
       <pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://eneus.github.io/tags/docker/</link>
+      <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://eneus.github.io/tags/jekyll/</link>
+      <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/jekyll/</guid>
       <description></description>
     </item>
     

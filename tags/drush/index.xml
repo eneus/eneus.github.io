@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Drush on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
+    <title>drush on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
     <link>https://eneus.github.io/tags/drush/</link>
-    <description>Recent content in Drush on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
+    <description>Recent content in drush on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate>
@@ -17,9 +17,9 @@
       <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid>
-      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
+      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&#39;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
-drush sqlq &amp;quot;DELETE FROM cache_config&amp;quot; drush sqlq &amp;quot;DELETE FROM config WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot; drush sqlq &amp;quot;DELETE FROM config_snapshot WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&amp;quot;  Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
+drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&#39;t execute above commands on master/live database.</description>
     </item>
     
   </channel>

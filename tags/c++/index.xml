@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
@@ -28,8 +28,8 @@
       
       <guid>https://eneus.github.io/blog/awesome-cpp/</guid>
       <description>Awesome C++
- Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous  Software
- Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools  Resources</description>
+ Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous    Software
+ Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools    Resources</description>
     </item>
     
   </channel>

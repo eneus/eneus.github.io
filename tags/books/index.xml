@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Books on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
+    <title>books on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
     <link>https://eneus.github.io/tags/books/</link>
-    <description>Recent content in Books on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
+    <description>Recent content in books on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate>
@@ -40,8 +40,8 @@ Practical SSH examples
       
       <guid>https://eneus.github.io/blog/awesome-cpp/</guid>
       <description>Awesome C++
- Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous  Software
- Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools  Resources</description>
+ Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous    Software
+ Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools    Resources</description>
     </item>
     
   </channel>

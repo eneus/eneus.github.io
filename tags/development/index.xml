@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
@@ -76,7 +76,8 @@ A circular linked list is a sequence of elements in which every element has a li
       
       <guid>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</guid>
       <description>What is an algorithm? An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;
- An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.</description>
+ An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.
+ Algorithms are used to convert our problem solution into step by step statements.</description>
     </item>
     
     <item>
@@ -185,8 +186,8 @@ In this article, I would like to provide a brief math primer for people who woul
       
       <guid>https://eneus.github.io/blog/awesome-cpp/</guid>
       <description>Awesome C++
- Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous  Software
- Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools  Resources</description>
+ Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous    Software
+ Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools    Resources</description>
     </item>
     
   </channel>

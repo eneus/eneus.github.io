@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> Circular Linked List </title>
                 
@@ -88,7 +88,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -176,421 +176,379 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<h3 id="what-is-circular-linked-list">What is Circular Linked List?</h3>
-
+                        <h3 id="what-is-circular-linked-list">What is Circular Linked List?</h3>
 <p>In single linked list, every node points to its next node in the sequence and the last node points NULL. But in circular linked list, every node points to its next node in the sequence but the last node points to the first node in the list.</p>
-
-<p><strong><em>A circular linked list is a sequence of elements in which every element has a link to its next element in the sequence and the last element has a link to the first element.</em></strong></p>
-
+<p><em><strong>A circular linked list is a sequence of elements in which every element has a link to its next element in the sequence and the last element has a link to the first element.</strong></em></p>
 <p>That means circular linked list is similar to the single linked list except that the last node points to the first node in the list</p>
-
 <h4 id="example">Example</h4>
-
-<p><img src="/images/manual/Circular-linked-list.gif" alt="Example of single linked list" /></p>
-
+<p><img src="/images/manual/Circular-linked-list.gif" alt="Example of single linked list"></p>
 <h3 id="operations">Operations</h3>
-
 <p>In a circular linked list, we perform the following operations&hellip;</p>
-
 <ul>
 <li>Insertion</li>
 <li>Deletion</li>
 <li>Display</li>
 </ul>
-
 <p>Before we implement actual operations, first we need to setup empty list. First perform the following steps before implementing actual operations.</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Include all the header files which are used in the program.</li>
-<li><strong><em>Step 2</em></strong> - Declare all the user defined functions.</li>
-<li><strong><em>Step 3</em></strong> - Define a Node structure with two members data and next</li>
-<li><strong><em>Step 4</em></strong> - Define a Node pointer &lsquo;head&rsquo; and set it to NULL.</li>
-<li><strong><em>Step 5</em></strong> - Implement the main method by displaying operations menu and make suitable function calls in the main method to perform user selected operation.</li>
+<li><em><strong>Step 1</strong></em> - Include all the header files which are used in the program.</li>
+<li><em><strong>Step 2</strong></em> - Declare all the user defined functions.</li>
+<li><em><strong>Step 3</strong></em> - Define a Node structure with two members data and next</li>
+<li><em><strong>Step 4</strong></em> - Define a Node pointer &lsquo;head&rsquo; and set it to NULL.</li>
+<li><em><strong>Step 5</strong></em> - Implement the main method by displaying operations menu and make suitable function calls in the main method to perform user selected operation.</li>
 </ul>
-
 <h3 id="insertion">Insertion</h3>
-
 <p>In a circular linked list, the insertion operation can be performed in three ways. They are as follows&hellip;</p>
-
 <p>Inserting At Beginning of the list
 Inserting At End of the list
 Inserting At Specific location in the list</p>
-
 <h3 id="inserting-at-beginning-of-the-list">Inserting At Beginning of the list</h3>
-
 <p>We can use the following steps to insert a new node at beginning of the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Create a newNode with given value.</li>
-<li><strong><em>Step 2</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 3</em></strong> - If it is Empty then, set head = newNode and newNode→next = head .</li>
-<li><strong><em>Step 4</em></strong> - If it is Not Empty then, define a Node pointer &lsquo;temp&rsquo; and initialize with &lsquo;head&rsquo;.</li>
-<li><strong><em>Step 5</em></strong> - Keep moving the &lsquo;temp&rsquo; to its next node until it reaches to the last node (until &lsquo;temp → next == head&rsquo;).</li>
-<li><strong><em>Step 6</em></strong> - Set &lsquo;newNode → next =head&rsquo;, &lsquo;head = newNode&rsquo; and &lsquo;temp → next = head&rsquo;.</li>
+<li><em><strong>Step 1</strong></em> - Create a newNode with given value.</li>
+<li><em><strong>Step 2</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 3</strong></em> - If it is Empty then, set head = newNode and newNode→next = head .</li>
+<li><em><strong>Step 4</strong></em> - If it is Not Empty then, define a Node pointer &lsquo;temp&rsquo; and initialize with &lsquo;head&rsquo;.</li>
+<li><em><strong>Step 5</strong></em> - Keep moving the &lsquo;temp&rsquo; to its next node until it reaches to the last node (until &lsquo;temp → next == head&rsquo;).</li>
+<li><em><strong>Step 6</strong></em> - Set &lsquo;newNode → next =head&rsquo;, &lsquo;head = newNode&rsquo; and &lsquo;temp → next = head&rsquo;.</li>
 </ul>
-
 <h3 id="inserting-at-end-of-the-list">Inserting At End of the list</h3>
-
 <p>We can use the following steps to insert a new node at end of the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Create a newNode with given value.</li>
-<li><strong><em>Step 2</em></strong> - Check whether list is Empty (head == NULL).</li>
-<li><strong><em>Step 3</em></strong> - If it is Empty then, set head = newNode and newNode → next = head.</li>
-<li><strong><em>Step 4</em></strong> - If it is Not Empty then, define a node pointer temp and initialize with head.</li>
-<li><strong><em>Step 5</em></strong> - Keep moving the temp to its next node until it reaches to the last node in the list (until temp → next == head).</li>
-<li><strong><em>Step 6</em></strong> - Set temp → next = newNode and newNode → next = head.</li>
+<li><em><strong>Step 1</strong></em> - Create a newNode with given value.</li>
+<li><em><strong>Step 2</strong></em> - Check whether list is Empty (head == NULL).</li>
+<li><em><strong>Step 3</strong></em> - If it is Empty then, set head = newNode and newNode → next = head.</li>
+<li><em><strong>Step 4</strong></em> - If it is Not Empty then, define a node pointer temp and initialize with head.</li>
+<li><em><strong>Step 5</strong></em> - Keep moving the temp to its next node until it reaches to the last node in the list (until temp → next == head).</li>
+<li><em><strong>Step 6</strong></em> - Set temp → next = newNode and newNode → next = head.</li>
 </ul>
-
 <h3 id="inserting-at-specific-location-in-the-list-after-a-node">Inserting At Specific location in the list (After a Node)</h3>
-
 <p>We can use the following steps to insert a new node after a node in the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Create a newNode with given value.</li>
-<li><strong><em>Step 2</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 3</em></strong> - If it is Empty then, set head = newNode and newNode → next = head.</li>
-<li><strong><em>Step 4</em></strong> - If it is Not Empty then, define a node pointer temp and initialize with head.</li>
-<li><strong><em>Step 5</em></strong> - Keep moving the temp to its next node until it reaches to the node after which we want to insert the newNode (until temp1 → data is equal to location, here location is the node value after which we want to insert the newNode).</li>
-<li><strong><em>Step 6</em></strong> - Every time check whether temp is reached to the last node or not. If it is reached to last node then display &lsquo;Given node is not found in the list!!! Insertion not possible!!!&rsquo; and terminate the function. Otherwise move the temp to next node.</li>
-<li><strong><em>Step 7</em></strong> - If temp is reached to the exact node after which we want to insert the newNode then check whether it is last node (temp → next == head).</li>
-<li><strong><em>Step 8</em></strong> - If temp is last node then set temp → next = newNode and newNode → next = head.</li>
-<li><strong><em>Step 9</em></strong> - If temp is not last node then set newNode → next = temp → next and temp → next = newNode.</li>
+<li><em><strong>Step 1</strong></em> - Create a newNode with given value.</li>
+<li><em><strong>Step 2</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 3</strong></em> - If it is Empty then, set head = newNode and newNode → next = head.</li>
+<li><em><strong>Step 4</strong></em> - If it is Not Empty then, define a node pointer temp and initialize with head.</li>
+<li><em><strong>Step 5</strong></em> - Keep moving the temp to its next node until it reaches to the node after which we want to insert the newNode (until temp1 → data is equal to location, here location is the node value after which we want to insert the newNode).</li>
+<li><em><strong>Step 6</strong></em> - Every time check whether temp is reached to the last node or not. If it is reached to last node then display &lsquo;Given node is not found in the list!!! Insertion not possible!!!&rsquo; and terminate the function. Otherwise move the temp to next node.</li>
+<li><em><strong>Step 7</strong></em> - If temp is reached to the exact node after which we want to insert the newNode then check whether it is last node (temp → next == head).</li>
+<li><em><strong>Step 8</strong></em> - If temp is last node then set temp → next = newNode and newNode → next = head.</li>
+<li><em><strong>Step 9</strong></em> - If temp is not last node then set newNode → next = temp → next and temp → next = newNode.</li>
 </ul>
-
 <h3 id="deletion">Deletion</h3>
-
 <p>In a circular linked list, the deletion operation can be performed in three ways those are as follows&hellip;</p>
-
 <ul>
 <li>Deleting from Beginning of the list</li>
 <li>Deleting from End of the list</li>
 <li>Deleting a Specific Node</li>
 </ul>
-
 <h3 id="deleting-from-beginning-of-the-list">Deleting from Beginning of the list</h3>
-
 <p>We can use the following steps to delete a node from beginning of the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 2</em></strong> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
-<li><strong><em>Step 3</em></strong> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize both &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; with head.</li>
-<li><strong><em>Step 4</em></strong> - Check whether list is having only one node (temp1 → next == head)</li>
-<li><strong><em>Step 5</em></strong> - If it is TRUE then set head = NULL and delete temp1 (Setting Empty list conditions)</li>
-<li><strong><em>Step 6</em></strong> - If it is FALSE move the temp1 until it reaches to the last node. (until temp1 → next == head )</li>
-<li><strong><em>Step 7</em></strong> - Then set head = temp2 → next, temp1 → next = head and delete temp2.</li>
+<li><em><strong>Step 1</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 2</strong></em> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
+<li><em><strong>Step 3</strong></em> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize both &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; with head.</li>
+<li><em><strong>Step 4</strong></em> - Check whether list is having only one node (temp1 → next == head)</li>
+<li><em><strong>Step 5</strong></em> - If it is TRUE then set head = NULL and delete temp1 (Setting Empty list conditions)</li>
+<li><em><strong>Step 6</strong></em> - If it is FALSE move the temp1 until it reaches to the last node. (until temp1 → next == head )</li>
+<li><em><strong>Step 7</strong></em> - Then set head = temp2 → next, temp1 → next = head and delete temp2.</li>
 </ul>
-
 <h3 id="deleting-from-end-of-the-list">Deleting from End of the list</h3>
-
 <p>We can use the following steps to delete a node from end of the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 2</em></strong> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
-<li><strong><em>Step 3</em></strong> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize &lsquo;temp1&rsquo; with head.</li>
-<li><strong><em>Step 4</em></strong> - Check whether list has only one Node (temp1 → next == head)</li>
-<li><strong><em>Step 5</em></strong> - If it is TRUE. Then, set head = NULL and delete temp1. And terminate from the function. (Setting Empty list condition)</li>
-<li><strong><em>Step 6</em></strong> - If it is FALSE. Then, set &lsquo;temp2 = temp1 &rsquo; and move temp1 to its next node. Repeat the same until temp1 reaches to the last node in the list. (until temp1 → next == head)</li>
-<li><strong><em>Step 7</em></strong> - Set temp2 → next = head and delete temp1.</li>
+<li><em><strong>Step 1</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 2</strong></em> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
+<li><em><strong>Step 3</strong></em> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize &lsquo;temp1&rsquo; with head.</li>
+<li><em><strong>Step 4</strong></em> - Check whether list has only one Node (temp1 → next == head)</li>
+<li><em><strong>Step 5</strong></em> - If it is TRUE. Then, set head = NULL and delete temp1. And terminate from the function. (Setting Empty list condition)</li>
+<li><em><strong>Step 6</strong></em> - If it is FALSE. Then, set &lsquo;temp2 = temp1 ' and move temp1 to its next node. Repeat the same until temp1 reaches to the last node in the list. (until temp1 → next == head)</li>
+<li><em><strong>Step 7</strong></em> - Set temp2 → next = head and delete temp1.</li>
 </ul>
-
 <h3 id="deleting-a-specific-node-from-the-list">Deleting a Specific Node from the list</h3>
-
 <p>We can use the following steps to delete a specific node from the circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 2</em></strong> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
-<li><strong><em>Step 3</em></strong> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize &lsquo;temp1&rsquo; with head.</li>
-<li><strong><em>Step 4</em></strong> - Keep moving the temp1 until it reaches to the exact node to be deleted or to the last node. And every time set &lsquo;temp2 = temp1&rsquo; before moving the &lsquo;temp1&rsquo; to its next node.</li>
-<li><strong><em>Step 5</em></strong> - If it is reached to the last node then display &lsquo;Given node not found in the list! Deletion not possible!!!&rsquo;. And terminate the function.</li>
-<li><strong><em>Step 6</em></strong> - If it is reached to the exact node which we want to delete, then check whether list is having only one node (temp1 → next == head)</li>
-<li><strong><em>Step 7</em></strong> - If list has only one node and that is the node to be deleted then set head = NULL and delete temp1 (free(temp1)).</li>
-<li><strong><em>Step 8</em></strong> - If list contains multiple nodes then check whether temp1 is the first node in the list (temp1 == head).</li>
-<li><strong><em>Step 9</em></strong> - If temp1 is the first node then set temp2 = head and keep moving temp2 to its next node until temp2 reaches to the last node. Then set head = head → next, temp2 → next = head and delete temp1.</li>
-<li><strong><em>Step 10</em></strong> - If temp1 is not first node then check whether it is last node in the list (temp1 → next == head).</li>
-<li><strong><em>Step 11</em></strong>- If temp1 is last node then set temp2 → next = head and delete temp1 (free(temp1)).</li>
-<li><strong><em>Step 12</em></strong> - If temp1 is not first node and not last node then set temp2 → next = temp1 → next and delete temp1 (free(temp1)).</li>
+<li><em><strong>Step 1</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 2</strong></em> - If it is Empty then, display &lsquo;List is Empty!!! Deletion is not possible&rsquo; and terminate the function.</li>
+<li><em><strong>Step 3</strong></em> - If it is Not Empty then, define two Node pointers &lsquo;temp1&rsquo; and &lsquo;temp2&rsquo; and initialize &lsquo;temp1&rsquo; with head.</li>
+<li><em><strong>Step 4</strong></em> - Keep moving the temp1 until it reaches to the exact node to be deleted or to the last node. And every time set &lsquo;temp2 = temp1&rsquo; before moving the &lsquo;temp1&rsquo; to its next node.</li>
+<li><em><strong>Step 5</strong></em> - If it is reached to the last node then display &lsquo;Given node not found in the list! Deletion not possible!!!'. And terminate the function.</li>
+<li><em><strong>Step 6</strong></em> - If it is reached to the exact node which we want to delete, then check whether list is having only one node (temp1 → next == head)</li>
+<li><em><strong>Step 7</strong></em> - If list has only one node and that is the node to be deleted then set head = NULL and delete temp1 (free(temp1)).</li>
+<li><em><strong>Step 8</strong></em> - If list contains multiple nodes then check whether temp1 is the first node in the list (temp1 == head).</li>
+<li><em><strong>Step 9</strong></em> - If temp1 is the first node then set temp2 = head and keep moving temp2 to its next node until temp2 reaches to the last node. Then set head = head → next, temp2 → next = head and delete temp1.</li>
+<li><em><strong>Step 10</strong></em> - If temp1 is not first node then check whether it is last node in the list (temp1 → next == head).</li>
+<li><em><strong>Step 11</strong></em>- If temp1 is last node then set temp2 → next = head and delete temp1 (free(temp1)).</li>
+<li><em><strong>Step 12</strong></em> - If temp1 is not first node and not last node then set temp2 → next = temp1 → next and delete temp1 (free(temp1)).</li>
 </ul>
-
 <h3 id="displaying-a-circular-linked-list">Displaying a circular Linked List</h3>
-
 <p>We can use the following steps to display the elements of a circular linked list&hellip;</p>
-
 <ul>
-<li><strong><em>Step 1</em></strong> - Check whether list is Empty (head == NULL)</li>
-<li><strong><em>Step 2</em></strong> - If it is Empty, then display &lsquo;List is Empty!!!&rsquo; and terminate the function.</li>
-<li><strong><em>Step 3</em></strong> - If it is Not Empty then, define a Node pointer &lsquo;temp&rsquo; and initialize with head.</li>
-<li><strong><em>Step 4</em></strong> - Keep displaying temp → data with an arrow (&mdash;&gt;) until temp reaches to the last node</li>
-<li><strong><em>Step 5</em></strong> - Finally display temp → data with arrow pointing to head → data.</li>
+<li><em><strong>Step 1</strong></em> - Check whether list is Empty (head == NULL)</li>
+<li><em><strong>Step 2</strong></em> - If it is Empty, then display &lsquo;List is Empty!!!&rsquo; and terminate the function.</li>
+<li><em><strong>Step 3</strong></em> - If it is Not Empty then, define a Node pointer &lsquo;temp&rsquo; and initialize with head.</li>
+<li><em><strong>Step 4</strong></em> - Keep displaying temp → data with an arrow (&mdash;&gt;) until temp reaches to the last node</li>
+<li><em><strong>Step 5</strong></em> - Finally display temp → data with arrow pointing to head → data.</li>
 </ul>
-
 <h4 id="implementation-of-circular-linked-list-using-c-programming">Implementation of Circular Linked List using C Programming</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#</span><span style="color:#75715e">include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span><span style="color:#75715e">&lt;conio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtBeginning</span>(<span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtEnd</span>(<span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtAfter</span>(<span style="color:#66d9ef">int</span>,<span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteBeginning</span>();
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteEnd</span>();
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteSpecific</span>(<span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>();
 
-<pre><code class="language-C">#include&lt;stdio.h&gt;
-#include&lt;conio.h&gt;
-
-void insertAtBeginning(int);
-void insertAtEnd(int);
-void insertAtAfter(int,int);
-void deleteBeginning();
-void deleteEnd();
-void deleteSpecific(int);
-void display();
-
-struct Node
+<span style="color:#66d9ef">struct</span> Node
 {
-   int data;
-   struct Node *next;
-}*head = NULL;
+   <span style="color:#66d9ef">int</span> data;
+   <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>next;
+}<span style="color:#f92672">*</span>head <span style="color:#f92672">=</span> NULL;
 
-void main()
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>()
 {
-   int choice1, choice2, value, location;
+   <span style="color:#66d9ef">int</span> choice1, choice2, value, location;
    clrscr();
-   while(1)
+   <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
    {
-      printf(&quot;\n*********** MENU *************\n&quot;);
-      printf(&quot;1. Insert\n2. Delete\n3. Display\n4. Exit\nEnter your choice: &quot;);
-      scanf(&quot;%d&quot;,&amp;choice1);
-      switch()
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">*********** MENU *************</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. Insert</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. Delete</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Display</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Exit</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
+      scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice1);
+      <span style="color:#66d9ef">switch</span>()
       {
-         case 1: printf(&quot;Enter the value to be inserted: &quot;);
-         		 scanf(&quot;%d&quot;,&amp;value);
-                 while(1)
+         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the value to be inserted: </span><span style="color:#e6db74">&#34;</span>);
+         		 scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>value);
+                 <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
                  {
-                 	printf(&quot;\nSelect from the following Inserting options\n&quot;);
-                 	printf(&quot;1. At Beginning\n2. At End\n3. After a Node\n4. Cancel\nEnter your choice: &quot;);
-                    scanf(&quot;%d&quot;,&amp;choice2);
-                    switch(choice2)
+                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Inserting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. After a Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
+                    scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
+                    <span style="color:#66d9ef">switch</span>(choice2)
                     {
-                       case 1: 	insertAtBeginning(value);
-                       		break;
-                       case 2: 	insertAtEnd(value);
-                       		break;
-                       case 3: 	printf(&quot;Enter the location after which you want to insert: &quot;);
-                       		scanf(&quot;%d&quot;,&amp;location);
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> 	insertAtBeginning(value);
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> 	insertAtEnd(value);
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the location after which you want to insert: </span><span style="color:#e6db74">&#34;</span>);
+                       		scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>location);
                        		insertAfter(value,location);
-                       		break;
-                       case 4: 	goto EndSwitch;
-                       default: printf(&quot;\nPlease select correct Inserting option!!!\n&quot;);
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> 	<span style="color:#66d9ef">goto</span> EndSwitch;
+                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Inserting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
                     }
                  }
-         case 2: while(1)
+         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
                  {
-                 	printf(&quot;\nSelect from the following Deleting options\n&quot;);
-                 	printf(&quot;1. At Beginning\n2. At End\n3. Specific Node\n4. Cancel\nEnter your choice: &quot;);
-                    scanf(&quot;%d&quot;,&amp;choice2);
-                    switch(choice2)
+                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Deleting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Specific Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
+                    scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
+                    <span style="color:#66d9ef">switch</span>(choice2)
                     {
-                       case 1: 	deleteBeginning();
-                       		break;
-                       case 2: 	deleteEnd();
-                       		break;
-                       case 3: 	printf(&quot;Enter the Node value to be deleted: &quot;);
-                       		scanf(&quot;%d&quot;,&amp;location);
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> 	deleteBeginning();
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> 	deleteEnd();
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the Node value to be deleted: </span><span style="color:#e6db74">&#34;</span>);
+                       		scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>location);
                        		deleteSpecic(location);
-                       		break;
-                       case 4:	goto EndSwitch;
-                       default: printf(&quot;\nPlease select correct Deleting option!!!\n&quot;);
+                       		<span style="color:#66d9ef">break</span>;
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span>	<span style="color:#66d9ef">goto</span> EndSwitch;
+                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Deleting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
                     }
                  }
-                 EndSwitch: break;
-         case 3: display();
-         	 break;
-         case 4: exit(0);
-         default: printf(&quot;\nPlease select correct option!!!&quot;);
+                 EndSwitch: <span style="color:#66d9ef">break</span>;
+         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> display();
+         	 <span style="color:#66d9ef">break</span>;
+         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> exit(<span style="color:#ae81ff">0</span>);
+         <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct option!!!</span><span style="color:#e6db74">&#34;</span>);
       }
    }
 }
 
-void insertAtBeginning(int value)
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtBeginning</span>(<span style="color:#66d9ef">int</span> value)
 {
-    struct Node *newNode;
-    newNode = (struct Node*)malloc(sizeof(struct Node));
-    newNode -&gt; data = value;
-    if(head == NULL)
+    <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
+    newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
+    newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
+    <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
     {
-       head = newNode;
-       newNode -&gt; next = head;
+       head <span style="color:#f92672">=</span> newNode;
+       newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
     }
-    else
+    <span style="color:#66d9ef">else</span>
     {
-       struct Node *temp = head;
-       while(temp -&gt; next != head)
-          temp = temp -&gt; next;
-       newNode -&gt; next = head;
-       head = newNode;
-       temp -&gt; next = head;
+       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
+       <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> head)
+          temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+       newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
+       head <span style="color:#f92672">=</span> newNode;
+       temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
     }
-    printf(&quot;\nInsertion success!!!&quot;);
+    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);
 }
-void insertAtEnd(int value)
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtEnd</span>(<span style="color:#66d9ef">int</span> value)
 {
-   struct Node *newNode;
-   newNode = (struct Node*)malloc(sizeof(struct Node));
-   newNode -&gt; data = value;
-   if(head == NULL)
+   <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
+   newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
+   newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
    {
-      head = newNode;
-      newNode -&gt; next = head;
+      head <span style="color:#f92672">=</span> newNode;
+      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
    }
-   else
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp = head;
-      while(temp -&gt; next != head)
-         temp = temp -&gt; next;
-      temp -&gt; next = newNode;
-      newNode -&gt; next = head;
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> head)
+         temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+      temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> newNode;
+      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
    }
-   printf(&quot;\nInsertion success!!!&quot;);   
+   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);   
 }
-void insertAfter(int value, int location)
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAfter</span>(<span style="color:#66d9ef">int</span> value, <span style="color:#66d9ef">int</span> location)
 {
-   struct Node *newNode;
-   newNode = (struct Node*)malloc(sizeof(struct Node));
-   newNode -&gt; data = value;
-   if(head == NULL)
+   <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
+   newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
+   newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
    {      
-      head = newNode;
-      newNode -&gt; next = head;
+      head <span style="color:#f92672">=</span> newNode;
+      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
    }
-   else
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp = head;
-      while(temp -&gt; data != location)
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">!</span><span style="color:#f92672">=</span> location)
       {
-         if(temp -&gt; next == head)
+         <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
          {
-            printf(&quot;Given node is not found in the list!!!&quot;);
-            goto EndFunction;
+            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Given node is not found in the list!!!</span><span style="color:#e6db74">&#34;</span>);
+            <span style="color:#66d9ef">goto</span> EndFunction;
          }
-         else
+         <span style="color:#66d9ef">else</span>
          {
-            temp = temp -&gt; next;
+            temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
          }
       }
-      newNode -&gt; next = temp -&gt; next;
-      temp -&gt; next = newNode;
-      printf(&quot;\nInsertion success!!!&quot;);
+      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+      temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> newNode;
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);
    }
    EndFunction:
 }
-void deleteBeginning()
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteBeginning</span>()
 {
-   if(head == NULL)
-      printf(&quot;List is Empty!!! Deletion not possible!!!&quot;);
-   else
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp = head;
-      if(temp -&gt; next == head)
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
+      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
       {
-         head = NULL;
+         head <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
-      else{
-         head = head -&gt; next;
+      <span style="color:#66d9ef">else</span>{
+         head <span style="color:#f92672">=</span> head <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
          free(temp);
       }
-      printf(&quot;\nDeletion success!!!&quot;);
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
    }
 }
-void deleteEnd()
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteEnd</span>()
 {
-   if(head == NULL)
-      printf(&quot;List is Empty!!! Deletion not possible!!!&quot;);
-   else
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp1 = head, temp2;
-      if(temp1 -&gt; next == head)
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp1 <span style="color:#f92672">=</span> head, temp2;
+      <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
       {
-         head = NULL;
+         head <span style="color:#f92672">=</span> NULL;
          free(temp1);
       }
-      else{
-         while(temp1 -&gt; next != head){
-            temp2 = temp1;
-            temp1 = temp1 -&gt; next;
+      <span style="color:#66d9ef">else</span>{
+         <span style="color:#66d9ef">while</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> head){
+            temp2 <span style="color:#f92672">=</span> temp1;
+            temp1 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
          }
-         temp2 -&gt; next = head;
+         temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
          free(temp1);
       }
-      printf(&quot;\nDeletion success!!!&quot;);
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
    }
 }
-void deleteSpecific(int delValue)
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteSpecific</span>(<span style="color:#66d9ef">int</span> delValue)
 {
-   if(head == NULL)
-      printf(&quot;List is Empty!!! Deletion not possible!!!&quot;);
-   else
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp1 = head, temp2;
-      while(temp1 -&gt; data != delValue)
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp1 <span style="color:#f92672">=</span> head, temp2;
+      <span style="color:#66d9ef">while</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">!</span><span style="color:#f92672">=</span> delValue)
       {
-         if(temp1 -&gt; next == head)
+         <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
          {
-            printf(&quot;\nGiven node is not found in the list!!!&quot;);
-            goto FuctionEnd;
+            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Given node is not found in the list!!!</span><span style="color:#e6db74">&#34;</span>);
+            <span style="color:#66d9ef">goto</span> FuctionEnd;
          }
-         else
+         <span style="color:#66d9ef">else</span>
          {
-            temp2 = temp1;
-            temp1 = temp1 -&gt; next;
+            temp2 <span style="color:#f92672">=</span> temp1;
+            temp1 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
          }
       }
-      if(temp1 -&gt; next == head){
-         head = NULL;
+      <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head){
+         head <span style="color:#f92672">=</span> NULL;
          free(temp1);
       }
-      else{
-         if(temp1 == head)
+      <span style="color:#66d9ef">else</span>{
+         <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
          {
-            temp2 = head;
-            while(temp2 -&gt; next != head)
-               temp2 = temp2 -&gt; next;
-            head = head -&gt; next;
-            temp2 -&gt; next = head;
+            temp2 <span style="color:#f92672">=</span> head;
+            <span style="color:#66d9ef">while</span>(temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> head)
+               temp2 <span style="color:#f92672">=</span> temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+            head <span style="color:#f92672">=</span> head <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+            temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
             free(temp1);
          }
-         else
+         <span style="color:#66d9ef">else</span>
          {
-            if(temp1 -&gt; next == head)
+            <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
             {
-               temp2 -&gt; next = head;
+               temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
             }
-            else
+            <span style="color:#66d9ef">else</span>
             {
-               temp2 -&gt; next = temp1 -&gt; next;
+               temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
             }   
             free(temp1);
          }
       }
-      printf(&quot;\nDeletion success!!!&quot;);
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
    }
    FuctionEnd:
 }
-void display()
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>()
 {
-   if(head == NULL)
-      printf(&quot;\nList is Empty!!!&quot;);
-   else
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List is Empty!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">else</span>
    {
-      struct Node *temp = head;
-      printf(&quot;\nList elements are: \n&quot;);
-      while(temp -&gt; next != head)
+      <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List elements are: </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> head)
       {
-         printf(&quot;%d ---&gt; &quot;,temp -&gt; data);
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d ---&gt; </span><span style="color:#e6db74">&#34;</span>,temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data);
       }
-      printf(&quot;%d ---&gt; %d&quot;, temp -&gt; data, head -&gt; data);
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d ---&gt; %d</span><span style="color:#e6db74">&#34;</span>, temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data, head <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data);
    }
 }
 
-</code></pre>
-
+</code></pre></div>
                     </div>
                 </div>
                 <div class="clear"></div>

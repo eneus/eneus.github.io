@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithms on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
+    <title>algorithms on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
     <link>https://eneus.github.io/tags/algorithms/</link>
-    <description>Recent content in Algorithms on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
+    <description>Recent content in algorithms on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate>
@@ -56,7 +56,8 @@ A circular linked list is a sequence of elements in which every element has a li
       
       <guid>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</guid>
       <description>What is an algorithm? An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;
- An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.</description>
+ An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.
+ Algorithms are used to convert our problem solution into step by step statements.</description>
     </item>
     
     <item>

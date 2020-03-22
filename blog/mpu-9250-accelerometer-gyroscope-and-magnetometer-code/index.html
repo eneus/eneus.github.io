@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> MPU-9250 Accelerometer, Gyroscope and Magnetometer Code </title>
                 
@@ -86,7 +86,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -173,7 +173,6 @@
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
                         <p>In this Article you will get the code and library for MPU-9250 module. Watch video instruction on how to use MPU-9250.</p>
-
 <ul>
 <li><a href="https://github.com/bolderflight/MPU9250">Get MPU-9250 Library from Github</a></li>
 <li><a href="/books/PS-MPU-9250A-01-v1.1.pdf">Data sheet for MPU-9250</a></li>
@@ -184,114 +183,105 @@
 <li><a href="https://www.instructables.com/id/Arduino-Nano-Accelerometer-Gyroscope-Compass-MPU92/">Arduino Nano: Accelerometer Gyroscope Compass MPU9250 I2C Sensor With Visuino</a></li>
 <li><a href="https://docs.forward-loop.com/drivers/mpu9250/master/index.html">Drivers for MPU9250 IMU Sensor</a></li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/*
+</span><span style="color:#75715e">* Library: https://github.com/bolderflight/MPU9250
+</span><span style="color:#75715e">Basic_I2C.ino
+</span><span style="color:#75715e">Brian R Taylor
+</span><span style="color:#75715e">brian.taylor@bolderflight.com
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">Copyright (c) 2017 Bolder Flight Systems
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+</span><span style="color:#75715e">and associated documentation files (the &#34;Software&#34;), to deal in the Software without restriction, 
+</span><span style="color:#75715e">including without limitation the rights to use, copy, modify, merge, publish, distribute, 
+</span><span style="color:#75715e">sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
+</span><span style="color:#75715e">furnished to do so, subject to the following conditions:
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">The above copyright notice and this permission notice shall be included in all copies or 
+</span><span style="color:#75715e">substantial portions of the Software.
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
+</span><span style="color:#75715e">BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+</span><span style="color:#75715e">NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+</span><span style="color:#75715e">DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+</span><span style="color:#75715e">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</span><span style="color:#75715e">*/</span>
+<span style="color:#75715e">/*
+</span><span style="color:#75715e"> * Updated by Ahmad Shamshiri on July 09, 2018 for Robojax.com
+</span><span style="color:#75715e"> * in Ajax, Ontario, Canada
+</span><span style="color:#75715e"> * watch instrucion video for this code: 
+</span><span style="color:#75715e">For this sketch you need to connect:
+</span><span style="color:#75715e">VCC to 5V and GND to GND of Arduino
+</span><span style="color:#75715e">SDA to A4 and SCL to A5
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">S20A is 3.3V voltage regulator MIC5205-3.3BM5
+</span><span style="color:#75715e">*/</span>
 
-<pre><code class="language-c">/*
-* Library: https://github.com/bolderflight/MPU9250
-Basic_I2C.ino
-Brian R Taylor
-brian.taylor@bolderflight.com
+<span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&#34;MPU9250.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// an MPU9250 object with the MPU-9250 sensor on I2C bus 0 with address 0x68
+</span><span style="color:#75715e"></span>MPU9250 <span style="color:#a6e22e">IMU</span>(Wire,<span style="color:#ae81ff">0x68</span>);
+<span style="color:#66d9ef">int</span> status;
 
-Copyright (c) 2017 Bolder Flight Systems
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
+  <span style="color:#75715e">// serial to display data
+</span><span style="color:#75715e"></span>  Serial.begin(<span style="color:#ae81ff">115200</span>);
+  <span style="color:#66d9ef">while</span>(<span style="color:#f92672">!</span>Serial) {}
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
-and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, 
-including without limitation the rights to use, copy, modify, merge, publish, distribute, 
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or 
-substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
-BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-/*
- * Updated by Ahmad Shamshiri on July 09, 2018 for Robojax.com
- * in Ajax, Ontario, Canada
- * watch instrucion video for this code: 
-For this sketch you need to connect:
-VCC to 5V and GND to GND of Arduino
-SDA to A4 and SCL to A5
-
-S20A is 3.3V voltage regulator MIC5205-3.3BM5
-*/
-
-#include &quot;MPU9250.h&quot;
-
-// an MPU9250 object with the MPU-9250 sensor on I2C bus 0 with address 0x68
-MPU9250 IMU(Wire,0x68);
-int status;
-
-void setup() {
-  // serial to display data
-  Serial.begin(115200);
-  while(!Serial) {}
-
-  // start communication with IMU 
-  status = IMU.begin();
-  if (status &lt; 0) {
-    Serial.println(&quot;IMU initialization unsuccessful&quot;);
-    Serial.println(&quot;Check IMU wiring or try cycling power&quot;);
-    Serial.print(&quot;Status: &quot;);
+  <span style="color:#75715e">// start communication with IMU 
+</span><span style="color:#75715e"></span>  status <span style="color:#f92672">=</span> IMU.begin();
+  <span style="color:#66d9ef">if</span> (status <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) {
+    Serial.println(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">IMU initialization unsuccessful</span><span style="color:#e6db74">&#34;</span>);
+    Serial.println(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Check IMU wiring or try cycling power</span><span style="color:#e6db74">&#34;</span>);
+    Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Status: </span><span style="color:#e6db74">&#34;</span>);
     Serial.println(status);
-    while(1) {}
+    <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>) {}
   }
 }
 
-void loop() {
-  // read the sensor
-  IMU.readSensor();
-  // display the data
-  Serial.print(&quot;AccelX: &quot;);
-  Serial.print(IMU.getAccelX_mss(),6);
-  Serial.print(&quot;	&quot;);
-  Serial.print(&quot;AccelY: &quot;);  
-  Serial.print(IMU.getAccelY_mss(),6);
-  Serial.print(&quot;	&quot;);
-  Serial.print(&quot;AccelZ: &quot;);  
-  Serial.println(IMU.getAccelZ_mss(),6);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
+  <span style="color:#75715e">// read the sensor
+</span><span style="color:#75715e"></span>  IMU.readSensor();
+  <span style="color:#75715e">// display the data
+</span><span style="color:#75715e"></span>  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelX: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(IMU.getAccelX_mss(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelY: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(IMU.getAccelY_mss(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.println(IMU.getAccelZ_mss(),<span style="color:#ae81ff">6</span>);
   
-  Serial.print(&quot;GyroX: &quot;);
-  Serial.print(IMU.getGyroX_rads(),6);
-  Serial.print(&quot;	&quot;);
-  Serial.print(&quot;GyroY: &quot;);  
-  Serial.print(IMU.getGyroY_rads(),6);
-  Serial.print(&quot;	&quot;);
-  Serial.print(&quot;GyroZ: &quot;);  
-  Serial.println(IMU.getGyroZ_rads(),6);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroX: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(IMU.getGyroX_rads(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroY: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(IMU.getGyroY_rads(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.println(IMU.getGyroZ_rads(),<span style="color:#ae81ff">6</span>);
 
-  Serial.print(&quot;MagX: &quot;);  
-  Serial.print(IMU.getMagX_uT(),6);
-  Serial.print(&quot;	&quot;);  
-  Serial.print(&quot;MagY: &quot;);
-  Serial.print(IMU.getMagY_uT(),6);
-  Serial.print(&quot;	&quot;);
-  Serial.print(&quot;MagZ: &quot;);  
-  Serial.println(IMU.getMagZ_uT(),6);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagX: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(IMU.getMagX_uT(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagY: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(IMU.getMagY_uT(),<span style="color:#ae81ff">6</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.println(IMU.getMagZ_uT(),<span style="color:#ae81ff">6</span>);
   
-  Serial.print(&quot;Temperature in C: &quot;);
-  Serial.println(IMU.getTemperature_C(),6);
+  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Temperature in C: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.println(IMU.getTemperature_C(),<span style="color:#ae81ff">6</span>);
   Serial.println();
-  delay(200);
+  delay(<span style="color:#ae81ff">200</span>);
 } 
-</code></pre>
-
-<p>Video explanation:<br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mzwovYcozvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UW9RyHPSPF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Qk8R-TLZo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N1Mva_A5D7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fhXONwuf7fs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</code></pre></div><p>Video explanation:\</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>raspivid -t 0 -h 720 -w 1080 -fps 25 -hf -b 2000000 -o - | gst-launch-1.0 -v fdsrc ! h264parse !  rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=YOUR_RPI_IP_ADDRESS port=5000</p>
-
 <p>gst-launch-1.0 rtspsrc location=rtsp://140.114.188.219/axis-media/media.amp latency=1200 ! rtph264depay ! h264parse ! mppvideodec ! rkximagesink sync=false</p>
 
                     </div>

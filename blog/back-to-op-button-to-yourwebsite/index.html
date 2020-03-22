@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> &#39;Back to Top&#39; Button for your website </title>
                 
@@ -84,7 +84,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -169,140 +169,114 @@
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
                         <p>A <strong>Back To Top</strong> button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.</p>
-
-<p>If you want to add a back to top button while you&rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.</p>
-
+<p>If you want to add a back to top button while you're still designing a website, or just curious about how you can build one on your own, this article for you.</p>
 <p>Our code would consist of three parts:</p>
-
 <ul>
 <li>tiny HTML,</li>
 <li>CSS styling,</li>
 <li>small jQuery script.</li>
 </ul>
-
 <p>Let’s start with HTML.
 You need a simple HTML button code:</p>
-
-<pre><code class="language-html">&lt;div class=&quot;scroll-top&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>The button will consist of layout <code>class=&quot;scroll-top&quot;</code> which located on the page by fixed position, usualy on the bottom left or right. And &lsquo;a&rsquo; tag with <code>class=&quot;btn&quot;</code> -  actually this a scroll top link styled like a button.  We&rsquo;ll don&rsquo;t use additional libraries or font styles for icon and will draw it by css.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scroll-top&#34;</span>&gt;
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>The button will consist of layout <code>class=&quot;scroll-top&quot;</code> which located on the page by fixed position, usualy on the bottom left or right. And &lsquo;a&rsquo; tag with <code>class=&quot;btn&quot;</code> -  actually this a scroll top link styled like a button.  We'll don't use additional libraries or font styles for icon and will draw it by css.</p>
 <p>The initial styles for the button would look like this:</p>
-
-<pre><code class="language-css">.scroll-top {
-  position:fixed;
-  bottom: 35px;
-  right: 20px;
-  transition: background-color .3s,
-     opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">scroll-top</span> {
+  <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">fixed</span>;
+  <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">background</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span> <span style="color:#ae81ff">.3</span><span style="color:#66d9ef">s</span>,
+     <span style="color:#66d9ef">opacity</span> <span style="color:#ae81ff">.5</span><span style="color:#66d9ef">s</span>, <span style="color:#66d9ef">visibility</span> <span style="color:#ae81ff">.5</span><span style="color:#66d9ef">s</span>;
+  <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0</span>;
+  <span style="color:#66d9ef">visibility</span>: <span style="color:#66d9ef">hidden</span>;
+  <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">1000</span>;
 }
-.btn {
-  display: inline-block;
-  background-color: transparent;
-  border: 4px solid #0697ae;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0px;
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: background-color .3s, transform 0.25s;
+.<span style="color:#a6e22e">btn</span> {
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">inline</span><span style="color:#f92672">-</span><span style="color:#66d9ef">block</span>;
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">transparent</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#0697ae</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span> <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">s</span>;
+  <span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">background</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span> <span style="color:#ae81ff">.3</span><span style="color:#66d9ef">s</span>, <span style="color:#66d9ef">transform</span> <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">s</span>;
 }
-.btn::after,
-.btn::before {
-    content: &quot;&quot;;
-    height: 4px;
-    width: 22px;
-    background: #5b5b5b;
-    top: 26px;
-    position: absolute;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 100%;
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: background-color .3s, transform 0.25s;
+.<span style="color:#a6e22e">btn</span>::<span style="color:#a6e22e">after</span><span style="color:#f92672">,</span>
+.<span style="color:#a6e22e">btn</span>::<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">content</span>: <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">background</span>: <span style="color:#ae81ff">#5b5b5b</span>;
+    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">26</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform-origin</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">transform-origin</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span> <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">s</span>;
+    <span style="color:#66d9ef">transition</span>: <span style="color:#66d9ef">background</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span> <span style="color:#ae81ff">.3</span><span style="color:#66d9ef">s</span>, <span style="color:#66d9ef">transform</span> <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">s</span>;
 }
-.btn::before {
-    left: 23px;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+.<span style="color:#a6e22e">btn</span>::<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">23</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate3d(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate3d(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">45</span><span style="color:#66d9ef">deg</span>);
 }
-.btn::after {
-    left: 13px;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+.<span style="color:#a6e22e">btn</span>::<span style="color:#a6e22e">after</span> {
+    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">13</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">transform</span>: rotate3d(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
+    <span style="color:#66d9ef">transform</span>: rotate3d(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">-45</span><span style="color:#66d9ef">deg</span>);
 }
-.btn:hover {
-  cursor: pointer;
-  background-color: #47afbf;
+.<span style="color:#a6e22e">btn</span>:<span style="color:#a6e22e">hover</span> {
+  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#47afbf</span>;
 }
-.btn:hover::after,
-.btn:hover::before {
-    background-color: #fff;
+.<span style="color:#a6e22e">btn</span>:<span style="color:#a6e22e">hover</span>::<span style="color:#a6e22e">after</span><span style="color:#f92672">,</span>
+.<span style="color:#a6e22e">btn</span>:<span style="color:#a6e22e">hover</span>::<span style="color:#a6e22e">before</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#fff</span>;
 }
-.btn:active {
-  background-color: #555;
+.<span style="color:#a6e22e">btn</span>:<span style="color:#a6e22e">active</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#555</span>;
 }
-.scroll-top.show {
-  opacity: 1;
-  visibility: visible;
+.<span style="color:#a6e22e">scroll-top</span>.<span style="color:#a6e22e">show</span> {
+  <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">1</span>;
+  <span style="color:#66d9ef">visibility</span>: <span style="color:#66d9ef">visible</span>;
 }
-</code></pre>
-
-<p>Since the button is an anchor element, and anchors by default are inline elements, we need to change the display property to inline block so that we can assign dimensions to it.</p>
-
+</code></pre></div><p>Since the button is an anchor element, and anchors by default are inline elements, we need to change the display property to inline block so that we can assign dimensions to it.</p>
 <p>I had make it a square button of 50*50px with rounded corners of 50% it make it round.</p>
-
 <p>The fixed position would always enable our button to stay at the same spot when we scroll the page, and z-index of a very high number makes sure that the button is always overlapping other website elements.</p>
-
 <p>When we hover over a button the cursor changes to a pointer, and the background becomes a dark grey. In order to make the transition smooth, we assign the transition of 0.3 seconds to the background-color property. Also, when we click the button, the background color also changes and becomes a bit lighter.</p>
-
 <p><strong>Adding Functionality with jQuery</strong></p>
-
-<p>In this sub-section I&rsquo;ll actually show you how to make the button work as expected. The easiest way to achieve this is to use a JavaScript library jQuery. First, we have to add jQuery to the HTML markup of our code. Add this line of code just before the closing body tag.</p>
-
+<p>In this sub-section I'll actually show you how to make the button work as expected. The easiest way to achieve this is to use a JavaScript library jQuery. First, we have to add jQuery to the HTML markup of our code. Add this line of code just before the closing body tag.</p>
 <pre><code>&lt;script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js”&gt;&lt;/script&gt;
-</code></pre>
+</code></pre><p>Now we can write our script using jQuery syntax. Add the following script after the jQuery line:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>() {
 
-<p>Now we can write our script using jQuery syntax. Add the following script after the jQuery line:</p>
-
-<pre><code class="language-html">&lt;script&gt;
-jQuery(document).ready(function() {
-
-  var btn = $('#backtop');
-  $(window).scroll(function() {
-    if ($(window).scrollTop() &gt; 300) {
-      btn.addClass('show');
-    } else {
-      btn.removeClass('show');
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">btn</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#backtop&#39;</span>);
+  <span style="color:#a6e22e">$</span>(window).<span style="color:#a6e22e">scroll</span>(<span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">$</span>(window).<span style="color:#a6e22e">scrollTop</span>() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">300</span>) {
+      <span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#39;show&#39;</span>);
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">removeClass</span>(<span style="color:#e6db74">&#39;show&#39;</span>);
     }
   });
 
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+  <span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {
+    <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
+    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;html, body&#39;</span>).<span style="color:#a6e22e">animate</span>({<span style="color:#a6e22e">scrollTop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">0</span>}, <span style="color:#e6db74">&#39;300&#39;</span>);
   });
 
 });
-&lt;/script&gt;
-</code></pre>
-
-<p>Congratulation! You done it!</p>
-
-<p>Now each time we click the button, it will take us to the top of the page.<br />
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Congratulation! You done it!</p>
+<p>Now each time we click the button, it will take us to the top of the page.<br>
 If you are looking for more detailed information about pieces of code you alway can finde full documentation on the official <a href="https://api.jquery.com/scroll/">jQuery</a> website.</p>
-
-<p><strong>Demo</strong><br />
-You can see the final result in my <a href="https://codepen.io/eneus/pen/qGYaJE">CodePen demo</a>. I’ve also included some sample text up there for demonstration purposes. Or just looking on the left sidebar of my website. <i class="fa fa-long-arrow-left" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i></p>
-
-<p><strong>Final Thoughts</strong><br />
+<p><strong>Demo</strong><br>
+You can see the final result in my <a href="https://codepen.io/eneus/pen/qGYaJE">CodePen demo</a>. I’ve also included some sample text up there for demonstration purposes. Or just looking on the left sidebar of my website. <!-- raw HTML omitted --><!-- raw HTML omitted --> <!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><strong>Final Thoughts</strong><br>
 Back to top buttons are a great usability element of a web page, and having one on your website adds a small but helpful detail most of us are used to.</p>
-
 <p>Have fun coding!</p>
 
                     </div>

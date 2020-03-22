@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> A FIFO Buffer Implementation </title>
                 
@@ -86,7 +86,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -172,16 +172,10 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<p>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.</p>
-
+                        <p>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.</p>
 <p>A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the buffer is full, and the implementation must define if the oldest data is discarded or the write is not completed. In the example, below the write is not completed.</p>
-
-<h3 id="general-implementation">General Implementation</h3>
-
+<h3 id="general-implementation">General Implementation\</h3>
 <p>The code below shows a general implementation of a FIFO buffer. The code assumes an overflow condition is not allowed (that is when the head meets the tail, the buffer is full and no more data can be written).</p>
-
 <pre><code>typedef struct {
      char * buf;
      int head;
@@ -239,15 +233,11 @@ int fifo_write(fifo_t * f, const void * buf, int nbytes){
      }
      return nbytes;
 }
-</code></pre>
-
-<p>Using a FIFO with a Microcontroller UART
+</code></pre><p>Using a FIFO with a Microcontroller UART
 Many microcontroller designs have limited buffer space for data arriving on the UART. Incorporating a FIFO in the UART ISR can make it easier to manage incoming data. The following pseudo-code uses the above FIFO as part of the UART ISR.</p>
-
 <ul>
-<li><strong><em>FIFO</em></strong>’s are very simple and powerful mechanisms for managing data in real-time systems. This example can be easily adapted to work with I2S. With I2S, it is better to have the FIFO operate on frames rather than on bytes. This way, the I2S frame can be defined to be 32 bytes in 1ms and when the frame is full the head points to the next frame. A C implementation of a framed fifo is available in my MPU9250 Driver.</li>
+<li><em><strong>FIFO</strong></em>’s are very simple and powerful mechanisms for managing data in real-time systems. This example can be easily adapted to work with I2S. With I2S, it is better to have the FIFO operate on frames rather than on bytes. This way, the I2S frame can be defined to be 32 bytes in 1ms and when the frame is full the head points to the next frame. A C implementation of a framed fifo is available in my MPU9250 Driver.</li>
 </ul>
-
 <pre><code>static fifo_t * uart_fifo;
 
 void uart_fifo_init(fifo_t * fifo){
@@ -265,15 +255,10 @@ void uart_isr(void){
 
      //execute any required ISR exit code
 }
-</code></pre>
-
-<p>Using a FIFO in the above way lessens the real-time requirements for an application as well as gives the application developer more leeway in handling incoming data.</p>
-
+</code></pre><p>Using a FIFO in the above way lessens the real-time requirements for an application as well as gives the application developer more leeway in handling incoming data.</p>
 <h3 id="conclusions">Conclusions</h3>
-
 <p>FIFOs are a storage mechanism which operate on a first-in, first-out basis. They are useful for managing the arrival of asynchronous data. Integrating a FIFO with an ISR, such as the UART ISR, can make processing the incoming data much easier for the application developer.</p>
-
-<!--- [Source](https://sandilands.info/sgordon/live-webca-streaming-using-vlc-command-line) -->
+<!-- raw HTML omitted -->
 
                     </div>
                 </div>

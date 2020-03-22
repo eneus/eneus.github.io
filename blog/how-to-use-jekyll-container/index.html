@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.53" />
+        <meta name="generator" content="Hugo 0.60.1" />
 		
         <title> How to use Jekyll Docker container </title>
                 
@@ -84,7 +84,7 @@
                 
                 <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/about">About</a></li>
+                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
                 
             </ul>
         </nav>
@@ -168,12 +168,8 @@
                     </div>
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
-                        
-
-<p>Jekyll&rsquo;s Docker Container with Demo Content and demo site.</p>
-
+                        <p>Jekyll's Docker Container with Demo Content and demo site.</p>
 <p><strong>Plugins included:</strong></p>
-
 <pre><code>- Jekyll: 3.8.3
   -- jekyll-paginate
   -- jekyll-sitemap
@@ -189,49 +185,32 @@
 - NodeJS: 8.9.3
 -- NPM: 5.5.1
 -- Yarn: 1.3.2
-</code></pre>
-
-<h2 id="the-first-of-all">The first of all:</h2>
-
+</code></pre><h2 id="the-first-of-all">The first of all:</h2>
 <p><strong>Install Docker:</strong></p>
-
 <ul>
-<li>On <strong><em>Linux Ubuntu/Debian</em></strong>:</li>
-</ul>
-
+<li>
+<p>On <em><strong>Linux Ubuntu/Debian</strong></em>:</p>
 <p><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a>
-  <a href="https://docs.docker.com/install/linux/docker-ce/debian/">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
-
-<ul>
-<li>On <strong><em>MacOS</em></strong>:</li>
-</ul>
-
+<a href="https://docs.docker.com/install/linux/docker-ce/debian/">https://docs.docker.com/install/linux/docker-ce/debian/</a></p>
+</li>
+<li>
+<p>On <em><strong>MacOS</strong></em>:</p>
 <p><a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></p>
-
-<ul>
-<li>On <strong><em>Windows</em></strong>:</li>
-</ul>
-
+</li>
+<li>
+<p>On <em><strong>Windows</strong></em>:</p>
 <p><a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a></p>
-
+</li>
+</ul>
 <p><strong>Install Docker Compose:</strong></p>
-
 <ul>
 <li><a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></li>
 </ul>
-
 <p><strong>Download repository:</strong></p>
-
 <pre><code>git clone git@github.com:eneus/jekyll.git
-</code></pre>
-
-<p><strong>Go to downloaded folder:</strong></p>
-
-<pre><code class="language-shell">cd jekyll
-</code></pre>
-
-<p><strong>Configure your .env file:</strong></p>
-
+</code></pre><p><strong>Go to downloaded folder:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd jekyll
+</code></pre></div><p><strong>Configure your .env file:</strong></p>
 <pre><code>COMPOSE_FILE=./configs/docker-compose.yml
 COMPOSE_PROJECT=demo           # Folder  (src/${COMPOSE_PROJECT}), config file ${COMPOSE_PROJECT}.yml,
 COMPOSE_PROJECT_NAME=demo      # short name used in container name Ex.: demo_jekyll
@@ -241,31 +220,17 @@ SITE_MAIL=admin@demosite.com
 IPRANGE=192.168.16.0/20
 CUID=1000
 CGID=1000
-</code></pre>
-
-<p><strong>Start docker container via Makefile:</strong></p>
-
-<pre><code class="language-shell">$ make all
-</code></pre>
-
-<p><strong>Start docker container via docker-compose:</strong></p>
-
-<pre><code class="language-shell">docker-compose up
-</code></pre>
-
-<p>or</p>
-
-<pre><code class="language-shell">docker-compose up -d     //in background
-</code></pre>
-
-<p><strong>Now you can access to you static site:</strong></p>
-
+</code></pre><p><strong>Start docker container via Makefile:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ make all
+</code></pre></div><p><strong>Start docker container via docker-compose:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker-compose up
+</code></pre></div><p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker-compose up -d     //in background
+</code></pre></div><p><strong>Now you can access to you static site:</strong></p>
 <ul>
-<li>Jekyll Server: <a href="http://localhost:4000">http://localhost:4000</a></li>
+<li>Jekyll Server: http://localhost:4000</li>
 </ul>
-
-<hr />
-
+<hr>
 <p>Image Credits: <a href="http://gratisography.com/">http://gratisography.com/</a></p>
 
                     </div>
