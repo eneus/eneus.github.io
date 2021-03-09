@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> SSH Examples, Tips &amp; Tunnels </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -226,7 +227,7 @@ In the above example ssh configuration file you can see that there are two Host 
 The ssh client comes with two other very handy tools for moving files around over an encrypted ssh connection. The commands are scp and sftp, see the examples below for basic usage. Note that many parameters for the ssh can be applied to these commands also.</p>
 <p>localhost:~$ scp mypic.png neo@remoteserver:/media/data/mypic_2.png
 In this example the file mypic.png was copied to the remoteserver to file system location /media/data and was renamed to mypic_2.png.</p>
-<p>Don't forget the difference in the port parameter. This is a gotcha that hits everyone using scp on the command line. The port parameter is -P not -p as it is in the ssh client.!. You will forget, but don't worry everyone does.</p>
+<p>Don&rsquo;t forget the difference in the port parameter. This is a gotcha that hits everyone using scp on the command line. The port parameter is -P not -p as it is in the ssh client.!. You will forget, but don&rsquo;t worry everyone does.</p>
 <p>For those familiar with command line ftp, many of the commands are similar when using sftp. You can push, put and ls to your hearts desire.</p>
 <p>sftp neo@remoteserver
 Practical Examples
@@ -245,7 +246,7 @@ Now we can configure our browser to connect to the socks proxy. In Firefox selec
 <p>Note the option at the bottom of the form to force browser DNS requests to also go over the socks proxy. If you are using the proxy to encrypt your web traffic on the local network you will definitely want to select this option so the DNS requests are also tunnelled over the SSH connection.</p>
 <p>Enable Socks Proxy on Chrome
 Using a command line parameter when launching Chrome will use the socks proxy and also tunnel DNS requests from the browser over the socks5 proxy. Trust but verify, use tcpdump (tcpdump not port 22) to confirm the DNS requests are no longer visible.</p>
-<p>localhost:~$ google-chrome &ndash;proxy-server=&quot;socks5://192.168.1.10:8888&rdquo;
+<p>localhost:~$ google-chrome &ndash;proxy-server=&ldquo;socks5://192.168.1.10:8888&rdquo;
 Using other applications with the Proxy
 Keep in mind that there are many other applications that can utilise a socks proxy. A web browser is simply the most popular. Some applications will have configuration options for use of the proxy. Others may need some help by using a helper program that talks the socks protocol. An example of this is proxychains. Using this tool we can for example use Microsoft RDP over the socks proxy.</p>
 <p>localhost:~$ proxychains rdesktop $RemoteWindowsServer
@@ -308,7 +309,7 @@ Now we should have a direct route to the other host (route -n and ping 10.10.10.
 On the remote side we need to enable ip_forward and iptables.</p>
 <p>remoteserver:~# echo 1 &gt; /proc/sys/net/ipv4/ip_forward
 remoteserver:~# iptables -t nat -A POSTROUTING -s 10.10.10.2 -o enp7s0 -j MASQUERADE
-Boom! Layer three VPN through an SSH tunnel. Now that's winning.</p>
+Boom! Layer three VPN through an SSH tunnel. Now that&rsquo;s winning.</p>
 <p>Any trouble, try tcpdump and ping to see where its broken. Since we are playing at layer 3 our icmp packets should be jumping through that tunnel.</p>
 <ol start="7">
 <li>Copy your SSH key (ssh-copy-id)
@@ -330,7 +331,7 @@ I grabbed this one from our tcpdump examples. Use it for a remote packet capture
 <p>:~$ ssh root@remoteserver &lsquo;tcpdump -c 1000 -nn -w - not port 22&rsquo; | wireshark -k -i -</p>
 <ol start="10">
 <li>SSH Copy Folder from Local to Remote
-A neat trick that compresses a folder using bzip2 (that's the -j in the tar command), then extracts the bzip2 stream on the other side creating a duplicate of the folder on the remote server.</li>
+A neat trick that compresses a folder using bzip2 (that&rsquo;s the -j in the tar command), then extracts the bzip2 stream on the other side creating a duplicate of the folder on the remote server.</li>
 </ol>
 <p>localhost:~$ tar -cvj /datafolder | ssh remoteserver &ldquo;tar -xj -C /datafolder&rdquo;
 Copy remote folder to local tar archive</p>
@@ -389,7 +390,7 @@ Using <code>sshfs</code> - an ssh filesystem client, we can mount a local direct
 Most readers will understand the value in using Two Factor Authentication, the same benefits that apply to your banking or Google Account can be applied to your SSH service.</p>
 <p>Of course ssh comes with a form of Two Factor capability included, that being a passphrase and an SSH key. An advantage of using a hardware based token or the Google Authenticator App is the fact that they are generally coming from a second physical device.</p>
 <p>See our 8 minute guide to getting started with Google Authenticator and SSH.</p>
-<h3 id="20-bouncing-through-jump-hosts-with-ssh-and-j">20. Bouncing through jump hosts with ssh and -J\</h3>
+<h3 id="20-bouncing-through-jump-hosts-with-ssh-and--j">20. Bouncing through jump hosts with ssh and -J\</h3>
 <p>When network segmentation means you are jumping through multiple ssh hosts to get to a final destination network or host, this jump host shortcut might be just what you need. Requires OpenSSH version 7.3+.</p>
 <pre><code>localhost:~$ ssh -J host1,host2,host3 user@host4.internal
 </code></pre><p>A key thing to understand here is that this is not the same as <code>ssh host1</code> then <code>user@host1:~$ ssh host2</code>, the <code>-J</code> jump parameter uses forwarding trickery so that the localhost is establishing the session with the next host in the chain. So our localhost is authenticating with host4 in the above example; meaning our localhost keys are used and the session from localhost to host4 is encrypted end to end.</p>

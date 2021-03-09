@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> Double Linked List </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -284,8 +285,8 @@ We can use the following steps to delete a node from beginning of the double lin
 <li><strong>Step 6</strong> - Finally, display temp → data with arrow pointing to NULL (temp → data &mdash;&gt; NULL).</li>
 </ul>
 <h4 id="implementation-of-double-linked-list-using-c-programming">Implementation of Double Linked List using C Programming</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#</span><span style="color:#75715e">include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span><span style="color:#75715e">&lt;conio.h&gt;</span><span style="color:#75715e">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span><span style="color:#75715e">&lt;conio.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtBeginning</span>(<span style="color:#66d9ef">int</span>);
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtEnd</span>(<span style="color:#66d9ef">int</span>);
@@ -307,56 +308,56 @@ We can use the following steps to delete a node from beginning of the double lin
    clrscr();
    <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
    {
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">*********** MENU *************</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. Insert</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. Delete</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Display</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Exit</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
-      scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice1);
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">*********** MENU *************</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74">&#34;1. Insert</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. Delete</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Display</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Exit</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: &#34;</span>);
+      scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>choice1);
       <span style="color:#66d9ef">switch</span>()
       {
-         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the value to be inserted: </span><span style="color:#e6db74">&#34;</span>);
-         		 scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>value);
+         <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74">&#34;Enter the value to be inserted: &#34;</span>);
+         		 scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>value);
                  <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
                  {
-                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Inserting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. After a Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
-                    scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
+                 	printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Inserting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                 	printf(<span style="color:#e6db74">&#34;1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. After a Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: &#34;</span>);
+                    scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
                     <span style="color:#66d9ef">switch</span>(choice2)
                     {
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> 	insertAtBeginning(value);
                        		<span style="color:#66d9ef">break</span>;
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> 	insertAtEnd(value);
                        		<span style="color:#66d9ef">break</span>;
-                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the location after which you want to insert: </span><span style="color:#e6db74">&#34;</span>);
-                       		scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>location);
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74">&#34;Enter the location after which you want to insert: &#34;</span>);
+                       		scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>location);
                        		insertAfter(value,location);
                        		<span style="color:#66d9ef">break</span>;
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> 	<span style="color:#66d9ef">goto</span> EndSwitch;
-                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Inserting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Inserting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
                     }
                  }
          <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>)
                  {
-                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Deleting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-                 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Specific Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: </span><span style="color:#e6db74">&#34;</span>);
-                    scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
+                 	printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Select from the following Deleting options</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                 	printf(<span style="color:#e6db74">&#34;1. At Beginning</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. At End</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">3. Specific Node</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">4. Cancel</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Enter your choice: &#34;</span>);
+                    scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>choice2);
                     <span style="color:#66d9ef">switch</span>(choice2)
                     {
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span> 	deleteBeginning();
                        		<span style="color:#66d9ef">break</span>;
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span> 	deleteEnd();
                        		<span style="color:#66d9ef">break</span>;
-                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Enter the Node value to be deleted: </span><span style="color:#e6db74">&#34;</span>);
-                       		scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>location);
+                       <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> 	printf(<span style="color:#e6db74">&#34;Enter the Node value to be deleted: &#34;</span>);
+                       		scanf(<span style="color:#e6db74">&#34;%d&#34;</span>,<span style="color:#f92672">&amp;</span>location);
                        		deleteSpecic(location);
                        		<span style="color:#66d9ef">break</span>;
                        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span>	<span style="color:#66d9ef">goto</span> EndSwitch;
-                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Deleting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+                       <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct Deleting option!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
                     }
                  }
                  EndSwitch: <span style="color:#66d9ef">break</span>;
          <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">:</span> display();
          	 <span style="color:#66d9ef">break</span>;
          <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">:</span> exit(<span style="color:#ae81ff">0</span>);
-         <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct option!!!</span><span style="color:#e6db74">&#34;</span>);
+         <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span> printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Please select correct option!!!&#34;</span>);
       }
    }
 }
@@ -365,163 +366,163 @@ We can use the following steps to delete a node from beginning of the double lin
 {
     <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
     newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
-    newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
-    newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> NULL;
-    <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+    newNode <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> value;
+    newNode <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> NULL;
+    <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
     {
-       newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> NULL;
+       newNode <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> NULL;
        head <span style="color:#f92672">=</span> newNode;
     }
     <span style="color:#66d9ef">else</span>
     {
-       newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> head;
+       newNode <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> head;
        head <span style="color:#f92672">=</span> newNode;
     }
-    printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);
+    printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!&#34;</span>);
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAtEnd</span>(<span style="color:#66d9ef">int</span> value)
 {
    <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
    newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
-   newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
-   newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> NULL;
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+   newNode <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> value;
+   newNode <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> NULL;
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
    {
-      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> NULL;
+      newNode <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> NULL;
       head <span style="color:#f92672">=</span> newNode;
    }
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
-      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> NULL)
-         temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
-      temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> newNode;
-      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> temp;
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">!=</span> NULL)
+         temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-&gt;</span> next;
+      temp <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> newNode;
+      newNode <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> temp;
    }
-   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);   
+   printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!&#34;</span>);   
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insertAfter</span>(<span style="color:#66d9ef">int</span> value, <span style="color:#66d9ef">int</span> location)
 {
    <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>newNode;
    newNode <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> Node<span style="color:#f92672">*</span>)malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> Node));
-   newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> value;
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+   newNode <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">=</span> value;
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
    {
-      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> NULL;
+      newNode <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> newNode <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> NULL;
       head <span style="color:#f92672">=</span> newNode;
    }
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp1 <span style="color:#f92672">=</span> head, temp2;
-      <span style="color:#66d9ef">while</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">!</span><span style="color:#f92672">=</span> location)
+      <span style="color:#66d9ef">while</span>(temp1 <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">!=</span> location)
       {
-         <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+         <span style="color:#66d9ef">if</span>(temp1 <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">==</span> NULL)
          {
-            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Given node is not found in the list!!!</span><span style="color:#e6db74">&#34;</span>);
+            printf(<span style="color:#e6db74">&#34;Given node is not found in the list!!!&#34;</span>);
             <span style="color:#66d9ef">goto</span> EndFunction;
          }
          <span style="color:#66d9ef">else</span>
          {
-            temp1 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+            temp1 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-&gt;</span> next;
          }
       }
-      temp2 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
-      temp1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> newNode;
-      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> temp1;
-      newNode <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> temp2;
-      temp2 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> newNode;
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!</span><span style="color:#e6db74">&#34;</span>);
+      temp2 <span style="color:#f92672">=</span> temp1 <span style="color:#f92672">-&gt;</span> next;
+      temp1 <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> newNode;
+      newNode <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> temp1;
+      newNode <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> temp2;
+      temp2 <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> newNode;
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Insertion success!!!&#34;</span>);
    }
    EndFunction:
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteBeginning</span>()
 {
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
+      printf(<span style="color:#e6db74">&#34;List is Empty!!! Deletion not possible!!!&#34;</span>);
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
-      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span><span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next)
+      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">==</span> temp <span style="color:#f92672">-&gt;</span> next)
       {
          head <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
       <span style="color:#66d9ef">else</span>{
-         head <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
-         head <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span> NULL;
+         head <span style="color:#f92672">=</span> temp <span style="color:#f92672">-&gt;</span> next;
+         head <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!&#34;</span>);
    }
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteEnd</span>()
 {
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
+      printf(<span style="color:#e6db74">&#34;List is Empty!!! Deletion not possible!!!&#34;</span>);
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
-      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">=</span><span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next)
+      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">==</span> temp <span style="color:#f92672">-&gt;</span> next)
       {
          head <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
       <span style="color:#66d9ef">else</span>{
-         <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> NULL)
-            temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
-         temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> NULL;
+         <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">!=</span> NULL)
+            temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-&gt;</span> next;
+         temp <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!&#34;</span>);
    }
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteSpecific</span>(<span style="color:#66d9ef">int</span> delValue)
 {
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">List is Empty!!! Deletion not possible!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
+      printf(<span style="color:#e6db74">&#34;List is Empty!!! Deletion not possible!!!&#34;</span>);
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
-      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data <span style="color:#f92672">!</span><span style="color:#f92672">=</span> delValue)
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-&gt;</span> data <span style="color:#f92672">!=</span> delValue)
       {
-         <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
+         <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">==</span> NULL)
          {
-            printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Given node is not found in the list!!!</span><span style="color:#e6db74">&#34;</span>);
+            printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Given node is not found in the list!!!&#34;</span>);
             <span style="color:#66d9ef">goto</span> FuctionEnd;
          }
          <span style="color:#66d9ef">else</span>
          {
-            temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+            temp <span style="color:#f92672">=</span> temp <span style="color:#f92672">-&gt;</span> next;
          }
       }
-      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">=</span><span style="color:#f92672">=</span> head)
+      <span style="color:#66d9ef">if</span>(temp <span style="color:#f92672">==</span> head)
       {
          head <span style="color:#f92672">=</span> NULL;
          free(temp);
       }
       <span style="color:#66d9ef">else</span>
       {
-         temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> previous <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">=</span> temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next;
+         temp <span style="color:#f92672">-&gt;</span> previous <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">=</span> temp <span style="color:#f92672">-&gt;</span> next;
          free(temp);   
       }
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Deletion success!!!&#34;</span>);
    }
    FuctionEnd:
 }
 <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">display</span>()
 {
-   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">=</span><span style="color:#f92672">=</span> NULL)
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List is Empty!!!</span><span style="color:#e6db74">&#34;</span>);
+   <span style="color:#66d9ef">if</span>(head <span style="color:#f92672">==</span> NULL)
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List is Empty!!!&#34;</span>);
    <span style="color:#66d9ef">else</span>
    {
       <span style="color:#66d9ef">struct</span> Node <span style="color:#f92672">*</span>temp <span style="color:#f92672">=</span> head;
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List elements are: </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NULL &lt;--- </span><span style="color:#e6db74">&#34;</span>);
-      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> next <span style="color:#f92672">!</span><span style="color:#f92672">=</span> NULL)
+      printf(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">List elements are: </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+      printf(<span style="color:#e6db74">&#34;NULL &lt;--- &#34;</span>);
+      <span style="color:#66d9ef">while</span>(temp <span style="color:#f92672">-&gt;</span> next <span style="color:#f92672">!=</span> NULL)
       {
-         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d &lt;===&gt; </span><span style="color:#e6db74">&#34;</span>,temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data);
+         printf(<span style="color:#e6db74">&#34;%d &lt;===&gt; &#34;</span>,temp <span style="color:#f92672">-&gt;</span> data);
       }
-      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d ---&gt; NULL</span><span style="color:#e6db74">&#34;</span>, temp <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> data);
+      printf(<span style="color:#e6db74">&#34;%d ---&gt; NULL&#34;</span>, temp <span style="color:#f92672">-&gt;</span> data);
    }
 }
 </code></pre></div>

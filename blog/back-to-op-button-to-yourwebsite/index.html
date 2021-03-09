@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> &#39;Back to Top&#39; Button for your website </title>
                 
@@ -72,19 +72,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -169,7 +170,7 @@
                     <div class="clear"></div>
                     <div class="content-wrap content-660 center-relative">
                         <p>A <strong>Back To Top</strong> button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.</p>
-<p>If you want to add a back to top button while you're still designing a website, or just curious about how you can build one on your own, this article for you.</p>
+<p>If you want to add a back to top button while you&rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.</p>
 <p>Our code would consist of three parts:</p>
 <ul>
 <li>tiny HTML,</li>
@@ -181,7 +182,7 @@ You need a simple HTML button code:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scroll-top&#34;</span>&gt;
     &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p>The button will consist of layout <code>class=&quot;scroll-top&quot;</code> which located on the page by fixed position, usualy on the bottom left or right. And &lsquo;a&rsquo; tag with <code>class=&quot;btn&quot;</code> -  actually this a scroll top link styled like a button.  We'll don't use additional libraries or font styles for icon and will draw it by css.</p>
+</code></pre></div><p>The button will consist of layout <code>class=&quot;scroll-top&quot;</code> which located on the page by fixed position, usualy on the bottom left or right. And &lsquo;a&rsquo; tag with <code>class=&quot;btn&quot;</code> -  actually this a scroll top link styled like a button.  We&rsquo;ll don&rsquo;t use additional libraries or font styles for icon and will draw it by css.</p>
 <p>The initial styles for the button would look like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">scroll-top</span> {
   <span style="color:#66d9ef">position</span>:<span style="color:#66d9ef">fixed</span>;
@@ -248,7 +249,7 @@ You need a simple HTML button code:</p>
 <p>The fixed position would always enable our button to stay at the same spot when we scroll the page, and z-index of a very high number makes sure that the button is always overlapping other website elements.</p>
 <p>When we hover over a button the cursor changes to a pointer, and the background becomes a dark grey. In order to make the transition smooth, we assign the transition of 0.3 seconds to the background-color property. Also, when we click the button, the background color also changes and becomes a bit lighter.</p>
 <p><strong>Adding Functionality with jQuery</strong></p>
-<p>In this sub-section I'll actually show you how to make the button work as expected. The easiest way to achieve this is to use a JavaScript library jQuery. First, we have to add jQuery to the HTML markup of our code. Add this line of code just before the closing body tag.</p>
+<p>In this sub-section I&rsquo;ll actually show you how to make the button work as expected. The easiest way to achieve this is to use a JavaScript library jQuery. First, we have to add jQuery to the HTML markup of our code. Add this line of code just before the closing body tag.</p>
 <pre><code>&lt;script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js”&gt;&lt;/script&gt;
 </code></pre><p>Now we can write our script using jQuery syntax. Add the following script after the jQuery line:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;

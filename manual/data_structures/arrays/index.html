@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> Arrays </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -200,12 +201,12 @@ An element is accessed by indexing the array name. This is done by placing the i
 <!-- raw HTML omitted -->
 <h3 id="arrays-in-detail">Arrays in Detail</h3>
 <p>Arrays are important to C and should need a lot more attention. The following important concepts related to array should be clear to a C programmer.</p>
-<h3 id="multidimensional-arrays-in-c">Multi-dimensional Arrays in C</h3>
+<h3 id="multi-dimensional-arrays-in-c">Multi-dimensional Arrays in C</h3>
 <p>C programming language allows multidimensional arrays. Here is the general form of a multidimensional array declaration −</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">type name[size1][size2]...[sizeN];
 </code></pre></div><p>For example, the following declaration creates a three dimensional integer array −</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> threedim[<span style="color:#ae81ff">5</span>][<span style="color:#ae81ff">10</span>][<span style="color:#ae81ff">4</span>];
-</code></pre></div><h3 id="twodimensional-arrays">Two-dimensional Arrays</h3>
+</code></pre></div><h3 id="two-dimensional-arrays">Two-dimensional Arrays</h3>
 <p>The simplest form of multidimensional array is the two-dimensional array. A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array of size [x][y], you would write something as follows −</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">type arrayName [ x ][ y ];
 </code></pre></div><p>Where type can be any valid C data type and arrayName will be a valid C identifier. A two-dimensional array can be considered as a table which will have x number of rows and y number of columns. A two-dimensional array a, which contains three rows and four columns can be shown as follows:</p>
@@ -213,21 +214,21 @@ An element is accessed by indexing the array name. This is done by placing the i
 <p>As explained above, you can have arrays with any number of dimensions, although it is likely that most of the arrays you create will be of one or two dimensions.</p>
 <h3 id="passing-arrays-as-function-arguments-in-c">Passing Arrays as Function Arguments in C</h3>
 <p>If you want to pass a single-dimension array as an argument in a function, you would have to declare a formal parameter in one of following three ways and all three declaration methods produce similar results because each tells the compiler that an integer pointer is going to be received. Similarly, you can pass multi-dimensional arrays as formal parameters.</p>
-<h4 id="way1">Way-1</h4>
+<h4 id="way-1">Way-1</h4>
 <p>Formal parameters as a pointer:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">myFunction</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>param) {
    .
    .
    .
 }
-</code></pre></div><h4 id="way2">Way-2</h4>
+</code></pre></div><h4 id="way-2">Way-2</h4>
 <p>Formal parameters as a sized array:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">myFunction</span>(<span style="color:#66d9ef">int</span> param[<span style="color:#ae81ff">10</span>]) {
    .
    .
    .
 }
-</code></pre></div><h4 id="way3">Way-3</h4>
+</code></pre></div><h4 id="way-3">Way-3</h4>
 <p>Formal parameters as an unsized array:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">myFunction</span>(<span style="color:#66d9ef">int</span> param[]) {
    .
@@ -242,8 +243,8 @@ An element is accessed by indexing the array name. This is done by placing the i
    <span style="color:#66d9ef">double</span> avg;
    <span style="color:#66d9ef">double</span> sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 
-   <span style="color:#66d9ef">for</span> (i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> size; <span style="color:#f92672">+</span><span style="color:#f92672">+</span>i) {
-      sum <span style="color:#f92672">+</span><span style="color:#f92672">=</span> arr[i];
+   <span style="color:#66d9ef">for</span> (i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> size; <span style="color:#f92672">++</span>i) {
+      sum <span style="color:#f92672">+=</span> arr[i];
    }
 
    avg <span style="color:#f92672">=</span> sum <span style="color:#f92672">/</span> size;
@@ -252,7 +253,7 @@ An element is accessed by indexing the array name. This is done by placing the i
 }
 </code></pre></div><p>Now, let us call the above function as follow:</p>
 <!-- raw HTML omitted -->
-<p>As you can see, the length of the array doesn't matter as far as the function is concerned because C performs no bounds checking for formal parameters.</p>
+<p>As you can see, the length of the array doesn&rsquo;t matter as far as the function is concerned because C performs no bounds checking for formal parameters.</p>
 
                     </div>
                 </div>

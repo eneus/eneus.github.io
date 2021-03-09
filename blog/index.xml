@@ -6,15 +6,20 @@
     <description>Recent content in Blogs on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://eneus.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 09 Feb 2021 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL Export Table to CSV</title>
+      <link>https://eneus.github.io/blog/mysql_export_table_to_csv/</link>
+      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/blog/mysql_export_table_to_csv/</guid>
+      <description>Sometimes we need keed data in some useful format and read it by available methods like Microsoft Excel, Google Spreadsheet, Libre Office, or something like that. In this post, I will show various techniques of how to export MySQL tables to a CSV file. The CSV stands for comma separated values. It will be useful to have data from MySQL database in CSV file format because you can analyze and format the data in the way you want.</description>
+    </item>
     
     <item>
       <title>A FIFO Buffer Implementation</title>
       <link>https://eneus.github.io/blog/a_fifo_buffer_implementation/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/a_fifo_buffer_implementation/</guid>
       <description>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.
@@ -98,9 +103,9 @@ In this article, I would like to provide a brief math primer for people who woul
       <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid>
-      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&#39;ve still a field which is using that missing module.
+      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
-drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&#39;t execute above commands on master/live database.</description>
+drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
     </item>
     
     <item>
@@ -110,7 +115,7 @@ drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE
       
       <guid>https://eneus.github.io/blog/back-to-op-button-to-yourwebsite/</guid>
       <description>A Back To Top button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.
-If you want to add a back to top button while you&#39;re still designing a website, or just curious about how you can build one on your own, this article for you.</description>
+If you want to add a back to top button while you&amp;rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.</description>
     </item>
     
     <item>
@@ -119,7 +124,7 @@ If you want to add a back to top button while you&#39;re still designing a websi
       <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/how-to-use-jekyll-container/</guid>
-      <description>Jekyll&#39;s Docker Container with Demo Content and demo site.
+      <description>Jekyll&amp;rsquo;s Docker Container with Demo Content and demo site.
 Plugins included:
 - Jekyll: 3.8.3 -- jekyll-paginate -- jekyll-sitemap -- jekyll-feed -- jekyll-multisite -- jekyll-github-metadata -- jekyll-seo-tag -- jekyll-watch -- jekyll-sass-converter -- jekyll-assets -- jekyll-multiple-languages-plugin - Compass: 1.0.3 - NodeJS: 8.9.3 -- NPM: 5.5.1 -- Yarn: 1.3.2 The first of all: Install Docker:
   On Linux Ubuntu/Debian:

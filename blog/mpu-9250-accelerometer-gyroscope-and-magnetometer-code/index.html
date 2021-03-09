@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> MPU-9250 Accelerometer, Gyroscope and Magnetometer Code </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -217,7 +218,7 @@
 </span><span style="color:#75715e">S20A is 3.3V voltage regulator MIC5205-3.3BM5
 </span><span style="color:#75715e">*/</span>
 
-<span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&#34;MPU9250.h&#34;</span><span style="color:#75715e">
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;MPU9250.h&#34;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// an MPU9250 object with the MPU-9250 sensor on I2C bus 0 with address 0x68
 </span><span style="color:#75715e"></span>MPU9250 <span style="color:#a6e22e">IMU</span>(Wire,<span style="color:#ae81ff">0x68</span>);
@@ -231,9 +232,9 @@
   <span style="color:#75715e">// start communication with IMU 
 </span><span style="color:#75715e"></span>  status <span style="color:#f92672">=</span> IMU.begin();
   <span style="color:#66d9ef">if</span> (status <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) {
-    Serial.println(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">IMU initialization unsuccessful</span><span style="color:#e6db74">&#34;</span>);
-    Serial.println(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Check IMU wiring or try cycling power</span><span style="color:#e6db74">&#34;</span>);
-    Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Status: </span><span style="color:#e6db74">&#34;</span>);
+    Serial.println(<span style="color:#e6db74">&#34;IMU initialization unsuccessful&#34;</span>);
+    Serial.println(<span style="color:#e6db74">&#34;Check IMU wiring or try cycling power&#34;</span>);
+    Serial.print(<span style="color:#e6db74">&#34;Status: &#34;</span>);
     Serial.println(status);
     <span style="color:#66d9ef">while</span>(<span style="color:#ae81ff">1</span>) {}
   }
@@ -243,34 +244,34 @@
   <span style="color:#75715e">// read the sensor
 </span><span style="color:#75715e"></span>  IMU.readSensor();
   <span style="color:#75715e">// display the data
-</span><span style="color:#75715e"></span>  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelX: </span><span style="color:#e6db74">&#34;</span>);
+</span><span style="color:#75715e"></span>  Serial.print(<span style="color:#e6db74">&#34;AccelX: &#34;</span>);
   Serial.print(IMU.getAccelX_mss(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelY: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;AccelY: &#34;</span>);  
   Serial.print(IMU.getAccelY_mss(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">AccelZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;AccelZ: &#34;</span>);  
   Serial.println(IMU.getAccelZ_mss(),<span style="color:#ae81ff">6</span>);
   
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroX: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;GyroX: &#34;</span>);
   Serial.print(IMU.getGyroX_rads(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroY: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;GyroY: &#34;</span>);  
   Serial.print(IMU.getGyroY_rads(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">GyroZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;GyroZ: &#34;</span>);  
   Serial.println(IMU.getGyroZ_rads(),<span style="color:#ae81ff">6</span>);
 
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagX: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;MagX: &#34;</span>);  
   Serial.print(IMU.getMagX_uT(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);  
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagY: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;MagY: &#34;</span>);
   Serial.print(IMU.getMagY_uT(),<span style="color:#ae81ff">6</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">	</span><span style="color:#e6db74">&#34;</span>);
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MagZ: </span><span style="color:#e6db74">&#34;</span>);  
+  Serial.print(<span style="color:#e6db74">&#34;	&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;MagZ: &#34;</span>);  
   Serial.println(IMU.getMagZ_uT(),<span style="color:#ae81ff">6</span>);
   
-  Serial.print(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Temperature in C: </span><span style="color:#e6db74">&#34;</span>);
+  Serial.print(<span style="color:#e6db74">&#34;Temperature in C: &#34;</span>);
   Serial.println(IMU.getTemperature_C(),<span style="color:#ae81ff">6</span>);
   Serial.println();
   delay(<span style="color:#ae81ff">200</span>);

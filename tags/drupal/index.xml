@@ -6,20 +6,16 @@
     <description>Recent content in drupal on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate>
-    
-	<atom:link href="https://eneus.github.io/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drupal8 - Unable to determine class for field...</title>
       <link>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</link>
       <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid>
-      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&#39;ve still a field which is using that missing module.
+      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
-drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&#39;t execute above commands on master/live database.</description>
+drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
     </item>
     
   </channel>

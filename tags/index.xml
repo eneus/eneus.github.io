@@ -6,10 +6,33 @@
     <description>Recent content in Tags on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 09 Feb 2021 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSV</title>
+      <link>https://eneus.github.io/tags/csv/</link>
+      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/csv/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://eneus.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://eneus.github.io/tags/database/</link>
+      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/database/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>MySQL</title>
+      <link>https://eneus.github.io/tags/mysql/</link>
+      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithms</title>
@@ -57,20 +80,20 @@
     </item>
     
     <item>
+      <title>Microcontroller</title>
+      <link>https://eneus.github.io/tags/microcontroller/</link>
+      <pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/microcontroller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Asymptotic Notations</title>
       <link>https://eneus.github.io/tags/asymptotic-notations/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/tags/asymptotic-notations/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C/C&#43;&#43;</title>
-      <link>https://eneus.github.io/tags/c/c&#43;&#43;/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/c/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
@@ -98,15 +121,6 @@
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://eneus.github.io/tags/linked-list/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microcontroller</title>
-      <link>https://eneus.github.io/tags/microcontroller/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/tags/microcontroller/</guid>
       <description></description>
     </item>
     
@@ -291,15 +305,6 @@
     </item>
     
     <item>
-      <title>MySQL</title>
-      <link>https://eneus.github.io/tags/mysql/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>javascript</title>
       <link>https://eneus.github.io/tags/javascript/</link>
       <pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate>
@@ -332,6 +337,15 @@
       <pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43;</title>
+      <link>https://eneus.github.io/tags/c/c&#43;&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://eneus.github.io/tags/c/c&#43;&#43;/</guid>
       <description></description>
     </item>
     

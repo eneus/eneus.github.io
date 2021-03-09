@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> Asymptotic Notations </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -183,7 +184,7 @@
 <li>Algorithm 1 : $5n^2 + 2n + 1$</li>
 <li>Algorithm 2 : $10n^2 + 8n + 3$</li>
 </ul>
-<p>Generally, when we analyze an algorithm, we consider the time complexity for larger values of input data (i.e. &lsquo;n&rsquo; value). In above two time complexities, for larger value of &lsquo;n&rsquo; the term &lsquo;$2n + 1$&rsquo; in algorithm 1 has least significance than the term &lsquo;$5n^2$&rsquo;, and the term $'8n + 3'$ in algorithm 2 has least significance than the term &lsquo;$10n^2$&rsquo;.
+<p>Generally, when we analyze an algorithm, we consider the time complexity for larger values of input data (i.e. &lsquo;n&rsquo; value). In above two time complexities, for larger value of &lsquo;n&rsquo; the term &lsquo;$2n + 1$&rsquo; in algorithm 1 has least significance than the term &lsquo;$5n^2$&rsquo;, and the term $&lsquo;8n + 3&rsquo;$ in algorithm 2 has least significance than the term &lsquo;$10n^2$&rsquo;.
 Here, for larger value of &lsquo;n&rsquo; the value of most significant terms ( $5n^2$ and $10n^2$ ) is very larger than the value of least significant terms ( $2n + 1$ and $8n + 3$ ). So for larger value of &lsquo;n&rsquo; we ignore the least significant terms to represent overall time required by an algorithm. In asymptotic notation, we use only the most significant terms to represent the time complexity of an algorithm.</p>
 <p>Majorly, we use THREE types of Asymptotic Notations and those are as follows&hellip;</p>
 <ol>
@@ -191,7 +192,7 @@ Here, for larger value of &lsquo;n&rsquo; the value of most significant terms ( 
 <li>Big - Omega (Ω)</li>
 <li>Big - Theta (Θ)</li>
 </ol>
-<h3 id="big--oh-notation-o">Big - Oh Notation (O)</h3>
+<h3 id="big---oh-notation-o">Big - Oh Notation (O)</h3>
 <p>Big - Oh notation is used to define the upper bound of an algorithm in terms of Time Complexity.
 That means Big - Oh notation always indicates the maximum time required by an algorithm for all input values. That means Big - Oh notation describes the worst case of an algorithm time complexity.
 Big - Oh Notation can be defined as follows&hellip;</p>
@@ -199,7 +200,7 @@ Big - Oh Notation can be defined as follows&hellip;</p>
 <p>$f(n) = O(g(n))$</p>
 <p>Consider the following graph drawn for the values of f(n) and C g(n) for input (n) value on X-Axis and time required is on Y-Axis</p>
 <p><img src="/images/manual/Big_O_Notation.png" alt="Time complexity of an algorithms"></p>
-<p>In above graph after a particular input value n0, always C g(n) is greater than f(n) which indicates the algorithm's upper bound.</p>
+<p>In above graph after a particular input value n0, always C g(n) is greater than f(n) which indicates the algorithm&rsquo;s upper bound.</p>
 <h4 id="example">Example</h4>
 <p>Consider the following $f(n)$ and $g(n)$&hellip;</p>
 <p>$f(n) = 3n + 2$<br>
@@ -210,7 +211,7 @@ $⇒3n + 2 &lt;= C n$</p>
 <p>Above condition is always TRUE for all values of $C = 4$ and $n &gt;= 2$.
 By using Big - Oh notation we can represent the time complexity as follows&hellip;
 $3n + 2 = O(n)$</p>
-<h3 id="big--omege-notation-">Big - Omege Notation (Ω)</h3>
+<h3 id="big---omege-notation-ω">Big - Omege Notation (Ω)</h3>
 <p>Big - Omega notation is used to define the lower bound of an algorithm in terms of Time Complexity.
 That means Big-Omega notation always indicates the minimum time required by an algorithm for all input values. That means Big-Omega notation describes the best case of an algorithm time complexity.
 Big - Omega Notation can be defined as follows&hellip;</p>
@@ -218,8 +219,8 @@ Big - Omega Notation can be defined as follows&hellip;</p>
 <p>$f(n) = Ω(g(n))$</p>
 <p>Consider the following graph drawn for the values of f(n) and C g(n) for input (n) value on X-Axis and time required is on Y-Axis.</p>
 <p><img src="/images/manual/Big_Omega_Notation.png" alt="Time complexity of an algorithms"></p>
-<p>In above graph after a particular input value n0, always C g(n) is less than f(n) which indicates the algorithm's lower bound.</p>
-<h4 id="example1">Example</h4>
+<p>In above graph after a particular input value n0, always C g(n) is less than f(n) which indicates the algorithm&rsquo;s lower bound.</p>
+<h4 id="example-1">Example</h4>
 <p>Consider the following f(n) and g(n)&hellip;</p>
 <p>$f(n) = 3n + 2$
 $g(n) = n$</p>
@@ -229,7 +230,7 @@ f(n) &gt;= C g(n)
 Above condition is always TRUE for all values of C = 1 and n &gt;= 1.
 By using Big - Omega notation we can represent the time complexity as follows&hellip;
 3n + 2 = Ω(n)</p>
-<h3 id="big--theta-notation-">Big - Theta Notation (Θ)</h3>
+<h3 id="big---theta-notation-θ">Big - Theta Notation (Θ)</h3>
 <p>Big - Theta notation is used to define the average bound of an algorithm in terms of Time Complexity.
 That means Big - Theta notation always indicates the average time required by an algorithm for all input values. That means Big - Theta notation describes the average case of an algorithm time complexity.
 Big - Theta Notation can be defined as follows&hellip;</p>
@@ -237,7 +238,7 @@ Big - Theta Notation can be defined as follows&hellip;</p>
 <p>$f(n) = Θ(g(n))$</p>
 <p>Consider the following graph drawn for the values of f(n) and C g(n) for input (n) value on X-Axis and time required is on Y-Axis</p>
 <p><img src="/images/manual/Big_Theta_Notation.png" alt="Time complexity of an algorithms"></p>
-<p>In above graph after a particular input value n0, always C1 g(n) is less than f(n) and C2 g(n) is greater than f(n) which indicates the algorithm's average bound.</p>
+<p>In above graph after a particular input value n0, always C1 g(n) is less than f(n) and C2 g(n) is greater than f(n) which indicates the algorithm&rsquo;s average bound.</p>
 <p>Example</p>
 <p>Consider the following f(n) and g(n)&hellip;</p>
 <p>$f(n) = 3n + 2$

@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> Sorting Algorithms </title>
                 
@@ -74,19 +74,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -199,7 +200,7 @@ $2h≥n!$.</p>
 <p>Taking the logarithm results in</p>
 <p>$h \geq \log(n!).$
 $h≥log(n!).$</p>
-<p>From Stirling's approximation,</p>
+<p>From Stirling&rsquo;s approximation,</p>
 <p>$n! &gt; \left(\frac{n}{e}\right)^n$.</p>
 <p>$n!&gt;( e/n ) n$.</p>
 <p>Therefore,</p>
@@ -208,7 +209,7 @@ $h≥log(n!).$</p>
 <h3 id="integer-sorts">Integer Sorts</h3>
 <p>Integer sorts are sometimes called counting sorts (though there is a specific integer sort algorithm called counting sort). Integer sorts do not make comparisons, so they are not bounded by $Ω(n\log n)Ω(nlogn)$. Integer sorts determine for each element​ xx how many elements are less than x. If there are 14 elements that are less than x, then x will be placed in the $15^{th}$ slot. This information is used to place each element into the correct slot immediately—no need to rearrange lists.</p>
 <h3 id="properties-of-sorting-algorithms">Properties of Sorting Algorithms</h3>
-<p>All sorting algorithms share the goal of outputting a sorted list, but the way that each algorithm goes about this task can vary. When working with any kind of algorithm, it is important to know how fast it runs and in how much space it operates—in other words, its time complexity and space complexity. As shown in the section above, comparison-based sorting algorithms have a time complexity of $Ω(n log n)$, meaning the algorithm can't be faster than $n log n$. However, usually, the running time of algorithms is discussed​ in terms of big O, and not Omega. For example, if an algorithm had a worst-case running time of $O(n log n)$, then it is guaranteed that the algorithm will never be slower than $O(n log n)$, and if an algorithm has an average-case running time of $O(n^2)$, then on average, it will not be slower than $O(n^2)$.</p>
+<p>All sorting algorithms share the goal of outputting a sorted list, but the way that each algorithm goes about this task can vary. When working with any kind of algorithm, it is important to know how fast it runs and in how much space it operates—in other words, its time complexity and space complexity. As shown in the section above, comparison-based sorting algorithms have a time complexity of $Ω(n log n)$, meaning the algorithm can&rsquo;t be faster than $n log n$. However, usually, the running time of algorithms is discussed​ in terms of big O, and not Omega. For example, if an algorithm had a worst-case running time of $O(n log n)$, then it is guaranteed that the algorithm will never be slower than $O(n log n)$, and if an algorithm has an average-case running time of $O(n^2)$, then on average, it will not be slower than $O(n^2)$.</p>
 <p>The running time describes how many operations an algorithm must carry out before it completes. The space complexity describes how much space must be allocated to run a particular algorithm. For example, if an algorithm takes in a list of size nn, and for some reason makes a new list of size nn for each element in nn, the algorithm needs $n^2$ space.</p>
 
                     </div>

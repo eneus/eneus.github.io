@@ -6,11 +6,7 @@
     <description>Recent content in Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate>
-    
-	<atom:link href="https://eneus.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sorting Algorithms</title>
       <link>https://eneus.github.io/manual/algorithms/sorting-algorithms/</link>
@@ -33,7 +29,7 @@ Instead of declaring individual variables, such as number0, number1, &amp;hellip
     <item>
       <title>A FIFO Buffer Implementation</title>
       <link>https://eneus.github.io/blog/a_fifo_buffer_implementation/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/a_fifo_buffer_implementation/</guid>
       <description>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.

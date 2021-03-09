@@ -16,7 +16,7 @@
 		
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Hugo 0.60.1" />
+        <meta name="generator" content="Hugo 0.80.0" />
 		
         <title> drush </title>
                 
@@ -67,19 +67,20 @@
         </div>
         <!-- main nav -->
         
+        
         <nav id="header-main-menu" class="collapse navbar-collapse navbar-right">
             <ul class="main-menu sm sm-clean">
                 <li><a data-scroll href="https://eneus.github.io/">Home</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/blog">Blog</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/blog/" title="Blog">Blog</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/manual">Online Manual</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/manual/" title="Online Manual">Online Manual</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/projects">Projects</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/projects/" title="Projects">Projects</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io/gallery">Gallery</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/gallery/" title="Gallery">Gallery</a></li>
                 
-                <li><a data-scroll href="https://eneus.github.io//about/">About</a></li>
+                <li><a data-scroll class="sidebar-nav-item" href="/about/" title="About">About</a></li>
                 
             </ul>
         </nav>
@@ -151,9 +152,9 @@
 
                         <div class="content">
                             <h3><a href="https://eneus.github.io/blog/drupal8-unable-to-determine-field/">Drupal8 - Unable to determine class for field...</a></h3>
-                            <p>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you've still a field which is using that missing module.
+                            <p>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&rsquo;ve still a field which is using that missing module.
 Try the following drush commands to remove the broken field:
-drush sqlq &#34;DELETE FROM cache_config&#34; drush sqlq &#34;DELETE FROM config WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&#34; drush sqlq &#34;DELETE FROM config_snapshot WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&#34; Warning: Don't execute above commands on master/live database.</p>
+drush sqlq &#34;DELETE FROM cache_config&#34; drush sqlq &#34;DELETE FROM config WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&#34; drush sqlq &#34;DELETE FROM config_snapshot WHERE name = &#39;field.storage.xxx.xxx&#39; OR data LIKE &#39;%field.storage.xxx.xxx%&#39;&#34; Warning: Don&rsquo;t execute above commands on master/live database.</p>
                             <a class="btn btn-transparent" href="https://eneus.github.io/blog/drupal8-unable-to-determine-field/">Read more</a>
                         </div>
                     </div>
