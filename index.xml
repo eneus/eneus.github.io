@@ -6,11 +6,21 @@
     <description>Recent content on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 10:35:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to copy files in Go</title>
+      <link>https://eneus.github.io/blog/how_to_copy_files_in_go/</link>
+      <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/blog/how_to_copy_files_in_go/</guid>
+      <description>A robust and efficient copy is conceptually simple, but not simple to implement due to the need to handle a number of edge cases and system limitations that are imposed by the target operating system and it&amp;rsquo;s configuration.
+If you simply want to make a duplicate of the existing file you can use os.Link(srcName, dstName). This avoids having to move bytes around in the application and saves disk space. For large files, this is a significant time and space saving.</description>
+    </item>
+    
     <item>
       <title>MySQL Export Table to CSV</title>
       <link>https://eneus.github.io/blog/mysql_export_table_to_csv/</link>
-      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      <pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/blog/mysql_export_table_to_csv/</guid>
       <description>Sometimes we need keed data in some useful format and read it by available methods like Microsoft Excel, Google Spreadsheet, Libre Office, or something like that. In this post, I will show various techniques of how to export MySQL tables to a CSV file. The CSV stands for comma separated values. It will be useful to have data from MySQL database in CSV file format because you can analyze and format the data in the way you want.</description>

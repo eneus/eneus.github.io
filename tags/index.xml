@@ -6,11 +6,38 @@
     <description>Recent content in Tags on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Feb 2021 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 10:35:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>copy</title>
+      <link>https://eneus.github.io/tags/copy/</link>
+      <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://eneus.github.io/tags/go/</link>
+      <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://eneus.github.io/tags/golang/</link>
+      <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
+      
+      <guid>https://eneus.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CSV</title>
       <link>https://eneus.github.io/tags/csv/</link>
-      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      <pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/csv/</guid>
       <description></description>
@@ -19,7 +46,7 @@
     <item>
       <title>Database</title>
       <link>https://eneus.github.io/tags/database/</link>
-      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      <pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/database/</guid>
       <description></description>
@@ -28,7 +55,7 @@
     <item>
       <title>MySQL</title>
       <link>https://eneus.github.io/tags/mysql/</link>
-      <pubDate>Tue, 09 Feb 2021 12:52:36 +0600</pubDate>
+      <pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate>
       
       <guid>https://eneus.github.io/tags/mysql/</guid>
       <description></description>
