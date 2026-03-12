@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/ivan/Projects/myPageIO",
+	"sourceRoot": "/home/runner/work/myPageIO/myPageIO",
 	"sources": [
 		"themes/eneus/assets/scss/styles.scss",
 		"themes/eneus/assets/scss/_variables.scss",

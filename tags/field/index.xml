@@ -1,22 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>field on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
-    <link>https://eneus.github.io/tags/field/</link>
-    <description>Recent content in field on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/field/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Drupal8 - Unable to determine class for field...</title>
-      <link>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</link>
-      <pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid>
-      <description>One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.
-Try the following drush commands to remove the broken field:
-drush sqlq &amp;#34;DELETE FROM cache_config&amp;#34; drush sqlq &amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; drush sqlq &amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34; Warning: Don&amp;rsquo;t execute above commands on master/live database.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Field on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title><link>https://eneus.github.io/tags/field/</link><description>Recent content in Field on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 13 Jul 2018 12:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/field/index.xml" rel="self" type="application/rss+xml"/><item><title>Drupal8 - Unable to determine class for field...</title><link>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</link><pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate><guid>https://eneus.github.io/blog/drupal8-unable-to-determine-field/</guid><description>&lt;p&gt;One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.&lt;/p&gt;
+&lt;p&gt;Try the following drush commands to remove the broken field:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM cache_config&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Don&amp;rsquo;t execute above commands on master/live database. Make a backup before doing any database changes.&lt;/p&gt;</description></item></channel></rss>

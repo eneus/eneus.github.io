@@ -1,190 +1,210 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title>
-    <link>https://eneus.github.io/tags/development/</link>
-    <description>Recent content in Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Sorting Algorithms</title>
-      <link>https://eneus.github.io/manual/algorithms/sorting-algorithms/</link>
-      <pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/sorting-algorithms/</guid>
-      <description>A sorting algorithm is an algorithm made up of a series of instructions that takes an array as input, performs specified operations on the array, sometimes called a list, and outputs a sorted array. Sorting algorithms are often taught early in computer science classes as they provide a straightforward way to introduce other key computer science topics like Big-O notation, divide-and-conquer methods, and data structures such as binary trees, and heaps.</description>
-    </item>
-    
-    <item>
-      <title>Arrays</title>
-      <link>https://eneus.github.io/manual/data_structures/arrays/</link>
-      <pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/manual/data_structures/arrays/</guid>
-      <description>Arrays Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
-Instead of declaring individual variables, such as number0, number1, &amp;hellip;, and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and &amp;hellip;, numbers[99] to represent individual variables.</description>
-    </item>
-    
-    <item>
-      <title>A FIFO Buffer Implementation</title>
-      <link>https://eneus.github.io/blog/a_fifo_buffer_implementation/</link>
-      <pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/a_fifo_buffer_implementation/</guid>
-      <description>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.
-A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”.</description>
-    </item>
-    
-    <item>
-      <title>Asymptotic Notations</title>
-      <link>https://eneus.github.io/manual/algorithms/asymptotic-notations/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/asymptotic-notations/</guid>
-      <description>What is Asymptotic Notation? Whenever we want to perform analysis of an algorithm, we need to calculate the complexity of that algorithm. But when we calculate the complexity of an algorithm it does not provide the exact amount of resource required. So instead of taking the exact amount of resource, we represent that complexity in a general form (Notation) which produces the basic nature of that algorithm. We use that general form (Notation) for analysis process.</description>
-    </item>
-    
-    <item>
-      <title>Circular Linked List</title>
-      <link>https://eneus.github.io/manual/data_structures/circular-linked-list/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/data_structures/circular-linked-list/</guid>
-      <description>What is Circular Linked List? In single linked list, every node points to its next node in the sequence and the last node points NULL. But in circular linked list, every node points to its next node in the sequence but the last node points to the first node in the list.
-A circular linked list is a sequence of elements in which every element has a link to its next element in the sequence and the last element has a link to the first element.</description>
-    </item>
-    
-    <item>
-      <title>Double Linked List</title>
-      <link>https://eneus.github.io/manual/data_structures/double-linked-list/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/data_structures/double-linked-list/</guid>
-      <description>What is Double Linked List? In a single linked list, every node has a link to its next node in the sequence. So, we can traverse from one node to another node only in one direction and we can not traverse back. We can solve this kind of problem by using a double linked list. A double linked list can be defined as follows&amp;hellip;
- Double linked list is a sequence of elements in which every element has links to its previous element and next element in the sequence.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Algorithms</title>
-      <link>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</guid>
-      <description>What is an algorithm? An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;
- An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.
- Algorithms are used to convert our problem solution into step by step statements.</description>
-    </item>
-    
-    <item>
-      <title>Linear &amp; Non-Linear Data Structures</title>
-      <link>https://eneus.github.io/manual/data_structures/linear-non-linear-data-structures/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/data_structures/linear-non-linear-data-structures/</guid>
-      <description>What is Data Structure? Whenever we want to work with a large amount of data, then organizing that data is very important. If that data is not organized effectively, it is very difficult to perform any task on that data. If it is organized effectively then any operation can be performed easily on that data. A data structure can be defined as follows&amp;hellip;
-Data structure is a method of organizing a large amount of data more efficiently so that any operation on that data becomes easy</description>
-    </item>
-    
-    <item>
-      <title>Performance Analysis</title>
-      <link>https://eneus.github.io/manual/algorithms/performance_analysis/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/performance_analysis/</guid>
-      <description>What is Performance Analysis of an algorithm? If we want to go from city &amp;ldquo;A&amp;rdquo; to city &amp;ldquo;B&amp;rdquo;, there can be many ways of doing this. We can go by flight, by bus, by train and also by bicycle. Depending on the availability and convenience, we choose the one which suits us. Similarly, in computer science, there are multiple algorithms to solve a problem. When we have more than one algorithm to solve a problem, we need to select the best one.</description>
-    </item>
-    
-    <item>
-      <title>Single Linked List</title>
-      <link>https://eneus.github.io/manual/data_structures/single-linked-list/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/data_structures/single-linked-list/</guid>
-      <description>What is Linked List? When we want to work with an unknown number of data values, we use a linked list data structure to organize that data. The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called &amp;ldquo;Node&amp;rdquo;.
-What is Single Linked List? Simply a list is a sequence of data, and the linked list is a sequence of data linked with each other.</description>
-    </item>
-    
-    <item>
-      <title>Space Complexity</title>
-      <link>https://eneus.github.io/manual/algorithms/space-complexity/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/space-complexity/</guid>
-      <description>What is Space complexity? When we design an algorithm to solve a problem, it needs some computer memory to complete its execution. For any algorithm, memory is required for the following purposes&amp;hellip;
- To store program instructions. To store constant values. To store variable values. And for few other things like funcion calls, jumping statements etc,.  Space complexity of an algorithm can be defined as follows&amp;hellip;
- Total amount of computer memory required by an algorithm to complete its execution is called as space complexity of that algorithm.</description>
-    </item>
-    
-    <item>
-      <title>Time Complexity</title>
-      <link>https://eneus.github.io/manual/algorithms/time-complexity/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/manual/algorithms/time-complexity/</guid>
-      <description>What is Time complexity? Every algorithm requires some amount of computer time to execute its instruction to perform the task. This computer time required is called time complexity. The time complexity of an algorithm can be defined as follows&amp;hellip;
- The time complexity of an algorithm is the total amount of time required by an algorithm to complete its execution.
- Generally, the running time of an algorithm depends upon the following&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Live Webcam Streaming using VLC on the Command Line</title>
-      <link>https://eneus.github.io/blog/live-webcam-streaming-using-vlc-on-the-command-line/</link>
-      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/blog/live-webcam-streaming-using-vlc-on-the-command-line/</guid>
-      <description>The following are notes on using VLC as both server and server to stream a webcam from a ender across a LAN to multiple receivers. It focusses only on internal LAN streaming, using RTSP, UDP and RTP as the streaming solutions, and working via the command line in Linux. VLC offers other form of streaming (e.g. HTTP, which are covered in some of my older notes) and the GUI is quite good for selecting streaming options.</description>
-    </item>
-    
-    <item>
-      <title>Operating Systems for ASUS Tinker Board</title>
-      <link>https://eneus.github.io/blog/os-for-asus-tinker-board/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/blog/os-for-asus-tinker-board/</guid>
-      <description>Hi dear reader. In previews article I had post How to connect DSI and CSI cable to tinker board with a some Frequently Asked Question. In this Article I had collected all available OS for single-board computer ASUS Tinker Board. Based on this computer i will to construct my robot with AI implementation and computer vision. Actually this the first reason why i had select Tinker Board that based on Rockchip RK3288 processor with 4x Cores &amp;ldquo;Cortex-A17&amp;rdquo; with frequency 1.</description>
-    </item>
-    
-    <item>
-      <title>How to connect DSI and CSI cable to tinker board</title>
-      <link>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</guid>
-      <description>DSI, CSI cable can be use will no difference, those cable is the same. CSI connect to the middle of tinker board, please refer icon print on board as follows:  DSI connect to the boundary of tinker board, please refer icon print on board as follows:
-DSI panel need extra 5V power. You can USB to supply, or thinker board can output 5V by GPIO PIN, red line is for positive(+)，black line is for negative(-) , as follow.</description>
-    </item>
-    
-    <item>
-      <title>Mathematics Primer for 3D Software Developer (Coordinate Systems)</title>
-      <link>https://eneus.github.io/blog/math-primer-coordinate-systems/</link>
-      <pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/math-primer-coordinate-systems/</guid>
-      <description>This article assumes you have a minimum understanding vectors, and matrices. I will simply show applications of vectors and matrices and how they apply to game programming.
-In this article, I would like to provide a brief math primer for people who would like to get involved in game programming. This is not an exhaustive explanation of all the math theory that one will have to know in order to be a successful game programmer, but it’s the very minimum amount of information that is necessary to know before you can begin as a game programmer.</description>
-    </item>
-    
-    <item>
-      <title>MPU-9250 Accelerometer, Gyroscope and Magnetometer Code</title>
-      <link>https://eneus.github.io/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://eneus.github.io/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</guid>
-      <description>In this Article you will get the code and library for MPU-9250 module. Watch video instruction on how to use MPU-9250.
- Get MPU-9250 Library from Github Data sheet for MPU-9250 MPU-9250 Register Map Get Library from Robojax.com I2C scanner Code and Video Guide to interfacing MPU9250 Gyroscope, Magnetometer and Accelerometer with a Raspberry Pi Arduino Nano: Accelerometer Gyroscope Compass MPU9250 I2C Sensor With Visuino Drivers for MPU9250 IMU Sensor  /* * Library: https://github.</description>
-    </item>
-    
-    <item>
-      <title>Awesome C&#43;&#43;</title>
-      <link>https://eneus.github.io/blog/awesome-cpp/</link>
-      <pubDate>Fri, 01 Feb 2019 14:51:12 +0600</pubDate>
-      
-      <guid>https://eneus.github.io/blog/awesome-cpp/</guid>
-      <description>Awesome C++
- Standard Libraries Frameworks Artificial Intelligence Asynchronous Event Loop Audio Biology BitTorrent CLI Compression Concurrency Containers Cryptography Database Debug Game Engine GUI Graphics Image Processing Internationalization Inter-process communication JSON Logging Machine Learning Math Memory Allocation Multimedia Networking PDF Physics Regular Expression Robotics Scientific Computing Scripting Serialization Sorting Video Virtual Machines Web Application Framework XML Miscellaneous    Software
- Compiler Online Compiler Debugger Integrated Development Environment Build Systems Static Code Analysis Coding Style Tools    Resources</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</title><link>https://eneus.github.io/tags/development/</link><description>Recent content in Development on Ivan Fesiuk - #Full Stack Developer | Personal Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 23 Aug 2019 13:52:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Sorting Algorithms</title><link>https://eneus.github.io/manual/algorithms/sorting-algorithms/</link><pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate><guid>https://eneus.github.io/manual/algorithms/sorting-algorithms/</guid><description>&lt;p&gt;A sorting algorithm is an algorithm made up of a series of instructions that takes an array as input, performs specified operations on the array, sometimes called a list, and outputs a sorted array. Sorting algorithms are often taught early in computer science classes as they provide a straightforward way to introduce other key computer science topics like Big-O notation, divide-and-conquer methods, and data structures such as binary trees, and heaps. There are many factors to consider when choosing a sorting algorithm to use.&lt;/p&gt;</description></item><item><title>Arrays</title><link>https://eneus.github.io/manual/data_structures/arrays/</link><pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate><guid>https://eneus.github.io/manual/data_structures/arrays/</guid><description>&lt;h3 id="arrays"&gt;Arrays&lt;/h3&gt;
+&lt;p&gt;Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.&lt;/p&gt;
+&lt;p&gt;Instead of declaring individual variables, such as number0, number1, &amp;hellip;, and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and &amp;hellip;, numbers[99] to represent individual variables. A specific element in an array is accessed by an index.&lt;/p&gt;</description></item><item><title>A FIFO Buffer Implementation</title><link>https://eneus.github.io/blog/a_fifo_buffer_implementation/</link><pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate><guid>https://eneus.github.io/blog/a_fifo_buffer_implementation/</guid><description>&lt;p&gt;A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.&lt;/p&gt;
+&lt;p&gt;A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the buffer is full, and the implementation must define if the oldest data is discarded or the write is not completed. In the example, below the write is not completed.&lt;/p&gt;</description></item><item><title>Asymptotic Notations</title><link>https://eneus.github.io/manual/algorithms/asymptotic-notations/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/algorithms/asymptotic-notations/</guid><description>&lt;h3 id="what-is-asymptotic-notation"&gt;What is Asymptotic Notation?&lt;/h3&gt;
+&lt;p&gt;Whenever we want to perform analysis of an algorithm, we need to calculate the complexity of that algorithm. But when we calculate the complexity of an algorithm it does not provide the exact amount of resource required. So instead of taking the exact amount of resource, we represent that complexity in a general form (Notation) which produces the basic nature of that algorithm. We use that general form (Notation) for analysis process.&lt;/p&gt;</description></item><item><title>Circular Linked List</title><link>https://eneus.github.io/manual/data_structures/circular-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/data_structures/circular-linked-list/</guid><description>&lt;h3 id="what-is-circular-linked-list"&gt;What is Circular Linked List?&lt;/h3&gt;
+&lt;p&gt;In single linked list, every node points to its next node in the sequence and the last node points NULL. But in circular linked list, every node points to its next node in the sequence but the last node points to the first node in the list.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A circular linked list is a sequence of elements in which every element has a link to its next element in the sequence and the last element has a link to the first element.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Double Linked List</title><link>https://eneus.github.io/manual/data_structures/double-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/data_structures/double-linked-list/</guid><description>&lt;h3 id="what-is-double-linked-list"&gt;What is Double Linked List?&lt;/h3&gt;
+&lt;p&gt;In a single linked list, every node has a link to its next node in the sequence. So, we can traverse from one node to another node only in one direction and we can not traverse back. We can solve this kind of problem by using a double linked list. A double linked list can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Double linked list is a sequence of elements in which every element has links to its previous element and next element in the sequence.&lt;/p&gt;</description></item><item><title>Introduction to Algorithms</title><link>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/algorithms/introduction_to_algorithms/</guid><description>&lt;h3 id="what-is-an-algorithm"&gt;What is an algorithm?&lt;/h3&gt;
+&lt;p&gt;An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Algorithms are used to convert our problem solution into step by step statements. These statements can be converted into computer programming instructions which form a program. This program is executed by a computer to produce a solution. Here, the program takes required data as input, processes data according to the program instructions and finally produces a result as shown in the following picture.&lt;/p&gt;</description></item><item><title>Linear &amp; Non-Linear Data Structures</title><link>https://eneus.github.io/manual/data_structures/linear-non-linear-data-structures/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/data_structures/linear-non-linear-data-structures/</guid><description>&lt;h3 id="what-is-data-structure"&gt;What is Data Structure?&lt;/h3&gt;
+&lt;p&gt;Whenever we want to work with a large amount of data, then organizing that data is very important. If that data is not organized effectively, it is very difficult to perform any task on that data. If it is organized effectively then any operation can be performed easily on that data.
+A data structure can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Data structure is a method of organizing a large amount of data more efficiently so that any operation on that data becomes easy&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Performance Analysis</title><link>https://eneus.github.io/manual/algorithms/performance_analysis/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/algorithms/performance_analysis/</guid><description>&lt;h3 id="what-is-performance-analysis-of-an-algorithm"&gt;What is Performance Analysis of an algorithm?&lt;/h3&gt;
+&lt;p&gt;If we want to go from city &amp;ldquo;A&amp;rdquo; to city &amp;ldquo;B&amp;rdquo;, there can be many ways of doing this. We can go by flight, by bus, by train and also by bicycle. Depending on the availability and convenience, we choose the one which suits us. Similarly, in computer science, there are multiple algorithms to solve a problem. When we have more than one algorithm to solve a problem, we need to select the best one. Performance analysis helps us to select the best algorithm from multiple algorithms to solve a problem.
+When there are multiple alternative algorithms to solve a problem, we analyze them and pick the one which is best suitable for our requirements. The formal definition is as follows&amp;hellip;&lt;/p&gt;</description></item><item><title>Single Linked List</title><link>https://eneus.github.io/manual/data_structures/single-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/data_structures/single-linked-list/</guid><description>&lt;h3 id="what-is-linked-list"&gt;What is Linked List?&lt;/h3&gt;
+&lt;p&gt;When we want to work with an unknown number of data values, we use a linked list data structure to organize that data. The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called &amp;ldquo;Node&amp;rdquo;.&lt;/p&gt;
+&lt;h3 id="what-is-single-linked-list"&gt;What is Single Linked List?&lt;/h3&gt;
+&lt;p&gt;Simply a list is a sequence of data, and the linked list is a sequence of data linked with each other.
+The formal definition of a single linked list is as follows&amp;hellip;&lt;/p&gt;</description></item><item><title>Space Complexity</title><link>https://eneus.github.io/manual/algorithms/space-complexity/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/algorithms/space-complexity/</guid><description>&lt;h3 id="what-is-space-complexity"&gt;What is Space complexity?&lt;/h3&gt;
+&lt;p&gt;When we design an algorithm to solve a problem, it needs some computer memory to complete its execution. For any algorithm, memory is required for the following purposes&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To store program instructions.&lt;/li&gt;
+&lt;li&gt;To store constant values.&lt;/li&gt;
+&lt;li&gt;To store variable values.&lt;/li&gt;
+&lt;li&gt;And for few other things like funcion calls, jumping statements etc,.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Space complexity of an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Total amount of computer memory required by an algorithm to complete its execution is called as space complexity of that algorithm.&lt;/p&gt;</description></item><item><title>Time Complexity</title><link>https://eneus.github.io/manual/algorithms/time-complexity/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/manual/algorithms/time-complexity/</guid><description>&lt;h3 id="what-is-time-complexity"&gt;What is Time complexity?&lt;/h3&gt;
+&lt;p&gt;Every algorithm requires some amount of computer time to execute its instruction to perform the task. This computer time required is called time complexity.
+The time complexity of an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The time complexity of an algorithm is the total amount of time required by an algorithm to complete its execution.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Generally, the running time of an algorithm depends upon the following&amp;hellip;&lt;/p&gt;</description></item><item><title>Live Webcam Streaming using VLC on the Command Line</title><link>https://eneus.github.io/blog/live-webcam-streaming-using-vlc-on-the-command-line/</link><pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/blog/live-webcam-streaming-using-vlc-on-the-command-line/</guid><description>&lt;p&gt;The following are notes on using VLC as both server and server to stream a webcam from a ender across a LAN to multiple receivers. It focusses only on internal LAN streaming, using RTSP, UDP and RTP as the streaming solutions, and working via the command line in Linux. VLC offers other form of streaming (e.g. HTTP, which are covered in some of my older notes) and the GUI is quite good for selecting streaming options.&lt;/p&gt;</description></item><item><title>Operating Systems for ASUS Tinker Board</title><link>https://eneus.github.io/blog/os-for-asus-tinker-board/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/blog/os-for-asus-tinker-board/</guid><description>&lt;p&gt;Hi dear reader. In previews article I had post &lt;a href="https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/"&gt;How to connect DSI and CSI cable to tinker board&lt;/a&gt; with a some Frequently Asked Question. In this Article I had collected all available OS for single-board computer &lt;!-- raw HTML omitted --&gt;ASUS Tinker Board&lt;!-- raw HTML omitted --&gt;. Based on this computer i will to construct my robot with AI implementation and computer vision. Actually this the first reason why i had select Tinker Board that based on Rockchip RK3288 processor with 4x Cores &amp;ldquo;Cortex-A17&amp;rdquo; with frequency 1.8 GHz, support hardware decoding H.265 with resolution 4K х 2К and besides, new chipset get support network 4G LTE with 64-bit RAM LPDDR3. More information you can get on the official website of the &lt;!-- raw HTML omitted --&gt;motherboard&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;</description></item><item><title>How to connect DSI and CSI cable to tinker board</title><link>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</link><pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</guid><description>&lt;ul&gt;
+&lt;li&gt;DSI, CSI cable can be use will no difference, those cable is the same.&lt;/li&gt;
+&lt;li&gt;CSI connect to the middle of tinker board, please refer icon print on board as follows:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://eneus.github.io/images/blog/ASUSTinkerBoard_ico1.png" alt="CSI" title="CSI connect"&gt;&lt;/p&gt;
+&lt;p&gt;DSI connect to the boundary of tinker board, please refer icon print on board as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://eneus.github.io/images/blog/ASUSTinkerBoard_ico2.png" alt="CSI" title="CSI connect"&gt;&lt;/p&gt;
+&lt;p&gt;DSI panel need extra 5V power. You can USB to supply, or thinker board can output 5V by GPIO PIN, red line is for positive(+)，black line is for negative(-) , as follow.&lt;/p&gt;</description></item><item><title>Mathematics Primer for 3D Software Developer (Coordinate Systems)</title><link>https://eneus.github.io/blog/math-primer-coordinate-systems/</link><pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate><guid>https://eneus.github.io/blog/math-primer-coordinate-systems/</guid><description>&lt;p&gt;This article assumes you have a minimum understanding vectors, and matrices. I will simply show applications of vectors and matrices and how they apply to game programming.&lt;/p&gt;
+&lt;p&gt;In this article, I would like to provide a brief math primer for people who would like to get involved in game programming. This is not an exhaustive explanation of all the math theory that one will have to know in order to be a successful game programmer, but it’s the very minimum amount of information that is necessary to know before you can begin as a game programmer.&lt;/p&gt;</description></item><item><title>MPU-9250 Accelerometer, Gyroscope and Magnetometer Code</title><link>https://eneus.github.io/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</link><pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</guid><description>&lt;p&gt;In this Article you will get the code and library for MPU-9250 module. Watch video instruction on how to use MPU-9250.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bolderflight/MPU9250"&gt;Get MPU-9250 Library from Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/books/PS-MPU-9250A-01-v1.1.pdf"&gt;Data sheet for MPU-9250&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/books/RM-MPU-9250A-00-v1.6.pdf"&gt;MPU-9250 Register Map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robojax.com/learn/arduino/robojax-MPU9250-master.zip"&gt;Get Library from Robojax.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robojax.com/learn/arduino/?vid=robojax-I2C-scanner"&gt;I2C scanner Code and Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://technicalustad.com/guide-to-interfacing-mpu9250-gyroscope-magnetometer-and-accelerometer-with-a-raspberry-pi/"&gt;Guide to interfacing MPU9250 Gyroscope, Magnetometer and Accelerometer with a Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.instructables.com/id/Arduino-Nano-Accelerometer-Gyroscope-Compass-MPU92/"&gt;Arduino Nano: Accelerometer Gyroscope Compass MPU9250 I2C Sensor With Visuino&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.forward-loop.com/drivers/mpu9250/master/index.html"&gt;Drivers for MPU9250 IMU Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-c" data-lang="c"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;* Library: https://github.com/bolderflight/MPU9250
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Basic_I2C.ino
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Brian R Taylor
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;brian.taylor@bolderflight.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Copyright (c) 2017 Bolder Flight Systems
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;and associated documentation files (the &amp;#34;Software&amp;#34;), to deal in the Software without restriction, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;including without limitation the rights to use, copy, modify, merge, publish, distribute, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;furnished to do so, subject to the following conditions:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;The above copyright notice and this permission notice shall be included in all copies or 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;substantial portions of the Software.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;THE SOFTWARE IS PROVIDED &amp;#34;AS IS&amp;#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * Updated by Ahmad Shamshiri on July 09, 2018 for Robojax.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * in Ajax, Ontario, Canada
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * watch instrucion video for this code: 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;For this sketch you need to connect:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;VCC to 5V and GND to GND of Arduino
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;SDA to A4 and SCL to A5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;S20A is 3.3V voltage regulator MIC5205-3.3BM5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;#34;MPU9250.h&amp;#34;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// an MPU9250 object with the MPU-9250 sensor on I2C bus 0 with address 0x68
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;MPU9250 &lt;span style="color:#a6e22e"&gt;IMU&lt;/span&gt;(Wire,&lt;span style="color:#ae81ff"&gt;0x68&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; status;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;setup&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// serial to display data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;begin&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;115200&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt;(&lt;span style="color:#f92672"&gt;!&lt;/span&gt;Serial) {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// start communication with IMU 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; status &lt;span style="color:#f92672"&gt;=&lt;/span&gt; IMU.&lt;span style="color:#a6e22e"&gt;begin&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (status &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;IMU initialization unsuccessful&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Check IMU wiring or try cycling power&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Status: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(status);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;loop&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// read the sensor
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; IMU.&lt;span style="color:#a6e22e"&gt;readSensor&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// display the data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelX: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelX_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelY: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelY_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelZ_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroX: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroX_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroY: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroY_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroZ_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagX: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagX_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagY: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagY_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagZ_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Temperature in C: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getTemperature_C&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;delay&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;200&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Video explanation:\&lt;/p&gt;</description></item><item><title>Awesome C++</title><link>https://eneus.github.io/blog/awesome-cpp/</link><pubDate>Fri, 01 Feb 2019 14:51:12 +0600</pubDate><guid>https://eneus.github.io/blog/awesome-cpp/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#awesome-cpp"&gt;Awesome C++&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#standard-libraries"&gt;Standard Libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#frameworks"&gt;Frameworks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#artificial-intelligence"&gt;Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#asynchronous-event-loop"&gt;Asynchronous Event Loop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#audio"&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#biology"&gt;Biology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#bittorrent"&gt;BitTorrent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cli"&gt;CLI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#compression"&gt;Compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#concurrency"&gt;Concurrency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#containers"&gt;Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cryptography"&gt;Cryptography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#database"&gt;Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#debug"&gt;Debug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#game-engine"&gt;Game Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#gui"&gt;GUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#graphics"&gt;Graphics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#image-processing"&gt;Image Processing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#internationalization"&gt;Internationalization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#inter-process-communication"&gt;Inter-process communication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#json"&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#logging"&gt;Logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#machine-learning"&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#math"&gt;Math&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#memory-allocation"&gt;Memory Allocation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#multimedia"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#networking"&gt;Networking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#pdf"&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#physics"&gt;Physics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#regular-expression"&gt;Regular Expression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#robotics"&gt;Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#scientific-computing"&gt;Scientific Computing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#scripting"&gt;Scripting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#serialization"&gt;Serialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#sorting"&gt;Sorting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#video"&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#virtual-machines"&gt;Virtual Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#web-application-framework"&gt;Web Application Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#xml"&gt;XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#miscellaneous"&gt;Miscellaneous&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#software"&gt;Software&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#compiler"&gt;Compiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#online-compiler"&gt;Online Compiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#debugger"&gt;Debugger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#integrated-development-environment"&gt;Integrated Development Environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#build-systems"&gt;Build Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#static-code-analysis"&gt;Static Code Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#coding-style-tools"&gt;Coding Style Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#resources"&gt;Resources&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
