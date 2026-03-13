@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SSH on Ivan Fesiuk - #Full Stack Developer | Персональний блог</title><link>https://eneus.github.io/uk/tags/ssh/</link><description>Recent content in SSH on Ivan Fesiuk - #Full Stack Developer | Персональний блог</description><generator>Hugo</generator><language>uk-UA</language><lastBuildDate>Sun, 12 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://eneus.github.io/uk/tags/ssh/index.xml" rel="self" type="application/rss+xml"/><item><title>SSH Examples, Tips &amp; Tunnels</title><link>https://eneus.github.io/uk/blog/ssh-examples-tips-tunnels/</link><pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/ssh-examples-tips-tunnels/</guid><description>&lt;p&gt;Practical SSH examples to take your remote system admin game to the next level. Commands and tips to not only use SSH but master ways to move around the network.&lt;/p&gt;
+&lt;p&gt;Knowing a few ssh tricks will benefit any system administrator, network engineer or security professional.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Practical SSH examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SSH Socks Proxy&lt;/li&gt;
+&lt;li&gt;SSH Tunnel (Port Forward)&lt;/li&gt;
+&lt;li&gt;SSH Tunnel to Secondary Host&lt;/li&gt;
+&lt;li&gt;Reverse SSH Tunnel&lt;/li&gt;
+&lt;li&gt;SSH Reverse Proxy&lt;/li&gt;
+&lt;li&gt;Establish VPN over SSH&lt;/li&gt;
+&lt;li&gt;Copy your SSH key (ssh-copy-id)&lt;/li&gt;
+&lt;li&gt;Run Command Remotely (non-interactive)&lt;/li&gt;
+&lt;li&gt;Remote Packet Capture &amp;amp; View in Wireshark&lt;/li&gt;
+&lt;li&gt;SSH Copy Folder from Local to Remote&lt;/li&gt;
+&lt;li&gt;Remote GUI Applications with SSH x11 Forwarding12. Copy files remotely with rsync and SSH&lt;/li&gt;
+&lt;li&gt;SSH over Tor Network&lt;/li&gt;
+&lt;li&gt;SSH to EC2 instance&lt;/li&gt;
+&lt;li&gt;Edit text files with VIM over ssh/scp&lt;/li&gt;
+&lt;li&gt;Mount remote SSH as local folder with SSHFS&lt;/li&gt;
+&lt;li&gt;SSH Multiplex using ControlPath&lt;/li&gt;
+&lt;li&gt;Stream Video over SSH&lt;/li&gt;
+&lt;li&gt;Two Factor Authentication&lt;/li&gt;
+&lt;li&gt;Bouncing through jump hosts with SSH and -J&lt;/li&gt;
+&lt;li&gt;Block SSH Brute Force Attempts with iptables&lt;/li&gt;
+&lt;li&gt;SSH Escape to Modify Port Forwarding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even if you are an experienced *&lt;strong&gt;nix guru&lt;/strong&gt; there are a couple of examples further down that are ?&amp;gt; only available in later versions of OpenSSH. Take a look at Proxy Jump -J and reverse dynamic &amp;gt; forwarding -R.&lt;/p&gt;</description></item></channel></rss>

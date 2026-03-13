@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ivan Fesiuk - #Full Stack Developer | Персональний блог</title><link>https://eneus.github.io/uk/</link><description>Recent content on Ivan Fesiuk - #Full Stack Developer | Персональний блог</description><generator>Hugo</generator><language>uk-UA</language><lastBuildDate>Wed, 10 Mar 2021 10:35:36 +0600</lastBuildDate><atom:link href="https://eneus.github.io/uk/index.xml" rel="self" type="application/rss+xml"/><item><title>How to copy files in Go</title><link>https://eneus.github.io/uk/blog/how_to_copy_files_in_go/</link><pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/how_to_copy_files_in_go/</guid><description>&lt;p&gt;A &lt;em&gt;robust&lt;/em&gt; and &lt;em&gt;efficient&lt;/em&gt; copy is conceptually simple, but not simple to implement due to the need to handle a number of edge cases and system limitations that are imposed by the target operating system and it&amp;rsquo;s configuration.&lt;/p&gt;
+&lt;p&gt;If you simply want to make a duplicate of the existing file you can use &lt;em&gt;&lt;strong&gt;os.Link(srcName, dstName)&lt;/strong&gt;&lt;/em&gt;. This avoids having to move bytes around in the application and saves disk space. For large files, this is a significant time and space saving.&lt;/p&gt;</description></item><item><title>MySQL Export Table to CSV</title><link>https://eneus.github.io/uk/blog/mysql_export_table_to_csv/</link><pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/mysql_export_table_to_csv/</guid><description>&lt;p&gt;Sometimes we need keed data in some useful format and read it by available methods like Microsoft Excel, Google Spreadsheet, Libre Office, or something like that. In this post, I will show various techniques of how to export MySQL tables to a CSV file. The CSV stands for comma separated values. It will be useful to have data from MySQL database in CSV file format because you can analyze and format the data in the way you want.&lt;/p&gt;</description></item><item><title>Sorting Algorithms</title><link>https://eneus.github.io/uk/manual/algorithms/sorting-algorithms/</link><pubDate>Fri, 23 Aug 2019 13:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/sorting-algorithms/</guid><description>&lt;p&gt;A sorting algorithm is an algorithm made up of a series of instructions that takes an array as input, performs specified operations on the array, sometimes called a list, and outputs a sorted array. Sorting algorithms are often taught early in computer science classes as they provide a straightforward way to introduce other key computer science topics like Big-O notation, divide-and-conquer methods, and data structures such as binary trees, and heaps. There are many factors to consider when choosing a sorting algorithm to use.&lt;/p&gt;</description></item><item><title>Arrays</title><link>https://eneus.github.io/uk/manual/data_structures/arrays/</link><pubDate>Fri, 23 Aug 2019 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/manual/data_structures/arrays/</guid><description>&lt;h3 id="arrays"&gt;Arrays&lt;/h3&gt;
+&lt;p&gt;Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.&lt;/p&gt;
+&lt;p&gt;Instead of declaring individual variables, such as number0, number1, &amp;hellip;, and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and &amp;hellip;, numbers[99] to represent individual variables. A specific element in an array is accessed by an index.&lt;/p&gt;</description></item><item><title>A FIFO Buffer Implementation</title><link>https://eneus.github.io/uk/blog/a_fifo_buffer_implementation/</link><pubDate>Sun, 23 Jun 2019 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/a_fifo_buffer_implementation/</guid><description>&lt;p&gt;A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.&lt;/p&gt;
+&lt;p&gt;A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the buffer is full, and the implementation must define if the oldest data is discarded or the write is not completed. In the example, below the write is not completed.&lt;/p&gt;</description></item><item><title>Asymptotic Notations</title><link>https://eneus.github.io/uk/manual/algorithms/asymptotic-notations/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/asymptotic-notations/</guid><description>&lt;h3 id="what-is-asymptotic-notation"&gt;What is Asymptotic Notation?&lt;/h3&gt;
+&lt;p&gt;Whenever we want to perform analysis of an algorithm, we need to calculate the complexity of that algorithm. But when we calculate the complexity of an algorithm it does not provide the exact amount of resource required. So instead of taking the exact amount of resource, we represent that complexity in a general form (Notation) which produces the basic nature of that algorithm. We use that general form (Notation) for analysis process.&lt;/p&gt;</description></item><item><title>Circular Linked List</title><link>https://eneus.github.io/uk/manual/data_structures/circular-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/data_structures/circular-linked-list/</guid><description>&lt;h3 id="what-is-circular-linked-list"&gt;What is Circular Linked List?&lt;/h3&gt;
+&lt;p&gt;In single linked list, every node points to its next node in the sequence and the last node points NULL. But in circular linked list, every node points to its next node in the sequence but the last node points to the first node in the list.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;A circular linked list is a sequence of elements in which every element has a link to its next element in the sequence and the last element has a link to the first element.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Double Linked List</title><link>https://eneus.github.io/uk/manual/data_structures/double-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/data_structures/double-linked-list/</guid><description>&lt;h3 id="what-is-double-linked-list"&gt;What is Double Linked List?&lt;/h3&gt;
+&lt;p&gt;In a single linked list, every node has a link to its next node in the sequence. So, we can traverse from one node to another node only in one direction and we can not traverse back. We can solve this kind of problem by using a double linked list. A double linked list can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Double linked list is a sequence of elements in which every element has links to its previous element and next element in the sequence.&lt;/p&gt;</description></item><item><title>Introduction to Algorithms</title><link>https://eneus.github.io/uk/manual/algorithms/introduction_to_algorithms/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/introduction_to_algorithms/</guid><description>&lt;h3 id="what-is-an-algorithm"&gt;What is an algorithm?&lt;/h3&gt;
+&lt;p&gt;An algorithm is a step by step procedure to solve a problem. In normal language, the algorithm is defined as a sequence of statements which are used to perform a task. In computer science, an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An algorithm is a sequence of unambiguous instructions used for solving a problem, which can be implemented (as a program) on a computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Algorithms are used to convert our problem solution into step by step statements. These statements can be converted into computer programming instructions which form a program. This program is executed by a computer to produce a solution. Here, the program takes required data as input, processes data according to the program instructions and finally produces a result as shown in the following picture.&lt;/p&gt;</description></item><item><title>Linear &amp; Non-Linear Data Structures</title><link>https://eneus.github.io/uk/manual/data_structures/linear-non-linear-data-structures/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/data_structures/linear-non-linear-data-structures/</guid><description>&lt;h3 id="what-is-data-structure"&gt;What is Data Structure?&lt;/h3&gt;
+&lt;p&gt;Whenever we want to work with a large amount of data, then organizing that data is very important. If that data is not organized effectively, it is very difficult to perform any task on that data. If it is organized effectively then any operation can be performed easily on that data.
+A data structure can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Data structure is a method of organizing a large amount of data more efficiently so that any operation on that data becomes easy&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Performance Analysis</title><link>https://eneus.github.io/uk/manual/algorithms/performance_analysis/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/performance_analysis/</guid><description>&lt;h3 id="what-is-performance-analysis-of-an-algorithm"&gt;What is Performance Analysis of an algorithm?&lt;/h3&gt;
+&lt;p&gt;If we want to go from city &amp;ldquo;A&amp;rdquo; to city &amp;ldquo;B&amp;rdquo;, there can be many ways of doing this. We can go by flight, by bus, by train and also by bicycle. Depending on the availability and convenience, we choose the one which suits us. Similarly, in computer science, there are multiple algorithms to solve a problem. When we have more than one algorithm to solve a problem, we need to select the best one. Performance analysis helps us to select the best algorithm from multiple algorithms to solve a problem.
+When there are multiple alternative algorithms to solve a problem, we analyze them and pick the one which is best suitable for our requirements. The formal definition is as follows&amp;hellip;&lt;/p&gt;</description></item><item><title>Single Linked List</title><link>https://eneus.github.io/uk/manual/data_structures/single-linked-list/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/data_structures/single-linked-list/</guid><description>&lt;h3 id="what-is-linked-list"&gt;What is Linked List?&lt;/h3&gt;
+&lt;p&gt;When we want to work with an unknown number of data values, we use a linked list data structure to organize that data. The linked list is a linear data structure that contains a sequence of elements such that each element links to its next element in the sequence. Each element in a linked list is called &amp;ldquo;Node&amp;rdquo;.&lt;/p&gt;
+&lt;h3 id="what-is-single-linked-list"&gt;What is Single Linked List?&lt;/h3&gt;
+&lt;p&gt;Simply a list is a sequence of data, and the linked list is a sequence of data linked with each other.
+The formal definition of a single linked list is as follows&amp;hellip;&lt;/p&gt;</description></item><item><title>Space Complexity</title><link>https://eneus.github.io/uk/manual/algorithms/space-complexity/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/space-complexity/</guid><description>&lt;h3 id="what-is-space-complexity"&gt;What is Space complexity?&lt;/h3&gt;
+&lt;p&gt;When we design an algorithm to solve a problem, it needs some computer memory to complete its execution. For any algorithm, memory is required for the following purposes&amp;hellip;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To store program instructions.&lt;/li&gt;
+&lt;li&gt;To store constant values.&lt;/li&gt;
+&lt;li&gt;To store variable values.&lt;/li&gt;
+&lt;li&gt;And for few other things like funcion calls, jumping statements etc,.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Space complexity of an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Total amount of computer memory required by an algorithm to complete its execution is called as space complexity of that algorithm.&lt;/p&gt;</description></item><item><title>Time Complexity</title><link>https://eneus.github.io/uk/manual/algorithms/time-complexity/</link><pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/manual/algorithms/time-complexity/</guid><description>&lt;h3 id="what-is-time-complexity"&gt;What is Time complexity?&lt;/h3&gt;
+&lt;p&gt;Every algorithm requires some amount of computer time to execute its instruction to perform the task. This computer time required is called time complexity.
+The time complexity of an algorithm can be defined as follows&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The time complexity of an algorithm is the total amount of time required by an algorithm to complete its execution.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Generally, the running time of an algorithm depends upon the following&amp;hellip;&lt;/p&gt;</description></item><item><title>Live Webcam Streaming using VLC on the Command Line</title><link>https://eneus.github.io/uk/blog/live-webcam-streaming-using-vlc-on-the-command-line/</link><pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/live-webcam-streaming-using-vlc-on-the-command-line/</guid><description>&lt;p&gt;The following are notes on using VLC as both server and server to stream a webcam from a ender across a LAN to multiple receivers. It focusses only on internal LAN streaming, using RTSP, UDP and RTP as the streaming solutions, and working via the command line in Linux. VLC offers other form of streaming (e.g. HTTP, which are covered in some of my older notes) and the GUI is quite good for selecting streaming options.&lt;/p&gt;</description></item><item><title>Operating Systems for ASUS Tinker Board</title><link>https://eneus.github.io/uk/blog/os-for-asus-tinker-board/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/os-for-asus-tinker-board/</guid><description>&lt;p&gt;Hi dear reader. In previews article I had post &lt;a href="https://eneus.github.io/uk/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/"&gt;How to connect DSI and CSI cable to tinker board&lt;/a&gt; with a some Frequently Asked Question. In this Article I had collected all available OS for single-board computer &lt;!-- raw HTML omitted --&gt;ASUS Tinker Board&lt;!-- raw HTML omitted --&gt;. Based on this computer i will to construct my robot with AI implementation and computer vision. Actually this the first reason why i had select Tinker Board that based on Rockchip RK3288 processor with 4x Cores &amp;ldquo;Cortex-A17&amp;rdquo; with frequency 1.8 GHz, support hardware decoding H.265 with resolution 4K х 2К and besides, new chipset get support network 4G LTE with 64-bit RAM LPDDR3. More information you can get on the official website of the &lt;!-- raw HTML omitted --&gt;motherboard&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;</description></item><item><title>Drone Communicator Interface</title><link>https://eneus.github.io/uk/projects/8/</link><pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/projects/8/</guid><description>&lt;p&gt;Application written on C++ with use OpenGL and OpenCV for communicate with available drones in the networks. Also will show drone status and control it. \&lt;/p&gt;
+&lt;p&gt;*Image downloaded from internet and will be changed for screenshot.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Active Development.&lt;/p&gt;</description></item><item><title>How to connect DSI and CSI cable to tinker board</title><link>https://eneus.github.io/uk/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</link><pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/how-to-connect-dsi-and-csi-cable-to-tinker-board/</guid><description>&lt;ul&gt;
+&lt;li&gt;DSI, CSI cable can be use will no difference, those cable is the same.&lt;/li&gt;
+&lt;li&gt;CSI connect to the middle of tinker board, please refer icon print on board as follows:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://eneus.github.io/images/blog/ASUSTinkerBoard_ico1.png" alt="CSI" title="CSI connect"&gt;&lt;/p&gt;
+&lt;p&gt;DSI connect to the boundary of tinker board, please refer icon print on board as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://eneus.github.io/images/blog/ASUSTinkerBoard_ico2.png" alt="CSI" title="CSI connect"&gt;&lt;/p&gt;
+&lt;p&gt;DSI panel need extra 5V power. You can USB to supply, or thinker board can output 5V by GPIO PIN, red line is for positive(+)，black line is for negative(-) , as follow.&lt;/p&gt;</description></item><item><title>SSH Examples, Tips &amp; Tunnels</title><link>https://eneus.github.io/uk/blog/ssh-examples-tips-tunnels/</link><pubDate>Sun, 12 May 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/ssh-examples-tips-tunnels/</guid><description>&lt;p&gt;Practical SSH examples to take your remote system admin game to the next level. Commands and tips to not only use SSH but master ways to move around the network.&lt;/p&gt;
+&lt;p&gt;Knowing a few ssh tricks will benefit any system administrator, network engineer or security professional.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Practical SSH examples&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SSH Socks Proxy&lt;/li&gt;
+&lt;li&gt;SSH Tunnel (Port Forward)&lt;/li&gt;
+&lt;li&gt;SSH Tunnel to Secondary Host&lt;/li&gt;
+&lt;li&gt;Reverse SSH Tunnel&lt;/li&gt;
+&lt;li&gt;SSH Reverse Proxy&lt;/li&gt;
+&lt;li&gt;Establish VPN over SSH&lt;/li&gt;
+&lt;li&gt;Copy your SSH key (ssh-copy-id)&lt;/li&gt;
+&lt;li&gt;Run Command Remotely (non-interactive)&lt;/li&gt;
+&lt;li&gt;Remote Packet Capture &amp;amp; View in Wireshark&lt;/li&gt;
+&lt;li&gt;SSH Copy Folder from Local to Remote&lt;/li&gt;
+&lt;li&gt;Remote GUI Applications with SSH x11 Forwarding12. Copy files remotely with rsync and SSH&lt;/li&gt;
+&lt;li&gt;SSH over Tor Network&lt;/li&gt;
+&lt;li&gt;SSH to EC2 instance&lt;/li&gt;
+&lt;li&gt;Edit text files with VIM over ssh/scp&lt;/li&gt;
+&lt;li&gt;Mount remote SSH as local folder with SSHFS&lt;/li&gt;
+&lt;li&gt;SSH Multiplex using ControlPath&lt;/li&gt;
+&lt;li&gt;Stream Video over SSH&lt;/li&gt;
+&lt;li&gt;Two Factor Authentication&lt;/li&gt;
+&lt;li&gt;Bouncing through jump hosts with SSH and -J&lt;/li&gt;
+&lt;li&gt;Block SSH Brute Force Attempts with iptables&lt;/li&gt;
+&lt;li&gt;SSH Escape to Modify Port Forwarding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Even if you are an experienced *&lt;strong&gt;nix guru&lt;/strong&gt; there are a couple of examples further down that are ?&amp;gt; only available in later versions of OpenSSH. Take a look at Proxy Jump -J and reverse dynamic &amp;gt; forwarding -R.&lt;/p&gt;</description></item><item><title>Mathematics Primer for 3D Software Developer (Coordinate Systems)</title><link>https://eneus.github.io/uk/blog/math-primer-coordinate-systems/</link><pubDate>Fri, 12 Apr 2019 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/blog/math-primer-coordinate-systems/</guid><description>&lt;p&gt;This article assumes you have a minimum understanding vectors, and matrices. I will simply show applications of vectors and matrices and how they apply to game programming.&lt;/p&gt;
+&lt;p&gt;In this article, I would like to provide a brief math primer for people who would like to get involved in game programming. This is not an exhaustive explanation of all the math theory that one will have to know in order to be a successful game programmer, but it’s the very minimum amount of information that is necessary to know before you can begin as a game programmer.&lt;/p&gt;</description></item><item><title>MPU-9250 Accelerometer, Gyroscope and Magnetometer Code</title><link>https://eneus.github.io/uk/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</link><pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/blog/mpu-9250-accelerometer-gyroscope-and-magnetometer-code/</guid><description>&lt;p&gt;In this Article you will get the code and library for MPU-9250 module. Watch video instruction on how to use MPU-9250.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bolderflight/MPU9250"&gt;Get MPU-9250 Library from Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/books/PS-MPU-9250A-01-v1.1.pdf"&gt;Data sheet for MPU-9250&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/books/RM-MPU-9250A-00-v1.6.pdf"&gt;MPU-9250 Register Map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robojax.com/learn/arduino/robojax-MPU9250-master.zip"&gt;Get Library from Robojax.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://robojax.com/learn/arduino/?vid=robojax-I2C-scanner"&gt;I2C scanner Code and Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://technicalustad.com/guide-to-interfacing-mpu9250-gyroscope-magnetometer-and-accelerometer-with-a-raspberry-pi/"&gt;Guide to interfacing MPU9250 Gyroscope, Magnetometer and Accelerometer with a Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.instructables.com/id/Arduino-Nano-Accelerometer-Gyroscope-Compass-MPU92/"&gt;Arduino Nano: Accelerometer Gyroscope Compass MPU9250 I2C Sensor With Visuino&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.forward-loop.com/drivers/mpu9250/master/index.html"&gt;Drivers for MPU9250 IMU Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-c" data-lang="c"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;* Library: https://github.com/bolderflight/MPU9250
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Basic_I2C.ino
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Brian R Taylor
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;brian.taylor@bolderflight.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Copyright (c) 2017 Bolder Flight Systems
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;and associated documentation files (the &amp;#34;Software&amp;#34;), to deal in the Software without restriction, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;including without limitation the rights to use, copy, modify, merge, publish, distribute, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;furnished to do so, subject to the following conditions:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;The above copyright notice and this permission notice shall be included in all copies or 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;substantial portions of the Software.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;THE SOFTWARE IS PROVIDED &amp;#34;AS IS&amp;#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * Updated by Ahmad Shamshiri on July 09, 2018 for Robojax.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * in Ajax, Ontario, Canada
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt; * watch instrucion video for this code: 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;For this sketch you need to connect:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;VCC to 5V and GND to GND of Arduino
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;SDA to A4 and SCL to A5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;S20A is 3.3V voltage regulator MIC5205-3.3BM5
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#include&lt;/span&gt; &lt;span style="color:#75715e"&gt;&amp;#34;MPU9250.h&amp;#34;&lt;/span&gt;&lt;span style="color:#75715e"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// an MPU9250 object with the MPU-9250 sensor on I2C bus 0 with address 0x68
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;MPU9250 &lt;span style="color:#a6e22e"&gt;IMU&lt;/span&gt;(Wire,&lt;span style="color:#ae81ff"&gt;0x68&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;int&lt;/span&gt; status;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;setup&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// serial to display data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;begin&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;115200&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt;(&lt;span style="color:#f92672"&gt;!&lt;/span&gt;Serial) {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// start communication with IMU 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; status &lt;span style="color:#f92672"&gt;=&lt;/span&gt; IMU.&lt;span style="color:#a6e22e"&gt;begin&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (status &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;IMU initialization unsuccessful&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Check IMU wiring or try cycling power&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Status: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(status);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;while&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;) {}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;loop&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// read the sensor
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; IMU.&lt;span style="color:#a6e22e"&gt;readSensor&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// display the data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelX: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelX_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelY: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelY_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;AccelZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getAccelZ_mss&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroX: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroX_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroY: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroY_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;GyroZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getGyroZ_rads&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagX: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagX_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagY: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagY_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;	&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;MagZ: &amp;#34;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getMagZ_uT&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;print&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;Temperature in C: &amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(IMU.&lt;span style="color:#a6e22e"&gt;getTemperature_C&lt;/span&gt;(),&lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Serial.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;delay&lt;/span&gt;(&lt;span style="color:#ae81ff"&gt;200&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;} 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Video explanation:\&lt;/p&gt;</description></item><item><title>Awesome C++</title><link>https://eneus.github.io/uk/blog/awesome-cpp/</link><pubDate>Fri, 01 Feb 2019 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/blog/awesome-cpp/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#awesome-cpp"&gt;Awesome C++&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#standard-libraries"&gt;Standard Libraries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#frameworks"&gt;Frameworks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#artificial-intelligence"&gt;Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#asynchronous-event-loop"&gt;Asynchronous Event Loop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#audio"&gt;Audio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#biology"&gt;Biology&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#bittorrent"&gt;BitTorrent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#cli"&gt;CLI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#compression"&gt;Compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#concurrency"&gt;Concurrency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#containers"&gt;Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#cryptography"&gt;Cryptography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#database"&gt;Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#debug"&gt;Debug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#game-engine"&gt;Game Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#gui"&gt;GUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#graphics"&gt;Graphics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#image-processing"&gt;Image Processing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#internationalization"&gt;Internationalization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#inter-process-communication"&gt;Inter-process communication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#json"&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#logging"&gt;Logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#machine-learning"&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#math"&gt;Math&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#memory-allocation"&gt;Memory Allocation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#multimedia"&gt;Multimedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#networking"&gt;Networking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#pdf"&gt;PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#physics"&gt;Physics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#regular-expression"&gt;Regular Expression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#robotics"&gt;Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#scientific-computing"&gt;Scientific Computing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#scripting"&gt;Scripting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#serialization"&gt;Serialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#sorting"&gt;Sorting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#video"&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#virtual-machines"&gt;Virtual Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#web-application-framework"&gt;Web Application Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#xml"&gt;XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#miscellaneous"&gt;Miscellaneous&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#software"&gt;Software&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#compiler"&gt;Compiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#online-compiler"&gt;Online Compiler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#debugger"&gt;Debugger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#integrated-development-environment"&gt;Integrated Development Environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#build-systems"&gt;Build Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#static-code-analysis"&gt;Static Code Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#coding-style-tools"&gt;Coding Style Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://eneus.github.io/uk/blog/awesome-cpp/#resources"&gt;Resources&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>to Lviv - Tourist website</title><link>https://eneus.github.io/uk/projects/4/</link><pubDate>Mon, 31 Dec 2018 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/projects/4/</guid><description>&lt;p&gt;Information tourism portal of Lviv region - search of tours, reservation of apartments, filter of restaurants by type of cuisine, places of recreation, and business meetups, geolocation.&lt;/p&gt;
+&lt;p&gt;Web Development geolocation, jquery, javascript, docker, apache-solr, drupal, object-oriented-php, twitter-bootstrap&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; in progress&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://tolviv.com"&gt;https://tolviv.com&lt;/a&gt;&lt;/p&gt;</description></item><item><title>SPA - Serial Port Analyzer</title><link>https://eneus.github.io/uk/projects/5/</link><pubDate>Fri, 21 Dec 2018 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/projects/5/</guid><description>&lt;p&gt;Cross platform system utility (MacOS X, Linux, Windows) for serial ports monitoring UART RS-232/422/485. The program monitors, displays, logs and analyzes all serial port activity in a system. Perfect software solution for serial port monitoring.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; in progress&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://github.com/eneus/SPA"&gt;https://github.com/eneus/SPA&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Awal 10</title><link>https://eneus.github.io/uk/projects/7/</link><pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/projects/7/</guid><description>&lt;p&gt;News WEB site for Arabian world. Customer asked about full redesign and data restructe WEB site based on WordPress CMS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Done.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="http://awal10.com/"&gt;http://awal10.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Jekyll Docker Container</title><link>https://eneus.github.io/uk/projects/6/</link><pubDate>Wed, 12 Sep 2018 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/projects/6/</guid><description>&lt;p&gt;Distribution for FrontEnd developer and generate static websites.&lt;/p&gt;
+&lt;p&gt;Design is not just what it looks like and feels like. Design is how it works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Done.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://github.com/eneus/jekyll"&gt;https://github.com/eneus/jekyll&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Drupal8 - Unable to determine class for field...</title><link>https://eneus.github.io/uk/blog/drupal8-unable-to-determine-field/</link><pubDate>Fri, 13 Jul 2018 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/drupal8-unable-to-determine-field/</guid><description>&lt;p&gt;One possible way is that your module is missing from the codebase or has been improperly uninstalled and you&amp;rsquo;ve still a field which is using that missing module.&lt;/p&gt;
+&lt;p&gt;Try the following drush commands to remove the broken field:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM cache_config&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM config WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;drush sqlq &lt;span style="color:#e6db74"&gt;&amp;#34;DELETE FROM config_snapshot WHERE name = &amp;#39;field.storage.xxx.xxx&amp;#39; OR data LIKE &amp;#39;%field.storage.xxx.xxx%&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Don&amp;rsquo;t execute above commands on master/live database. Make a backup before doing any database changes.&lt;/p&gt;</description></item><item><title>Homeless pets</title><link>https://eneus.github.io/uk/projects/3/</link><pubDate>Tue, 22 May 2018 14:51:12 +0600</pubDate><guid>https://eneus.github.io/uk/projects/3/</guid><description>&lt;p&gt;Information base of animals Kharkiv Center for the Content of Homeless Animals. Search for lost, registration and adoption of homeless animals. Work with volunteers.
+Adaptive layout, filters.
+Integration with social media.&lt;/p&gt;
+&lt;p&gt;Web Development drupal, object-oriented-php, responsive-design, web-design&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Done.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://animals-city.org/"&gt;https://animals-city.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>'Back to Top' Button for your website</title><link>https://eneus.github.io/uk/blog/back-to-op-button-to-yourwebsite/</link><pubDate>Sun, 30 Apr 2017 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/back-to-op-button-to-yourwebsite/</guid><description>&lt;p&gt;A &lt;strong&gt;Back To Top&lt;/strong&gt; button is something that a lot of you have probably seen on many websites. It’s that arrow that appears at the bottom right or left corner of a web page when you start scrolling it. When clicked, it brings you back to the top of the page.&lt;/p&gt;
+&lt;p&gt;If you want to add a back to top button while you&amp;rsquo;re still designing a website, or just curious about how you can build one on your own, this article for you.&lt;/p&gt;</description></item><item><title>How to use Jekyll Docker container</title><link>https://eneus.github.io/uk/blog/how-to-use-jekyll-container/</link><pubDate>Mon, 17 Apr 2017 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/blog/how-to-use-jekyll-container/</guid><description>&lt;p&gt;Jekyll&amp;rsquo;s Docker Container with Demo Content and demo site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Plugins included:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;- Jekyll: 3.8.3
+ -- jekyll-paginate
+ -- jekyll-sitemap
+ -- jekyll-feed
+ -- jekyll-multisite
+ -- jekyll-github-metadata
+ -- jekyll-seo-tag
+ -- jekyll-watch
+ -- jekyll-sass-converter
+ -- jekyll-assets
+ -- jekyll-multiple-languages-plugin
+- Compass: 1.0.3
+- NodeJS: 8.9.3
+-- NPM: 5.5.1
+-- Yarn: 1.3.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="the-first-of-all"&gt;The first of all:&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Install Docker:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On &lt;em&gt;&lt;strong&gt;Linux Ubuntu/Debian&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/"&gt;https://docs.docker.com/install/linux/docker-ce/ubuntu/&lt;/a&gt;
+&lt;a href="https://docs.docker.com/install/linux/docker-ce/debian/"&gt;https://docs.docker.com/install/linux/docker-ce/debian/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On &lt;em&gt;&lt;strong&gt;MacOS&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.docker.com/docker-for-mac/install/"&gt;https://docs.docker.com/docker-for-mac/install/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On &lt;em&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.docker.com/docker-for-windows/install/"&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Install Docker Compose:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/compose/install/"&gt;https://docs.docker.com/compose/install/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Download repository:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;git clone git@github.com:eneus/jekyll.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Go to downloaded folder:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Business Security Center</title><link>https://eneus.github.io/uk/projects/1/</link><pubDate>Wed, 12 Jun 2013 12:52:36 +0600</pubDate><guid>https://eneus.github.io/uk/projects/1/</guid><description>&lt;p&gt;Business Security Center (BSC) website had needed SEO optimization and a total redesign and data restructure for securing high professional level of services and achievement of maximum efficiency of company activity.&lt;/p&gt;
+&lt;p&gt;First required for developing was to provide comfort navigation and quick search of services, products and equipment, since the company granting a full range of security and safety services for private individuals or companies as well as sells integrated security solutions.&lt;/p&gt;</description></item><item><title>City Events</title><link>https://eneus.github.io/uk/projects/2/</link><pubDate>Mon, 12 Mar 2012 14:39:16 +0600</pubDate><guid>https://eneus.github.io/uk/projects/2/</guid><description>&lt;p&gt;City Events - Started as distribution and implemented like regional WEBsite &amp;lsquo;Моя Жовківщина&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Regional news portal with news, blogs, organizations, events, publications. Registration of users, contests, photo reports. Search engine ApacheSolr. Filter, Geolocation, social integration, SEO optimization. Development based on Docker Containers with flexibility extensions.&lt;/p&gt;
+&lt;p&gt;Web Development drupal, php, twitter-bootstrap, responsive-design&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Done.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a href="https://myzhovkva.com/"&gt;https://myzhovkva.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Gallery</title><link>https://eneus.github.io/uk/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/gallery/</guid><description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description></item><item><title>Greetings!</title><link>https://eneus.github.io/uk/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://eneus.github.io/uk/about/</guid><description>&lt;!-- raw HTML omitted --&gt;</description></item></channel></rss>
