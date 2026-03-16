@@ -12,21 +12,47 @@ jQuery(document).ready(function ($) {
     //	Main Page Menu -->
 	$('body').addClass('op-menu');
 	$('body').prepend('<div class="overlay"><span class="circle-top"></span><span class="circle-bottom"></span></div>');
-		
-	$('#toggle').click(function(e) {
+
+    // Toggle main nav menu -->
+    function toggleMenu(forceClose) {
+        var isOpen = $('#toggle').hasClass('on');
+        if (forceClose && !isOpen) return;
+        $('#toggle').toggleClass('on');
+        $('html, body, .overlay, .sidebar, .menu-left-part, .menu-right-part').toggleClass('active');
+    }
+ 
+    // Toggle book index panel -->
+    function toggleIndex(forceClose) {
+        var isOpen = $('#bookindex').hasClass('on');
+        if (forceClose && !isOpen) return;
+        $('#bookindex').toggleClass('on');
+        $('html, body, .overlay, .book-index').toggleClass('active');
+    }
+ 
+    $('#toggle').on('click', function (e) {
         e.stopPropagation();
-        closeMenu($(this));
+        // close index if open, then toggle menu
+        toggleIndex(true);
+        toggleMenu();
     });
-    $('.overlay').click(function(e) {
-        closeMenu($('#toggle'));
+ 
+    $('#bookindex').on('click', function (e) {
+        e.stopPropagation();
+        // close main menu if open, then toggle index
+        toggleMenu(true);
+        toggleIndex();
     });
-    
-    var closeMenu = function (close) {
-		if (close.is('#toggle')) {
-			close.toggleClass('on');
-			$('html, body, .overlay, .sidebar, .menu-left-part, .menu-right-part').toggleClass('active');
-		}
-    };
+    // close button inside .book-index panel -->
+    $(document).on('click', '#toggleindex', function (e) {
+        e.stopPropagation();
+        toggleIndex(true);
+    });
+    // clicking overlay closes whichever panel is active -->
+    $('.overlay').on('click', function () {
+        toggleMenu(true);
+        toggleIndex(true);
+    });
+
     // InstaFeed.js Methods -->
     var instafeedId = $("#instafeed");
     if ($("#instafeed").length) {
