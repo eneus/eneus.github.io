@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "04d0ac4f54d021f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b89d15b4c42f18c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "685c6ad5da650e9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "uk/blog/A_FIFO_Buffer_Implementation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A_FIFO_Buffer_Implementation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2dfb84cf54df1134",
+    "type": "split",
+    "children": [
+      {
+        "id": "02210a90e9294c1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a3a4bc82ea01ab6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловий менеджер"
+            }
+          },
+          {
+            "id": "979945d0534b4f32",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Пошук"
+            }
+          },
+          {
+            "id": "6eed6d4885e3e3f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b86fb37e072a2c17",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1a5d1cb7a3c8938",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df48f34315fbb1af",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "uk/blog/A_FIFO_Buffer_Implementation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Зворотні посилання для A_FIFO_Buffer_Implementation"
+            }
+          },
+          {
+            "id": "4794734c35c9a649",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "manual/algorithms/asymptotic-notations.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Вихідні посилання з asymptotic-notations"
+            }
+          },
+          {
+            "id": "c1179a0d04719bc6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Мітки"
+            }
+          },
+          {
+            "id": "e53379314491e155",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Всі властивості"
+            }
+          },
+          {
+            "id": "9fd44735a675f323",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "manual/algorithms/asymptotic-notations.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Вміст asymptotic-notations"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "publish:Публікація змін": false,
+      "switcher:Відкрити провідник файлів": false,
+      "graph:Граф": false,
+      "canvas:Створити нове полотно": false,
+      "daily-notes:Сьогоднішня нотатка": false,
+      "templates:Вставити шаблон": false,
+      "command-palette:Відкрити меню команд": false,
+      "bases:Створити нову базу": false,
+      "hugo-publish:hugo sync": false
+    }
+  },
+  "active": "685c6ad5da650e9e",
+  "lastOpenFiles": [
+    "uk/blog/images/fifo.svg",
+    "uk/book/afs/Chapter1/1.2. Основні величини, що характеризують електромагнітне поле.md",
+    "uk/blog/images",
+    "uk/book/afs/Chapter1/_index.md",
+    "search.md",
+    "uk/book/afs/Chapter1/1.6. Плоска хвиля в поглинальному середовищі.md",
+    "uk/book/afs/Chapter1/1.5. Електромагнітні хвилі в ідеальному діелектрику.md",
+    "uk/book/afs/Chapter1/1.4. Перенесення енергії електромагнітною хвилею. Вектор Пойнтінга.md",
+    "uk/book/afs/Chapter1/1.3. Основні закони електромагнітного поля. Рівняння Максвелла.md",
+    "uk/book/afs/Chapter1/1.1 Вступ.md",
+    "uk/book/afs/_index.md",
+    "uk/book/afs/Chapter2/2.6. ПЛОСКА ХВИЛЯ В ПОГЛИНАЛЬНОМУ СЕРЕДОВИЩІ.md",
+    "uk/book/afs/Chapter2/2.5. ЕЛЕКТРОМАГНІТНІ ХВИЛІ В ІДЕАЛЬНОМУ ДІЕЛЕКТРИКУ.md",
+    "uk/book/afs/Chapter2/2.4. ПЕРЕНЕСЕННЯ ЕНЕРГІЇ ЕЛЕКТРОМАГНІТНОЮ ХВИЛЕЮ. ВЕКТОР ПОЙНТИНГА.md",
+    "uk/book/afs/Chapter2/2.3. ОСНОВНІ ЗАКОНИ ЕЛЕКТРОМАГНІТНОГО ПОЛЯ. РІВНЯННЯ МАКСВЕЛЛА.md",
+    "uk/book/afs/Chapter2/12.3. ОСНОВНІ ЗАКОНИ ЕЛЕКТРОМАГНІТНОГО ПОЛЯ. РІВНЯННЯ МАКСВЕЛЛА.md",
+    "uk/book/afs/Chapter2/2.2. ОСНОВНІ ВЕЛИЧИНИ, ЩО ХАРАКТЕРИЗУЮТЬ ЕЛЕКТРОМАГНІТНЕ ПОЛЕ.md",
+    "uk/book/afs/Chapter2/2.1 Вступ.md",
+    "uk/book/afs/Chapter2/1.6. ПЛОСКА ХВИЛЯ В ПОГЛИНАЛЬНОМУ СЕРЕДОВИЩІ.md",
+    "uk/book/afs/Chapter2/1.5. ЕЛЕКТРОМАГНІТНІ ХВИЛІ В ІДЕАЛЬНОМУ ДІЕЛЕКТРИКУ.md",
+    "uk/book/afs/Chapter2/1.4. ПЕРЕНЕСЕННЯ ЕНЕРГІЇ ЕЛЕКТРОМАГНІТНОЮ ХВИЛЕЮ. ВЕКТОР ПОЙНТИНГА.md",
+    "uk/book/afs/Chapter2/1.3. ОСНОВНІ ЗАКОНИ ЕЛЕКТРОМАГНІТНОГО ПОЛЯ. РІВНЯННЯ МАКСВЕЛЛА.md",
+    "uk/book/afs/Chapter2/1.2. ОСНОВНІ ВЕЛИЧИНИ, ЩО ХАРАКТЕРИЗУЮТЬ ЕЛЕКТРОМАГНІТНЕ ПОЛЕ.md",
+    "uk/book/afs/Chapter2/1.1 Вступ.md",
+    "uk/book/ElrctronicsBasics/_index.md",
+    "uk/book/_index.md",
+    "uk/book/afs/Chapter2/_index.md",
+    "uk/book/ElrctronicsBasics",
+    "uk/book/elrctronics",
+    "uk/book/afs/elrctronics",
+    "uk/book/afs/Chapter1",
+    "uk/book/afs/Chapter2",
+    "uk/book/afs/Chapter1",
+    "uk/book/afs/Chapper1",
+    "uk/book/afs/Розділ ІІ",
+    "uk/book/afs/Розділ І"
+  ]
+}

@@ -1,0 +1,112 @@
+---
+title: "Експорт таблиць MySQL Export в CSV"
+date: 2021-03-09T12:52:36+06:00
+type: "blog"
+tags: ["MySQL", "Database", "CSV"]
+image: images/blog/csvmysql.png
+description : "MySQL Export Table to CSV"
+---
+Sometimes we need keed data in some useful format and read it by available methods like Microsoft Excel, Google Spreadsheet, Libre Office, or something like that. In this post, I will show various techniques of how to export MySQL tables to a CSV file. The CSV stands for comma separated values. It will be useful to have data from MySQL database in CSV file format because you can analyze and format the data in the way you want.
+
+MySQL provides an easy way to export the query’s result into a CSV file that resides in the database server.
+
+Before exporting data, you must ensure that:
+- The MySQL server’s process has write access to the target folder that contains the target CSV file.
+- The target CSV file must not exist.
+
+The following query selects cancelled orders from the `orders` table:
+
+```
+SELECT orderNumber, status, orderDate, requiredDate, comments
+FROM orders
+WHERE status = 'Cancelled';
+```
+
+To export this result set into a CSV file, you add some clauses to the query above as follows:
+
+```
+SELECT orderNumber, status, orderDate, requiredDate, comments
+FROM orders
+WHERE status = 'Cancelled' 
+INTO OUTFILE 'C:/tmp/cancelled_orders.csv' 
+FIELDS ENCLOSED BY '"' 
+TERMINATED BY ';' 
+ESCAPED BY '"' 
+LINES TERMINATED BY '\r\n';
+```
+
+The statement created a CSV file named `cancelled_orders.csv` in the `~/tmp` folder that contains the result set.
+
+The CSV file contains lines of rows in the result set. Each line is terminated by a sequence of carriage return and a line feed character specified by the `LINES TERMINATED BY '\r\n'` clause. Each line contains values of each column of the row in the result set.
+
+Each value is enclosed by double quotation marks indicated by `FIELDS ENCLOSED BY '”'` clause. This prevents the value that may contain a comma (,) will be interpreted as the field separator. When enclosing the values by the double quotation marks, the commas inside the value are not recognized as the field separators.
+
+### Exporting data to a CSV file whose filename contains timestamp
+
+You often need to export data into a CSV file whose name contains timestamp at which the file is created. To do so, you need to use the [MySQL prepared statement](https://www.mysqltutorial.org/mysql-prepared-statement.aspx).
+
+The following commands export the whole orders table into a CSV file with timestamp as a part of the file name.
+
+```
+SET @TS = DATE_FORMAT(NOW(),'_%Y_%m_%d_%H_%i_%s');
+
+SET @FOLDER = 'c:/tmp/';
+SET @PREFIX = 'orders';
+SET @EXT    = '.csv';
+
+SET @CMD = CONCAT("SELECT * FROM orders INTO OUTFILE '",@FOLDER,@PREFIX,@TS,@EXT,
+				   "' FIELDS ENCLOSED BY '\"' TERMINATED BY ';' ESCAPED BY '\"'",
+				   "  LINES TERMINATED BY '\r\n';");
+
+PREPARE statement FROM @CMD;
+
+EXECUTE statement;
+```
+
+Let’s examine the commands above in more detail.
+
+- First, we constructed a query with current timestamp as a part of the file name.
+- Second, we prepared the statement for execution by using `PREPARE` statement `FROM` command.
+- Third, we executed the statement by using the `EXECUTE` command.
+
+You can wrap the command by an [event](https://www.mysqltutorial.org/mysql-triggers/working-mysql-scheduled-event/) and schedule the event run periodically if needed.
+
+### Exporting data with column headings
+
+It would be convenient if the CSV file contains the first line as the column headings so that the file is more understandable.
+
+To add the column headings, you need to use the [UNION](https://www.mysqltutorial.org/sql-union-mysql.aspx) statement as follows:
+
+```
+(SELECT 'Order Number','Order Date','Status')
+UNION 
+(SELECT orderNumber,orderDate, status
+FROM orders
+INTO OUTFILE 'C:/tmp/orders.csv'
+FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"'
+LINES TERMINATED BY '\r\n');
+```
+
+As the query showed, you need to include the column heading of every column.
+
+### Handling NULL values
+
+In case the values in the result set contain [NULL](https://www.mysqltutorial.org/mysql-null/) values, the target file will contain  "`N` instead of `NULL`. To fix this issue, you need to replace the `NULL` value by another value e.g., not applicable ( N/A ) by using the [IFNULL function](https://www.mysqltutorial.org/mysql-ifnull/) as the following query:
+
+```
+SELECT 
+    orderNumber, orderDate, IFNULL(shippedDate, 'N/A')
+FROM
+    orders INTO OUTFILE 'C:/tmp/orders2.csv' 
+    FIELDS ENCLOSED BY '"' 
+    TERMINATED BY ';' 
+    ESCAPED BY '"' LINES 
+    TERMINATED BY '\r\n';
+
+```
+
+We replaced `NULL` values in the `shippedDate` column by the `N/A` strings. The CSV file shows  `N/A` instead of `NULL` values.
+
+Hope this post was helpfull for you.
+
+Have fun coding!
