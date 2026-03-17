@@ -9,7 +9,7 @@
     <lastBuildDate>Wed, 10 Mar 2021 10:35:36 +0600</lastBuildDate>
     <atom:link href="https://eneus.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Як копіювати файли в Go</title>
+      <title>How to copy files in Go</title>
       <link>https://eneus.github.io/blog/how_to_copy_files_in_go/</link>
       <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
       <guid>https://eneus.github.io/blog/how_to_copy_files_in_go/</guid>

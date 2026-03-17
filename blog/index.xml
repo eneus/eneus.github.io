@@ -9,14 +9,14 @@
     <lastBuildDate>Wed, 10 Mar 2021 10:35:36 +0600</lastBuildDate>
     <atom:link href="https://eneus.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Як копіювати файли в Go</title>
+      <title>How to copy files in Go</title>
       <link>https://eneus.github.io/blog/how_to_copy_files_in_go/</link>
       <pubDate>Wed, 10 Mar 2021 10:35:36 +0600</pubDate>
       <guid>https://eneus.github.io/blog/how_to_copy_files_in_go/</guid>
       <description>&lt;p&gt;A &lt;em&gt;robust&lt;/em&gt; and &lt;em&gt;efficient&lt;/em&gt; copy is conceptually simple, but not simple to implement due to the need to handle a number of edge cases and system limitations that are imposed by the target operating system and it&amp;rsquo;s configuration.&lt;/p&gt;&#xA;&lt;p&gt;If you simply want to make a duplicate of the existing file you can use &lt;em&gt;&lt;strong&gt;os.Link(srcName, dstName)&lt;/strong&gt;&lt;/em&gt;. This avoids having to move bytes around in the application and saves disk space. For large files, this is a significant time and space saving.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Експорт таблиць MySQL Export в CSV</title>
+      <title>MySQL Export Table to CSV</title>
       <link>https://eneus.github.io/blog/mysql_export_table_to_csv/</link>
       <pubDate>Tue, 09 Mar 2021 12:52:36 +0600</pubDate>
       <guid>https://eneus.github.io/blog/mysql_export_table_to_csv/</guid>
