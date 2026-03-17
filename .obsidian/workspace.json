@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "136454be6c4394be",
+        "id": "b603f053f493ddd5",
         "type": "tabs",
         "children": [
           {
-            "id": "701cc53f04275d3a",
+            "id": "50d4c829bca6f7aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/uk/blog/PSOC - знайомство.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Нова вкладка"
+              "title": "PSOC - знайомство"
             }
           }
         ]
@@ -157,13 +161,23 @@
               "icon": "lucide-list",
               "title": "Вміст"
             }
+          },
+          {
+            "id": "f932180f10fcdf3d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,11 +187,17 @@
       "daily-notes:Сьогоднішня нотатка": false,
       "templates:Вставити шаблон": false,
       "command-palette:Відкрити меню команд": false,
-      "bases:Створити нову базу": false
+      "bases:Створити нову базу": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "701cc53f04275d3a",
+  "active": "50d4c829bca6f7aa",
   "lastOpenFiles": [
+    "images/blog/infineon-PsoC-6.png",
+    "content/uk/blog/PSOC - знайомство.md",
+    "images/blog/Не підтверджено 790616.crdownload",
+    "Без назви.base",
+    "content/uk/blog/A_FIFO_Buffer_Implementation.md",
     "content/uk/book/ElrctronicsBasics/chapter2/_index.md",
     "content/uk/book/ElrctronicsBasics/chapter2/1. Загальні відомості.md",
     "content/uk/book/ElrctronicsBasics/chapter2",
