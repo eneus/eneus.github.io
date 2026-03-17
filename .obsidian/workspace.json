@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "04d0ac4f54d021f5",
+    "id": "92260410d3c990b6",
     "type": "split",
     "children": [
       {
-        "id": "eae7e77a1e797d95",
+        "id": "2e57bc7645008c0b",
         "type": "tabs",
         "children": [
           {
-            "id": "c5e922ad5b81d634",
+            "id": "c5436322c278bf1d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2dfb84cf54df1134",
+    "id": "295d7d0b3f9c1bc2",
     "type": "split",
     "children": [
       {
-        "id": "02210a90e9294c1f",
+        "id": "9844427f20b7a5a8",
         "type": "tabs",
         "children": [
           {
-            "id": "7a3a4bc82ea01ab6",
+            "id": "9ede50a8ce8ab430",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "979945d0534b4f32",
+            "id": "07ceb1f52834c9ec",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "6eed6d4885e3e3f6",
+            "id": "6885f4c91d473d85",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +77,20 @@
     "width": 300
   },
   "right": {
-    "id": "b86fb37e072a2c17",
+    "id": "bd638fe15525f461",
     "type": "split",
     "children": [
       {
-        "id": "c1a5d1cb7a3c8938",
+        "id": "371e8d255e7baa9a",
         "type": "tabs",
         "children": [
           {
-            "id": "df48f34315fbb1af",
+            "id": "9da3b1f457288203",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,25 +100,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Зворотні посилання"
+              "title": "Зворотні посилання для README"
             }
           },
           {
-            "id": "4794734c35c9a649",
+            "id": "bb7db2cc698ed3d0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "manual/algorithms/asymptotic-notations.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Вихідні посилання з asymptotic-notations"
+              "title": "Вихідні посилання з README"
             }
           },
           {
-            "id": "c1179a0d04719bc6",
+            "id": "6d68f6d31553d31d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +133,7 @@
             }
           },
           {
-            "id": "e53379314491e155",
+            "id": "5cbaabbcb18daa92",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,18 +147,18 @@
             }
           },
           {
-            "id": "9fd44735a675f323",
+            "id": "d44b76fa9c1fc0b2",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "manual/algorithms/asymptotic-notations.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Вміст asymptotic-notations"
+              "title": "Вміст README"
             }
           }
         ]
@@ -169,64 +170,47 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "publish:Публікація змін": false,
       "switcher:Відкрити провідник файлів": false,
       "graph:Граф": false,
       "canvas:Створити нове полотно": false,
       "daily-notes:Сьогоднішня нотатка": false,
       "templates:Вставити шаблон": false,
       "command-palette:Відкрити меню команд": false,
-      "bases:Створити нову базу": false,
-      "hugo-publish:hugo sync": false
+      "bases:Створити нову базу": false
     }
   },
-  "active": "c5e922ad5b81d634",
+  "active": "c5436322c278bf1d",
   "lastOpenFiles": [
-    "uk/book/ElrctronicsBasics/chapter1/_index.md",
-    "blog/how-to-connect-dsi-and-csi-cable-to-tinker-board.md",
-    "uk/book/ElrctronicsBasics/chapter1/1.md",
-    "uk/book/ElrctronicsBasics/_index.md",
-    "uk/book/_index.md",
-    "uk/projects/3.md",
-    "blog",
-    "images/blog/fifo.svg",
-    "uk/book/ElrctronicsBasics/chapter2/1. Загальні відомості.md",
-    "images/projects/1/BSChome.png",
-    "images/projects/1/BSCmobile.png",
-    "images/projects/8/DC_interface.png",
-    "images/projects/7/awal10.png",
-    "images/projects/4/toLviv.png",
-    "images/projects/3/HomelessPets.png",
-    "images/projects/2/CityEvents.png",
-    "images/projects/1/BSCshop.png",
-    "images/projects/1/BSCmobileShopFilter.png",
-    "images/projects/8",
-    "images/projects/7",
-    "images/projects/4",
-    "images/projects/3",
-    "images/projects/2",
-    "images/projects/1",
-    "images/slider",
-    "images/projects",
-    "images/blog",
-    "uk/book/ElrctronicsBasics/chapter1/15. Фотоелектронні прилади.md",
-    "uk/book/ElrctronicsBasics/chapter1/14. Електронно-променеві трубки.md",
-    "uk/book/ElrctronicsBasics/chapter1/13. Генераторні лампи.md",
-    "uk/book/ElrctronicsBasics/chapter1/12. Стабілітрони.md",
-    "uk/book/ElrctronicsBasics/chapter1/11. Неонова лампа.md",
-    "uk/book/ElrctronicsBasics/chapter1/10. Тиратрон.md",
-    "uk/book/ElrctronicsBasics/chapter1/9. Газотрон.md",
-    "uk/book/ElrctronicsBasics/chapter1/8. Газорозрядні прилади.md",
-    "uk/book/ElrctronicsBasics/chapter1/7. Комбіновані і багатосіткові лампи.md",
-    "uk/book/ElrctronicsBasics/chapter1/6. Променевий Тетрод.md",
-    "uk/book/ElrctronicsBasics/chapter1/5.  П'ятиелектронна лампа (Пентод).md",
-    "uk/book/ElrctronicsBasics/chapter1/4. Чотириелектронна лампа (Тетрод).md",
-    "uk/book/ElrctronicsBasics/chapter1/3. Триелектронна лампа (тріод).md",
-    "uk/book/ElrctronicsBasics/chapter1/2. Двохелектронна лампа (діод).md",
-    "uk/book/ElrctronicsBasics/chapter1/1. Загальні відомості.md",
-    "search.md",
-    "uk/book/ElrctronicsBasics/chapter2/_index.md",
-    "_index.md",
-    "_tempates/Book Template.md"
+    "content/uk/book/afs/Chapter1/1.2. Основні величини, що характеризують електромагнітне поле.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/10. Тиратрон.md",
+    "public/images/books/magnet_lines.jpeg",
+    "images/books/magnet_lines.jpeg",
+    "content/uk/blog/How-to-connect-DSI-and-CSI-cable-to-Tinker-Board.md",
+    "public/index.xml",
+    "public/js/html5.js",
+    "public/css/font-awesome-4.7.0/less/mixins.less",
+    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2",
+    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff",
+    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf",
+    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg",
+    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot",
+    "public/css/font-awesome-4.7.0/fonts/FontAwesome.otf",
+    "public/css/font-awesome-4.7.0/scss/font-awesome.scss",
+    "public/css/font-awesome-4.7.0/scss/_variables.scss",
+    "public/images/clippy.svg",
+    "public/images/favicon.png",
+    "public/images/arrow.png",
+    "public/images/screenshot.png",
+    "public/images/manual/sorting-algorithm.png",
+    "public/images/manual/single-linked-list.png",
+    "public/images/manual/single-double-linked-list.jpg",
+    "content/uk/blog/OS-for-ASUS-Tinker-Board.md",
+    "content/uk/blog/Math-Primer-Coordinate-Systems.md",
+    "content/uk/blog/back-to-op-button-to-yourwebsite.md",
+    "content/uk/blog/configure-docker-for-drupal.md",
+    "content/uk/blog/drupal-libraries.md",
+    "README.md",
+    "public_del/uk/book/afs/_index.md",
+    "themes/AJAX-enabled-Typeahead-Autocomplete-Plugin-For-jQuery-Bootstrap/README.md"
   ]
 }

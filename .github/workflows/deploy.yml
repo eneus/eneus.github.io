@@ -1,0 +1,54 @@
+name: Remote Build and Deploy
+
+on:
+  push:
+    branches:
+      - content # The trigger fires when notes are pushed.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Loading CONTENT (from the current branch)
+      - name: Checkout Content
+        uses: actions/checkout@v4
+        with:
+          path: 'content-repo'
+
+      # 2. Download ENGINE (from the mypageio repository)
+      - name: Checkout Hugo Engine
+        uses: actions/checkout@v4
+        with:
+          repository: eneus/mypageio
+          path: 'engine'
+          submodules: true # If the template is a submodule
+
+      # 3. Combine them
+      - name: Prepare Workspace
+        run: |
+          # Copy content to the engine folder
+          cp -r content-repo/content/* engine/content/
+          # You can also copy static if it is in the content repository
+          # cp -r content-repo/images/* engine/images/ 2>/dev/null || true
+          # cp -r content-repo/static/* engine/static/ 2>/dev/null || true
+
+      # 4. Install Hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.157.0'
+          extended: true
+
+      # 5. Build the site
+      - name: Build
+        run: |
+          cd engine
+          hugo --minify --baseURL "https://eneus.github.io/"
+
+      # 6. Deploy the result to the main branch of the same repository
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./engine/public
+          publish_branch: main # Where does the finished HTML go

@@ -3,7 +3,7 @@ title: "A FIFO Buffer Implementation"
 date: 2019-06-23T12:52:36+06:00
 type: "blog"
 tags: ["C", "C++", "Microcontroller", "Development"]
-image: uk/blog/images/fifo.svg
+image: images/blog/fifo.svg
 description : "A FIFO Buffer Implementation"
 ---
 A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.
