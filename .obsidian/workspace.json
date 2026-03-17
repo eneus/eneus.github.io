@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/uk/blog/PSOC - знайомство.md",
+                "file": "content/uk/blog/Linux Kernel vs User space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PSOC - знайомство"
+              "title": "Linux Kernel vs User space"
             }
           }
         ]
@@ -193,8 +193,11 @@
   },
   "active": "50d4c829bca6f7aa",
   "lastOpenFiles": [
+    "content/uk/blog/PSOC-знайомство.md",
+    "content/uk/blog/Linux Kernel vs User space.md",
+    "content/uk/book/afs/Chapter1/1.2. Основні величини, що характеризують електромагнітне поле.md",
+    "content/uk/blog/Live-Webcam-Streaming-using-VLC-on-the-Command-Line.md",
     "images/blog/infineon-PsoC-6.png",
-    "content/uk/blog/PSOC - знайомство.md",
     "images/blog/Не підтверджено 790616.crdownload",
     "Без назви.base",
     "content/uk/blog/A_FIFO_Buffer_Implementation.md",
@@ -225,7 +228,6 @@
     "content/_tempates/Book Template.md",
     "content/_tempates/Blog Post.md",
     "content/_tempates",
-    "content/uk/book/afs/_index.md",
     "static"
   ]
 }

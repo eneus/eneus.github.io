@@ -6,7 +6,7 @@ tags:
   - psoc
 image: images/blog/infineon-PsoC-6.png
 description: Cypress CY8CPROTO-062–4343W PSoC 6 Wi-Fi BT Prototyping Kit Specs and More
-slug:
+slug: psoc
 draft: false
 ---
 Комплект для прототипування Cypress CY8CPROTO-062–4343W PSoC 6 Wi-Fi BT — це простий у використанні мікроконтролер. Завдяки надійним характеристикам, включаючи процесор ARM Cortex-M4, та чудовим можливостям підключення, таким як Wi-Fi та Bluetooth, це фантастичний мікроконтролер для проектування та створення прототипів. Дізнайтеся все про комплект для прототипування Cypress CY8CPROTO-062–4343W PSoC 6 Wi-Fi BT, від його характеристик до того, чи варто його купувати!

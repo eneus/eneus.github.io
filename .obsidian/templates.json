@@ -1,3 +1,4 @@
 {
-  "folder": "content/_tempates"
+  "folder": "content/_tempates",
+  "dateFormat": "YYYY-MM-DD[T]HH:mm:ssZ"
 }
