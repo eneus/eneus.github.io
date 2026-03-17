@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "92260410d3c990b6",
+    "id": "b969455ee4760cc7",
     "type": "split",
     "children": [
       {
-        "id": "2e57bc7645008c0b",
+        "id": "136454be6c4394be",
         "type": "tabs",
         "children": [
           {
-            "id": "c5436322c278bf1d",
+            "id": "701cc53f04275d3a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "295d7d0b3f9c1bc2",
+    "id": "40fe5273bee77fee",
     "type": "split",
     "children": [
       {
-        "id": "9844427f20b7a5a8",
+        "id": "f2385810b61a03bf",
         "type": "tabs",
         "children": [
           {
-            "id": "9ede50a8ce8ab430",
+            "id": "da3935e8ba1302db",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "07ceb1f52834c9ec",
+            "id": "a10c5c623dbf5788",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "6885f4c91d473d85",
+            "id": "f3241c15db922eda",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "bd638fe15525f461",
+    "id": "bea7a8be27015e91",
     "type": "split",
     "children": [
       {
-        "id": "371e8d255e7baa9a",
+        "id": "2ed91770c4cddf93",
         "type": "tabs",
         "children": [
           {
-            "id": "9da3b1f457288203",
+            "id": "a6d71353f9d62676",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Зворотні посилання для README"
+              "title": "Зворотні посилання"
             }
           },
           {
-            "id": "bb7db2cc698ed3d0",
+            "id": "1970d628b5e925c4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Вихідні посилання з README"
+              "title": "Вихідні посилання"
             }
           },
           {
-            "id": "6d68f6d31553d31d",
+            "id": "ae2b95f09bdb5739",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +131,7 @@
             }
           },
           {
-            "id": "5cbaabbcb18daa92",
+            "id": "9f665ff73ab1b2f4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,18 +145,17 @@
             }
           },
           {
-            "id": "d44b76fa9c1fc0b2",
+            "id": "18658b3ef48e09e1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Вміст README"
+              "title": "Вміст"
             }
           }
         ]
@@ -179,38 +176,36 @@
       "bases:Створити нову базу": false
     }
   },
-  "active": "c5436322c278bf1d",
+  "active": "701cc53f04275d3a",
   "lastOpenFiles": [
-    "content/uk/book/afs/Chapter1/1.2. Основні величини, що характеризують електромагнітне поле.md",
+    "content/uk/book/ElrctronicsBasics/chapter2/_index.md",
+    "content/uk/book/ElrctronicsBasics/chapter2/1. Загальні відомості.md",
+    "content/uk/book/ElrctronicsBasics/chapter2",
+    "content/uk/book/ElrctronicsBasics/chapter1/9. Газотрон.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/_index.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/8. Газорозрядні прилади.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/6. Променевий Тетрод.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/7. Комбіновані і багатосіткові лампи.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/13. Генераторні лампи.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/5.  П'ятиелектронна лампа (Пентод).md",
+    "content/uk/book/ElrctronicsBasics/chapter1/4. Чотириелектронна лампа (Тетрод).md",
+    "content/uk/book/ElrctronicsBasics/chapter1/3. Триелектронна лампа (тріод).md",
+    "content/uk/book/ElrctronicsBasics/chapter1/2. Двохелектронна лампа (діод).md",
+    "content/uk/book/ElrctronicsBasics/chapter1/15. Фотоелектронні прилади.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/14. Електронно-променеві трубки.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/12. Стабілітрони.md",
     "content/uk/book/ElrctronicsBasics/chapter1/10. Тиратрон.md",
-    "public/images/books/magnet_lines.jpeg",
+    "content/uk/book/ElrctronicsBasics/chapter1/11. Неонова лампа.md",
+    "content/uk/book/ElrctronicsBasics/chapter1/1. Загальні відомості.md",
+    "content/uk/book/ElrctronicsBasics/chapter1",
     "images/books/magnet_lines.jpeg",
-    "content/uk/blog/How-to-connect-DSI-and-CSI-cable-to-Tinker-Board.md",
-    "public/index.xml",
-    "public/js/html5.js",
-    "public/css/font-awesome-4.7.0/less/mixins.less",
-    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2",
-    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff",
-    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf",
-    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.svg",
-    "public/css/font-awesome-4.7.0/fonts/fontawesome-webfont.eot",
-    "public/css/font-awesome-4.7.0/fonts/FontAwesome.otf",
-    "public/css/font-awesome-4.7.0/scss/font-awesome.scss",
-    "public/css/font-awesome-4.7.0/scss/_variables.scss",
-    "public/images/clippy.svg",
-    "public/images/favicon.png",
-    "public/images/arrow.png",
-    "public/images/screenshot.png",
-    "public/images/manual/sorting-algorithm.png",
-    "public/images/manual/single-linked-list.png",
-    "public/images/manual/single-double-linked-list.jpg",
-    "content/uk/blog/OS-for-ASUS-Tinker-Board.md",
-    "content/uk/blog/Math-Primer-Coordinate-Systems.md",
-    "content/uk/blog/back-to-op-button-to-yourwebsite.md",
-    "content/uk/blog/configure-docker-for-drupal.md",
-    "content/uk/blog/drupal-libraries.md",
-    "README.md",
-    "public_del/uk/book/afs/_index.md",
-    "themes/AJAX-enabled-Typeahead-Autocomplete-Plugin-For-jQuery-Bootstrap/README.md"
+    "images/books/Thyratron_Symbols.svg",
+    "images/books",
+    "content/_tempates/_index.md",
+    "content/_tempates/Book Template.md",
+    "content/_tempates/Blog Post.md",
+    "content/_tempates",
+    "content/uk/book/afs/_index.md",
+    "static"
   ]
 }

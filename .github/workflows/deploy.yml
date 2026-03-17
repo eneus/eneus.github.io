@@ -22,7 +22,8 @@ jobs:
           repository: eneus/mypageio
           path: 'engine'
           submodules: true # If the template is a submodule
-
+          # Використовуємо ваш новий секрет тут:
+          token: ${{ secrets.HUGO_ENGINE_ACCESS }}
       # 3. Combine them
       - name: Prepare Workspace
         run: |
