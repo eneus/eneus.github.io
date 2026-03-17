@@ -1,0 +1,36 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="650px" height="300px" id="thyratron2" version="1.1">
+<defs id="defs4"/>
+<g id="layer1">
+<path style="fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" id="path2985" d="m 190,140 a 50,50 0 1 1 -100,0 50,50 0 1 1 100,0 z"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 5,140 100,0" id="path3759"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.5, 6.5;stroke-dashoffset:0" d="m 110,140 60,0" id="path3751"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 130,250 0,-70 10,-15 10,15 0,70" id="path3779"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 115,170 0,-15 50,0 0,95" id="path3781"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 140,30 0,90" id="path3757"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 115,120 50,0" id="path3750"/>
+<path style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" id="path3845" d="m 180,145 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"/>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="30" y="130" id="text3847">grid</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="150" y="70" id="text3849">anode</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="55" y="220" id="text3848">filament</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="175" y="220" id="text3842">cathode</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="255" y="120" id="text3845">
+  <tspan id="tspan3849-1" x="257" y="120" style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace">dots indicate the</tspan>
+  <tspan x="255" y="145" style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace" id="tspan5297">tube is gas-filled</tspan>
+</text>
+<path style="fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 200,140 10,1 -1,-2 41,-7 -1,-2 -40,7 0,-2 -9,5" id="path3771"/>
+<path style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 459,108 c 0,-75 100,-75 100,0 l 0,50 c 0,75 -100,75 -100,0 0,0 0,-35 0,-50 z" id="path5299"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 545,135 100,0" id="path3776"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6.5,6.5;stroke-dashoffset:0" d="m 480,135 60,0" id="path3711"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 490,260 0,-70 c 10,-15 30,-15 40,0 l 0,70" id="path3774"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 510,5 0,85" id="path3773"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 485,90 50,0" id="path3702"/>
+<path style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" id="path3842" d="m 480,150 a 3,3 0 1 1 -6,0 3,3 0 1 1 6,0 z"/>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="585" y="125" id="text3841">grid</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="520" y="30" id="text3898">anode</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="415" y="245" id="text3887">filament</text>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="575" y="170" id="text3821">cathode</text>
+<path style="fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 450,140 -10,1 1,-2 -41,-7 1,-2 40,7 0,-2 9,5" id="path3719"/>
+<path style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 480,179 c 20,-25 40,-25 60,0 l 105,0" id="path3742"/>
+<text xml:space="preserve" style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:monospace" x="110" y="295" id="text3877">American (left) and European (right) thyratron symbols</text>
+</g>
+</svg>
