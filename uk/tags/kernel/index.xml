@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kernel on Ivan Fesiuk - #Full Stack Developer | Персональний блог</title><link>https://eneus.github.io/uk/tags/kernel/</link><description>Recent content in Kernel on Ivan Fesiuk - #Full Stack Developer | Персональний блог</description><generator>Hugo</generator><language>uk-UA</language><lastBuildDate>Tue, 17 Mar 2026 22:55:25 +0200</lastBuildDate><atom:link href="https://eneus.github.io/uk/tags/kernel/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Kernel vs User space</title><link>https://eneus.github.io/uk/blog/linux-kernel-vs-user-space/</link><pubDate>Tue, 17 Mar 2026 22:55:25 +0200</pubDate><guid>https://eneus.github.io/uk/blog/linux-kernel-vs-user-space/</guid><description>&lt;p&gt;Щоб зрозуміти різницю між &lt;strong&gt;Linux Kernel (ядром)&lt;/strong&gt; та &lt;strong&gt;User Space (простором користувача)&lt;/strong&gt;, уявіть собі сучасний ресторан.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;User Space&lt;/strong&gt; — це обідня зала, де сидять гості (ваші програми), читають меню та роблять замовлення.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kernel Space&lt;/strong&gt; — це кухня та адміністрація. Гості не мають права заходити на кухню чи самостійно брати продукти з холодильника; вони мусять просити офіціанта (робити системний виклик), щоб отримати бажане.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ось детальний розбір того, як працює цей поділ в архітектурі Linux.&lt;/p&gt;</description></item></channel></rss>
