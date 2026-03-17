@@ -1,1 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://eneus.github.io/uk/categories/</loc><xhtml:link rel="alternate" hreflang="en-US" href="https://eneus.github.io/categories/"/><xhtml:link rel="alternate" hreflang="uk-UA" href="https://eneus.github.io/uk/categories/"/></url><url><loc>https://eneus.github.io/uk/</loc><xhtml:link rel="alternate" hreflang="en-US" href="https://eneus.github.io/"/><xhtml:link rel="alternate" hreflang="uk-UA" href="https://eneus.github.io/uk/"/></url><url><loc>https://eneus.github.io/uk/tags/</loc><xhtml:link rel="alternate" hreflang="en-US" href="https://eneus.github.io/tags/"/><xhtml:link rel="alternate" hreflang="uk-UA" href="https://eneus.github.io/uk/tags/"/></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://eneus.github.io/uk/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://eneus.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk-UA"
+                href="https://eneus.github.io/uk/categories/"
+                />
+  </url><url>
+    <loc>https://eneus.github.io/uk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://eneus.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk-UA"
+                href="https://eneus.github.io/uk/"
+                />
+  </url><url>
+    <loc>https://eneus.github.io/uk/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://eneus.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk-UA"
+                href="https://eneus.github.io/uk/tags/"
+                />
+  </url>
+</urlset>
