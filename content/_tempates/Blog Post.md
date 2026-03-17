@@ -1,7 +1,7 @@
 ---
 title:
 type: blog
-date:
+date: {{date:YYYY-MM-DDTHH:mm:ssZ}}
 tags:
 image: images/blog/awesome_cpp.jpg
 description: ""
