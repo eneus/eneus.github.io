@@ -52,4 +52,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./engine/public
-          publish_branch: main # Where does the finished HTML go
+          publish_branch: master # Where does the finished HTML go
